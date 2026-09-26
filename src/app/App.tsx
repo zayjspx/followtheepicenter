@@ -1,6 +1,7 @@
 import type {DataBundle} from './types';
 import {useRoute,href} from './router';
 import {Home,ClaimsPage,DiagnosticsPage,SearchPage,SourcesPage} from './Pages';
+import {NetworkExperience} from './NetworkExperience';
 import {GraphView} from './GraphView';
 import {NodeView} from './NodeView';
 import {RatchetView,RatchetsIndex} from './RatchetView';
@@ -8,12 +9,14 @@ import {OperatorPage} from './SessionOperator';
 import {ReplayPage} from './SessionReplay';
 import {GuidedCase,GuidedIndex} from './GuidedCase';
 
-function Nav(){return <><header className="site-header"><a className="brand" href={href('/')}><span className="brand-mark">DB</span><span><strong>Debunker</strong><small>Interrogation System</small></span></a><nav><a className="guided-nav" href={href('/guided')}>Guided</a><a href={href('/claims')}>Claims</a><a href={href('/sources')}>Evidence</a><a href={href('/graph')}>Graph</a><a href={href('/ratchets')}>Ratchets</a><a href={href('/diagnostics')}>Diagnostics</a><a href={href('/search')}>Search</a></nav></header><div className="scope-strip">Public case graph is read-only · guided exploration changes only your browser state · no truth or credibility scores</div></>}
+function Nav(){return <><header className="site-header"><a className="brand" href={href('/')}><span className="brand-mark">DB</span><span><strong>Debunker</strong><small>Interrogation System</small></span></a><nav><a href={href('/network')}>Network</a><a className="guided-nav" href={href('/guided')}>Guided</a><a href={href('/claims')}>Claims</a><a href={href('/sources')}>Evidence</a><a href={href('/graph')}>Graph</a><a href={href('/ratchets')}>Ratchets</a><a href={href('/diagnostics')}>Diagnostics</a><a href={href('/search')}>Search</a></nav></header><div className="scope-strip">Public case graph is read-only · guided exploration changes only your browser state · no truth or credibility scores</div></>}
 export function App({bundle}:{bundle:DataBundle}){const r=useRoute();const [a,b]=r.segments;let page;
- if(!a)page=<Home bundle={bundle}/>;
+ if(!a||a==='network')page=<NetworkExperience bundle={bundle} focusParam={r.query.get('focus')??undefined}/>;
+ else if(a==='about')page=<Home bundle={bundle}/>;
  else if(a==='guided'&&!b)page=<GuidedIndex bundle={bundle}/>;
  else if(a==='guided'&&b)page=<GuidedCase key={b} id={b} bundle={bundle} initialLock={r.query.get('lock')??undefined}/>;
- else if(a==='graph')page=<GraphView bundle={bundle} focusParam={r.query.get('focus')??undefined} depthParam={r.query.get('depth')??undefined}/>;
+ else if(a==='graph')page=<NetworkExperience bundle={bundle} focusParam={r.query.get('focus')??undefined}/>;
+ else if(a==='neighborhood')page=<GraphView bundle={bundle} focusParam={r.query.get('focus')??undefined} depthParam={r.query.get('depth')??undefined}/>;
  else if(a==='claims')page=<ClaimsPage bundle={bundle}/>;
  else if(a==='ratchets')page=<RatchetsIndex bundle={bundle}/>;
  else if(a==='diagnostics')page=<DiagnosticsPage bundle={bundle}/>;
