@@ -1,0 +1,74 @@
+{
+  "slice": 3,
+  "status": "static_source_validation_passed",
+  "checks": [
+    {
+      "check": "route /graph",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "route /claims",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "route /ratchets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "route /diagnostics",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "route /sources",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "route /search",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "WHY traversal label",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "downstream traversal label",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ratchet seven response branches",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "public data mirror",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "pages production build",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "pages push main",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "operator controls excluded",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "file_count": 13,
+  "implementation_fingerprint": "6944fc5ba7adf0448db0cbf37d7f793da23851cc9d3a2bb27773acba6689648d",
+  "note": "Dependency-free source/static validation only. Operator-side npm ci && npm run build remains the authoritative compile/smoke test."
+}

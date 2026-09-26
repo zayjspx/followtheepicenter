@@ -1,0 +1,10 @@
+schema_version: 1
+records:
+  - review_state: reviewed
+    id: aud-physical-width
+    kind: physical_quantity
+    node: inf-width
+    entity: marker
+    quantity: width
+    scope: frame-68-coplanar
+    unit: mm

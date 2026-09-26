@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "build_id": "309639f350789e8ed6013fb9bd66153527bee3e52cd82379dfa36636c21f1451",
+  "audit": {
+    "schema_version": 1,
+    "records": []
+  },
+  "nodes": [
+    {
+      "id": "asm-phone-baseline-39mm",
+      "title": "Synthetic baseline assumption",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "assumption",
+      "quantity": "stereo_microphone_baseline",
+      "value": 0.039,
+      "unit": "m",
+      "basis": "operator_supplied",
+      "receipts": [
+        "rec-itd-inputs"
+      ],
+      "body": "\nSynthetic compiler acceptance fixture.\n"
+    },
+    {
+      "id": "der-itd-max",
+      "title": "Maximum delay calculation",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "derivation",
+      "expression": "baseline / sound_speed",
+      "inputs": {
+        "baseline": {
+          "node": "asm-phone-baseline-39mm"
+        },
+        "sound_speed": {
+          "value": 343,
+          "unit": "m/s"
+        }
+      },
+      "output": {
+        "quantity": "max_plane_wave_itd",
+        "unit": "us"
+      },
+      "expected": {
+        "value": 113.7,
+        "tolerance": 0.05
+      },
+      "depends_on": [
+        "inv-plane-wave-itd"
+      ],
+      "body": "\nSynthetic compiler acceptance fixture.\n"
+    },
+    {
+      "id": "inv-plane-wave-itd",
+      "title": "Fixture plane-wave constraint",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "invariant",
+      "statement": "For a coherent two-sensor baseline d and plane wave of speed c, absolute delay cannot exceed d/c.",
+      "scope": "Synthetic coherent two-sensor model only; reference is a test record, not a literature authority.",
+      "units": [
+        "m",
+        "m/s",
+        "us"
+      ],
+      "formula": "abs_dt_max = d / c",
+      "applies_when": [
+        "two_sensor_delay",
+        "approximately_plane_wave"
+      ],
+      "does_not_apply_when": [
+        "channels_not_time_coherent",
+        "unknown_sensor_processing_invalidates_raw_delay"
+      ],
+      "references": [
+        "src-itd-synthetic"
+      ],
+      "body": "\nSynthetic compiler acceptance fixture.\n"
+    },
+    {
+      "id": "mea-itd-reported",
+      "title": "Synthetic reported delay",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "measurement",
+      "quantity": "interchannel_time_delay",
+      "value": -113.4,
+      "unit": "us",
+      "method": "met-fixture-transcription",
+      "observed_from": [
+        "obs-itd-reported"
+      ],
+      "body": "\nSynthetic compiler acceptance fixture.\n"
+    },
+    {
+      "id": "met-fixture-transcription",
+      "title": "Fixture transcription method",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "method",
+      "procedure": "Transcribe the quantity from the synthetic source. This is not a measurement of real audio.",
+      "references": [
+        "src-itd-synthetic"
+      ],
+      "body": "\nSynthetic compiler acceptance fixture.\n"
+    },
+    {
+      "id": "obs-itd-reported",
+      "title": "Reported fixture delay",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "observation",
+      "statement": "The synthetic record contains a reported delay of -113.4 us.",
+      "receipts": [
+        "rec-itd-inputs"
+      ],
+      "body": "\nSynthetic compiler acceptance fixture.\n"
+    },
+    {
+      "id": "rec-itd-inputs",
+      "title": "Synthetic input receipt",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "receipt",
+      "source": "src-itd-synthetic",
+      "locator": {
+        "kind": "lines",
+        "start": 2,
+        "end": 3
+      },
+      "quote": "Baseline assumption: 0.039 m. Reported interchannel delay: -113.4 us.",
+      "context": "Literal input record for software testing.",
+      "body": "\nSynthetic compiler acceptance fixture.\n"
+    },
+    {
+      "id": "src-itd-synthetic",
+      "title": "Synthetic ITD source",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "source",
+      "source_type": "text",
+      "author": "Fixture author",
+      "original_url": "https://example.invalid/itd-synthetic",
+      "published_at": null,
+      "captured_at": "2026-09-26T00:00:00Z",
+      "sha256": "642d5e5f0520f6a7cb47b8f212aa0ec449c590728c47bb925fe2d27daf0a49e2",
+      "artifact": "public/evidence/itd-synthetic.txt",
+      "redistribution": "full_local",
+      "version": {
+        "family": "itd-synthetic",
+        "sequence": 1
+      },
+      "body": "\nSynthetic compiler acceptance fixture.\n"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edg-itd-baseline",
+      "title": "Calculation assumes baseline",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "itd"
+      ],
+      "summary": "Synthetic fixture for compiler verification; not evidence about a real event.",
+      "type": "edge",
+      "from": "der-itd-max",
+      "relation": "assumes",
+      "to": "asm-phone-baseline-39mm",
+      "rationale": "Baseline is an assumed input, not independently measured corroboration.",
+      "receipts": [
+        "rec-itd-inputs"
+      ]
+    }
+  ],
+  "derivations": [
+    {
+      "id": "der-itd-max",
+      "quantity": "max_plane_wave_itd",
+      "value": 113.70262390670555,
+      "unit": "us",
+      "inputs": {
+        "baseline": {
+          "node": "asm-phone-baseline-39mm"
+        },
+        "sound_speed": {
+          "value": 343,
+          "unit": "m/s"
+        }
+      },
+      "expression": "baseline / sound_speed",
+      "expected": {
+        "value": 113.7,
+        "tolerance": 0.05
+      },
+      "absolute_error": 0.0026239067055513488
+    }
+  ],
+  "content_fingerprint": "14061940148d90b0000f3f80c2a5dd8bfb1e87143c30917dbf11818c33f3c883"
+}

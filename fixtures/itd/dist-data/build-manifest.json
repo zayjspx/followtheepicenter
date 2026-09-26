@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "build_id": "309639f350789e8ed6013fb9bd66153527bee3e52cd82379dfa36636c21f1451",
+  "compiler_version": "slice-2-v1",
+  "authored_count": 9,
+  "published_count": 9,
+  "excluded_ids": [],
+  "inputs": [
+    {
+      "path": "asm-phone-baseline-39mm.md",
+      "id": "asm-phone-baseline-39mm",
+      "sha256": "103758a50f12d5e1b09fac7cef3d75b565c9f7cc6a9120507d8ed33c61fb7a06"
+    },
+    {
+      "path": "der-itd-max.md",
+      "id": "der-itd-max",
+      "sha256": "66ee8fb09b1cfc1efa3a8821d4717b95558a7eec25f95fc1764b1eed99df4c08"
+    },
+    {
+      "path": "edg-itd-baseline.md",
+      "id": "edg-itd-baseline",
+      "sha256": "db7c9972b2304eb224db7d5987e9ab8a92985cd33bf4422ad08b3c88fdbcc4d0"
+    },
+    {
+      "path": "inv-plane-wave-itd.md",
+      "id": "inv-plane-wave-itd",
+      "sha256": "62853a7fba22f964c48a4baba22627e94d60f7e4e127769c91a6cf4db036f7d7"
+    },
+    {
+      "path": "mea-itd-reported.md",
+      "id": "mea-itd-reported",
+      "sha256": "ba89144bf08561bae3aa40d1709032b7c9a0b1a9f6a460319368ef6f9e811354"
+    },
+    {
+      "path": "met-fixture-transcription.md",
+      "id": "met-fixture-transcription",
+      "sha256": "a4e1aae414cb21f0384d39a70f01f84bbb9ac2263264f956c4ba0739d113508f"
+    },
+    {
+      "path": "obs-itd-reported.md",
+      "id": "obs-itd-reported",
+      "sha256": "b50681b80fd876e5f659340eee15c96cc7811d4f10a546c3db394371948ee184"
+    },
+    {
+      "path": "rec-itd-inputs.md",
+      "id": "rec-itd-inputs",
+      "sha256": "9f54890a6ec9864bd2eedf5ea4d1fc476301543189d6d0329098a16e020eab9b"
+    },
+    {
+      "path": "src-itd-synthetic.md",
+      "id": "src-itd-synthetic",
+      "sha256": "3b440ab4b5835f76d5c3d3696030f1c1514095d32404f3e2e790cfef43801bf6"
+    }
+  ],
+  "integrity": {
+    "sources": [
+      {
+        "id": "src-itd-synthetic",
+        "sha256": "642d5e5f0520f6a7cb47b8f212aa0ec449c590728c47bb925fe2d27daf0a49e2",
+        "verification": "local_bytes_verified"
+      }
+    ],
+    "receipts": [
+      {
+        "id": "rec-itd-inputs",
+        "verification": "quote_verified_at_lines"
+      }
+    ]
+  },
+  "audit_annotations_sha256": "16bf24d404b6914dd084140cfc2ff9adc145ed6a3db2fe852f20b47f5bab0d6c",
+  "excluded_annotation_ids": [],
+  "graph_fingerprint": "14061940148d90b0000f3f80c2a5dd8bfb1e87143c30917dbf11818c33f3c883",
+  "scope": "Slice 2 compiler: hardened schemas, typed audit annotations and explicit provenance paths; no graph UI or runtime",
+  "audit": {
+    "engine_version": "slice-2-v1",
+    "detectors": [
+      "arithmetic_contradiction",
+      "circular_support",
+      "pseudo_independence",
+      "assumption_laundering",
+      "missing_calibration",
+      "active_claim_conflict"
+    ],
+    "candidate_count": 0,
+    "fingerprint": "52c11aea5e09841530dad92e6528b92fe80aafaa617c17c8a7f96fe7bd7aa616"
+  },
+  "topology": {
+    "fingerprint": "5c701a3a5aeedb313754a7647a33d0fd9d06f383b6fbb7d89c9177d4a6856642",
+    "blast_radius_fingerprint": "5b7a968f415467c51e151fa1226f6725b0d46e6cb70ac506414ecb479a14444d",
+    "interrogation_order_fingerprint": "c92e295c4002f09a492989bc22dfe2545f542487826bd8b639fe21a6d8ee6200"
+  }
+}

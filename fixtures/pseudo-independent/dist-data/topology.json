@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "build_id": "c47d8bab0cb4fb01f4d4b6715b5534b79400d2788640d21a409544178b1ea743",
+  "claim_state": {
+    "clm-convergence": {
+      "direct_burdens": [],
+      "inherited_burdens": [],
+      "all_burdens": [],
+      "support_paths": [
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow"
+      ],
+      "downstream_claims": [],
+      "structural_state": "supported",
+      "note": "Structural state only; not a truth judgment."
+    }
+  },
+  "ratchets": {},
+  "response_patterns": {},
+  "fingerprint": "e9f381aa56c7602ca78e9a724df3c09bea1a4c723922691b84e5c2c874e9bcd8"
+}

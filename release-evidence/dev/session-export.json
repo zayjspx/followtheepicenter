@@ -1,0 +1,145 @@
+{
+  "schema": "interrogation.session.v1",
+  "session_id": "ses-local-20260926-193834",
+  "title": "RC1 browser smoke",
+  "created_at": "2026-09-26T19:38:34.055Z",
+  "updated_at": "2026-09-26T19:38:36.611Z",
+  "graph_build_id": "8cd63978a2c97f4a07e68694f86efd7427f02704be97f5f676a97a6c2f5268ba",
+  "graph_schema_version": 2,
+  "graph_content_fingerprint": "e73591845f5404edf9aae2a343011ce283295a62b50f28d7882cf3b17584b308",
+  "git_commit": null,
+  "events": [
+    {
+      "event_id": "ses-local-20260926-193834-evt-00001",
+      "sequence": 1,
+      "occurred_at": "2026-09-26T19:38:34.072Z",
+      "elapsed_ms": 17,
+      "event_type": "session_started",
+      "payload": {
+        "title": "RC1 browser smoke",
+        "graph_build_id": "8cd63978a2c97f4a07e68694f86efd7427f02704be97f5f676a97a6c2f5268ba",
+        "graph_schema_version": 2,
+        "graph_content_fingerprint": "e73591845f5404edf9aae2a343011ce283295a62b50f28d7882cf3b17584b308",
+        "git_commit": null
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00002",
+      "sequence": 2,
+      "occurred_at": "2026-09-26T19:38:34.590Z",
+      "elapsed_ms": 535,
+      "event_type": "ratchet_activated",
+      "payload": {
+        "ratchet_id": "rat-rode-petn-consistency",
+        "title": "RØDE acoustic classification vs PETN model"
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00003",
+      "sequence": 3,
+      "occurred_at": "2026-09-26T19:38:34.590Z",
+      "elapsed_ms": 535,
+      "event_type": "lock_activated",
+      "payload": {
+        "ratchet_id": "rat-rode-petn-consistency",
+        "lock_id": "lck-rode-petn-standby",
+        "reason": "ratchet_entry"
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00004",
+      "sequence": 4,
+      "occurred_at": "2026-09-26T19:38:34.591Z",
+      "elapsed_ms": 536,
+      "event_type": "burden_opened",
+      "payload": {
+        "burden_id": "bur-rode-petn-acoustic-consistency",
+        "lock_id": "lck-rode-petn-standby",
+        "ratchet_id": "rat-rode-petn-consistency"
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00005",
+      "sequence": 5,
+      "occurred_at": "2026-09-26T19:38:36.147Z",
+      "elapsed_ms": 2092,
+      "event_type": "response_classified",
+      "payload": {
+        "ratchet_id": "rat-rode-petn-consistency",
+        "lock_id": "lck-rode-petn-standby",
+        "response": "yes",
+        "answer_text": "RC1 test: accepted for branch testing only.",
+        "branch_lock_id": "lck-rode-petn-reconcile"
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00006",
+      "sequence": 6,
+      "occurred_at": "2026-09-26T19:38:36.147Z",
+      "elapsed_ms": 2092,
+      "event_type": "commitment_added",
+      "payload": {
+        "claim_id": "clm-rode-event-not-shockwave",
+        "status": "accepted",
+        "lock_id": "lck-rode-petn-standby",
+        "ratchet_id": "rat-rode-petn-consistency",
+        "answer_text": "RC1 test: accepted for branch testing only."
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00007",
+      "sequence": 7,
+      "occurred_at": "2026-09-26T19:38:36.147Z",
+      "elapsed_ms": 2092,
+      "event_type": "commitment_added",
+      "payload": {
+        "claim_id": "clm-petn-shaped-charge-hidden",
+        "status": "accepted",
+        "lock_id": "lck-rode-petn-standby",
+        "ratchet_id": "rat-rode-petn-consistency",
+        "answer_text": "RC1 test: accepted for branch testing only."
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00008",
+      "sequence": 8,
+      "occurred_at": "2026-09-26T19:38:36.148Z",
+      "elapsed_ms": 2093,
+      "event_type": "callback_available",
+      "payload": {
+        "kind": "commitment_conflict",
+        "fingerprint": "edg-rode-notshockwave-tension-petn:clm-petn-shaped-charge-hidden:clm-rode-event-not-shockwave",
+        "edge_id": "edg-rode-notshockwave-tension-petn",
+        "relation": "tension_with",
+        "source_claim": "clm-rode-event-not-shockwave",
+        "target_claim": "clm-petn-shaped-charge-hidden",
+        "message": "Current commitment may require reconciliation with earlier accepted commitment via tension with."
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00009",
+      "sequence": 9,
+      "occurred_at": "2026-09-26T19:38:36.148Z",
+      "elapsed_ms": 2093,
+      "event_type": "lock_activated",
+      "payload": {
+        "ratchet_id": "rat-rode-petn-consistency",
+        "lock_id": "lck-rode-petn-reconcile",
+        "reason": "response:yes",
+        "from_lock_id": "lck-rode-petn-standby"
+      }
+    },
+    {
+      "event_id": "ses-local-20260926-193834-evt-00010",
+      "sequence": 10,
+      "occurred_at": "2026-09-26T19:38:36.611Z",
+      "elapsed_ms": 2556,
+      "event_type": "tangent_parked",
+      "payload": {
+        "text": "RC1 parked tangent",
+        "origin_lock_id": "lck-rode-petn-reconcile",
+        "origin_ratchet_id": "rat-rode-petn-consistency"
+      }
+    }
+  ]
+}

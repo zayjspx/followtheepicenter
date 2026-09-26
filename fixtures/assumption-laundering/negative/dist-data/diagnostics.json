@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "engine_version": "slice-2-v1",
+  "build_id": "1a3110f777d2060a5b3662ee85e16d5342b4e750189a274756d71b56b9be65ce",
+  "graph_fingerprint": "3d5009b9ac2a4326fba34441e0cadfa73ab426ff09696758716af7eb5d60bd30",
+  "detectors": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "pseudo_independence",
+    "assumption_laundering",
+    "missing_calibration",
+    "active_claim_conflict"
+  ],
+  "candidates": [],
+  "fingerprint": "c3b350834108ac4b45c513f2035244c09a01e43b4d55702984bfa7a892a558c8"
+}

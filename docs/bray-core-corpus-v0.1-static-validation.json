@@ -1,0 +1,28 @@
+{
+  "record_count": 209,
+  "by_type": {
+    "claim": 33,
+    "derivation": 6,
+    "receipt": 15,
+    "observation": 11,
+    "source": 4,
+    "edge": 34,
+    "burden": 12,
+    "ratchet": 10,
+    "method": 9,
+    "assumption": 12,
+    "lock": 41,
+    "measurement": 15,
+    "theory": 3,
+    "diagnostic": 4
+  },
+  "errors": [],
+  "known_derivations": {
+    "der-itd-baseline-max": 113.70262390670555,
+    "der-velocity-from-4940": 188.214,
+    "der-magclip-image-aspect": 2.4166666666666665,
+    "der-magclip-physical-aspect": 1.5294117647058822,
+    "der-object-image-aspect": 1.0222222222222221,
+    "der-br-object-minus-shirt": -0.15100000000000002
+  }
+}

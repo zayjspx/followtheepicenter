@@ -1,0 +1,97 @@
+{
+  "schema": "interrogation.slice-implementation-receipt.v1",
+  "slice": 5,
+  "name": "self-guided-debunker",
+  "created_at": "2026-09-26",
+  "base_artifact": "interrogation-system-slice-4-live-runtime.zip",
+  "canonical_vault_unchanged": true,
+  "product_posture": {
+    "primary_public_ux": "self-guided",
+    "live_audience_sync": "deferred",
+    "operator_runtime": "preserved_optional_local_tool"
+  },
+  "implemented": [
+    "guided index",
+    "interactive guided ratchet execution",
+    "simple/technical modes",
+    "what-this-answer-changes preview",
+    "surviving support display",
+    "claim-to-guided entry points",
+    "local resume state",
+    "current-lock permalinks",
+    "operator removed from primary navigation"
+  ],
+  "validation": {
+    "typescript_syntax_files_checked": 32,
+    "typescript_syntax_errors": 0,
+    "guided_runtime_smoke": "pass",
+    "vault_ratchets": 19,
+    "vault_locks": 68,
+    "all_locks_have_seven_branches": true,
+    "claims_with_guided_target": 31,
+    "vault_hash_diff_vs_slice4": "identical",
+    "full_npm_build": "deferred to user disk"
+  },
+  "files": [
+    {
+      "path": "src/app/App.tsx",
+      "sha256": "516420f1985c3176ccf6e63b1f3af8f2d74b10cd23f4f353e2afd5f2d422e668",
+      "bytes": 2803
+    },
+    {
+      "path": "src/app/Pages.tsx",
+      "sha256": "071440dca7ba24041f6bc1e827648d907866f17e4ae96156b6b3c66e9dadd712",
+      "bytes": 8321
+    },
+    {
+      "path": "src/app/NodeView.tsx",
+      "sha256": "07edbabe164707207836f89c2ef0f25af271bcd81cbd1b52ea5da957c158a28c",
+      "bytes": 8192
+    },
+    {
+      "path": "src/app/RatchetView.tsx",
+      "sha256": "e9045f8cc756e4e6c9814b573698a2142dee04a82133b35d9e0b8831a568578b",
+      "bytes": 4132
+    },
+    {
+      "path": "src/app/GuidedCase.tsx",
+      "sha256": "f962e355280c534f96838441ff9d97604430b64a6619d307dac0509862ca93f6",
+      "bytes": 12794
+    },
+    {
+      "path": "src/guided/runtime.ts",
+      "sha256": "7b35f5219ec7016e99d0573e54f7b992aa50415d0cdf1b4751222eb2f76e3847",
+      "bytes": 4979
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "221153717cf6b37a307425a33aea79657d963e5462c077d021f34ec1db4828e4",
+      "bytes": 28691
+    },
+    {
+      "path": "tests/guided-runtime.test.ts",
+      "sha256": "876e34748c131345582a1bf941d24cf4b0ee2faab9b55ac6faa86869dfb9852f",
+      "bytes": 2912
+    },
+    {
+      "path": "README.md",
+      "sha256": "18a36d794f60d0db18afd4efcc78ebbcc8514c68116cf3ddecde56f5eeed4220",
+      "bytes": 4862
+    },
+    {
+      "path": "docs/slice-5-self-guided-debunker.md",
+      "sha256": "9600fdc8198bf3d641089d40018e5b8d9dc7eab6aef76f43281a8aee315ff448",
+      "bytes": 2564
+    },
+    {
+      "path": "docs/slice-5-static-validation.json",
+      "sha256": "fa0754c4a0aed0997a1d9610b84c90c0a115396fcf5abae6b9c58ba07cd40d18",
+      "bytes": 368
+    },
+    {
+      "path": "SLICE_5_RETURN_TO_USER.md",
+      "sha256": "7ce15b47144eef98f05faf97ee9cb20e01e44d55257b253f5ce8f70c1c619dc5",
+      "bytes": 1598
+    }
+  ]
+}

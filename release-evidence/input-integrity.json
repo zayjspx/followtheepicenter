@@ -1,0 +1,1690 @@
+{
+  "status": "unchanged",
+  "files": [
+    {
+      "path": "public/evidence/4940-record.txt",
+      "sha256": "074999874e9fdbe49837a95ff88a64a8f118e7e88afcf3f44b9dffcc166dc641"
+    },
+    {
+      "path": "public/evidence/active-claim-conflict-record.txt",
+      "sha256": "64a3227360fd18b13254a47af25ee2c114e840ba6d46cd9933fb050d7ed5e3a1"
+    },
+    {
+      "path": "public/evidence/assumption-laundering-record.txt",
+      "sha256": "5cacdbaca8882fb9e541d69c8deed50608830de3584659e3ae90e5649033eee8"
+    },
+    {
+      "path": "public/evidence/itd-synthetic.txt",
+      "sha256": "642d5e5f0520f6a7cb47b8f212aa0ec449c590728c47bb925fe2d27daf0a49e2"
+    },
+    {
+      "path": "public/evidence/missing-calibration-record.txt",
+      "sha256": "cec78f86f30cb5a63be73f372d75d9b0a90efd007431b5c0b9f5dd40566ca8ca"
+    },
+    {
+      "path": "public/evidence/pcb-color-record.txt",
+      "sha256": "b6dc1363bda1cd5b831d3c4cd818537046ce7c07fb6645c8b1f297899d36cc51"
+    },
+    {
+      "path": "public/evidence/pcb-size-record.txt",
+      "sha256": "1341859d311699c743d7dd2886c9f5245d85a8fd08410feb38aa7c3520d2f8e6"
+    },
+    {
+      "path": "public/evidence/pseudo-independent-false-color.txt",
+      "sha256": "8df95fdf83bb713cab63118476f8f067e07dc0eb080bd6bb2fc971da9510c904"
+    },
+    {
+      "path": "public/evidence/pseudo-independent-optical-flow.txt",
+      "sha256": "398294c669a92500484fb87fcba5cac2fc3e4c6078a7bf1cccdcc44d28470d55"
+    },
+    {
+      "path": "public/evidence/pseudo-independent-record.txt",
+      "sha256": "8395a85032b3e670df8f512c2245392496c4e6b1c009967134da5f2b95f3f2f9"
+    },
+    {
+      "path": "public/evidence/bray/bray-petn-05g.png",
+      "sha256": "271fafb09ea82c77deb1bbb9c1615153de64453029c41db960299805b359894c"
+    },
+    {
+      "path": "public/evidence/bray/bray-petn-recoil-05g.png",
+      "sha256": "328f444c0447dbf26d138c604fa6e6c160fa4bb1e32429fd03947cdcf1e80d55"
+    },
+    {
+      "path": "public/evidence/bray/epicenter-current.html",
+      "sha256": "9289906bc10ebc37c4ad2c2b9b80556f12506fceb3f6d1e7f6f88e65e3da802e"
+    },
+    {
+      "path": "public/evidence/bray/epicenter-july-archive.html",
+      "sha256": "f097e03da2aa4786bc760c9720f924219ca63d276b53b9ccbbc024022a7a9563"
+    },
+    {
+      "path": "vault/audit.yaml",
+      "sha256": "c9da5d852be84c1e6930f16e652dea3a95d6d028a8685143614b69d6a710c7a2"
+    },
+    {
+      "path": "vault/README.md",
+      "sha256": "b4c0744629ad56ad644ef3f766b5d61ad65e9fb30259e156a59ea3f521d74351"
+    },
+    {
+      "path": "vault/assumptions/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/assumptions/asm-blood-f68-vascular-breach.md",
+      "sha256": "1f3796b4074cbccfbb58fb6a0a67fbd05b80045f0bef78be47c1aefa88ee54d1"
+    },
+    {
+      "path": "vault/assumptions/asm-gel-effective-orifice-stable.md",
+      "sha256": "bf1b2f7fb1d39dc8d93e2f8ef4aa1bb0eea7b33a071df40c6fffcb697686008c"
+    },
+    {
+      "path": "vault/assumptions/asm-magclip-height-17mm.md",
+      "sha256": "ad8a3f4117edfdcea21092ab2f94730f7409337f5047a4325d8bde890814b62c"
+    },
+    {
+      "path": "vault/assumptions/asm-magclip-object-scale-transfer.md",
+      "sha256": "b099645fea7ef0d4895e6c4498d5462877fa596f9df248290a31ec75a1233e47"
+    },
+    {
+      "path": "vault/assumptions/asm-magclip-width-26mm.md",
+      "sha256": "8b2282ef880d8787572c52d26b5fb9907162581c01173d47e73dd43ffda43996"
+    },
+    {
+      "path": "vault/assumptions/asm-orifice-762mm.md",
+      "sha256": "7d0984d633b3bcb1525d9b2b773824f4336211eeeb1b5acc49b3fd2e8167f313"
+    },
+    {
+      "path": "vault/assumptions/asm-pcb-height-28mm.md",
+      "sha256": "bacf28abbbcbadf7d787bef4581ec560abdba26497fc7f3d7f77acf1414d510a"
+    },
+    {
+      "path": "vault/assumptions/asm-pcb-width-30mm.md",
+      "sha256": "b3e1c6a00c7ec01ddfd203ad94c17fab3d02d78e1c84e5892b9e11c683e46653"
+    },
+    {
+      "path": "vault/assumptions/asm-phone-baseline-39mm.md",
+      "sha256": "6280e781736ab3ca9f06d13e0b964948038ae827326aada6fe66f0f389401d87"
+    },
+    {
+      "path": "vault/assumptions/asm-sound-speed-343.md",
+      "sha256": "e340b1a4b1e870b7d66e3dee495aadcfb2a85f55bb2e7414fc482dbc5ba7d605"
+    },
+    {
+      "path": "vault/assumptions/asm-strouhal-02.md",
+      "sha256": "3536ab9b17380cbcf1afc5da92854021bff9024232719c26fbb32d8315efd565"
+    },
+    {
+      "path": "vault/assumptions/asm-tx-height-45-3mm.md",
+      "sha256": "3a7732a31199abe5adba086df55224b12aa17f11cf9f48f85c6c045a6aaf113c"
+    },
+    {
+      "path": "vault/assumptions/asm-tx-width-44mm.md",
+      "sha256": "5fcf8519cea5e4b3bcef2d8fd3ee91278944d0f149e06e3248e08dd780a7f34d"
+    },
+    {
+      "path": "vault/burdens/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/burdens/bur-13of13-definition.md",
+      "sha256": "ecf351a1c24473e106dbbe6d4d0c9b1840a9d5bb8a97b7d362b20250153cb354"
+    },
+    {
+      "path": "vault/burdens/bur-188-independent-provenance.md",
+      "sha256": "2d35b0b020351fcccc89b6fd656f5de2f285ab1f0983c8093a8cf0959263a0b6"
+    },
+    {
+      "path": "vault/burdens/bur-blood-detectability.md",
+      "sha256": "69545692708a250ad0a5e06ad607555abe3df82917585dd6875642fffae29f00"
+    },
+    {
+      "path": "vault/burdens/bur-blood-timezero.md",
+      "sha256": "ca7ef1701faa90d17297c7cf3123a9397301d5926590e63774e48d3d83cf7df2"
+    },
+    {
+      "path": "vault/burdens/bur-component-differential-model.md",
+      "sha256": "83f8b06a33138bc1e752adae1de687b0b73696bdccbbdfce81bcb9002bbb938b"
+    },
+    {
+      "path": "vault/burdens/bur-current-theory-definition.md",
+      "sha256": "0f06f792e55d1d898dde1fa0471d0853aa215ec1560ca83e8705ea6d656727a5"
+    },
+    {
+      "path": "vault/burdens/bur-device-output-assignment.md",
+      "sha256": "fb291669f0253e64faa1c28177b109375cb717ef726508a14d336a4e5afed61d"
+    },
+    {
+      "path": "vault/burdens/bur-energy-impulse-bookkeeping.md",
+      "sha256": "f874d9ff5ee3ffec904fd67bbb854648cdda46282ddeca4068b90e625a716772"
+    },
+    {
+      "path": "vault/burdens/bur-evidence-independence-provenance.md",
+      "sha256": "baf0c2049afaaf2af80279e3e21d1dd806a539caa2e76e51779a0503a76e17e5"
+    },
+    {
+      "path": "vault/burdens/bur-evidence-strength-definition.md",
+      "sha256": "ad4a43ac6f1707bfb7154b9bf87f59a223715fb0926a25fbfeb21283e75858d9"
+    },
+    {
+      "path": "vault/burdens/bur-first-audio-discrimination.md",
+      "sha256": "0e7a3c17bf03a9acd271f999dc76d6450318c74ac728acfaf6281f6c9a7dc078"
+    },
+    {
+      "path": "vault/burdens/bur-gel-source-identification.md",
+      "sha256": "97354d67f183411fe9356c62d0ed25384b0740f5d2700601d27e2ab295825072"
+    },
+    {
+      "path": "vault/burdens/bur-itd-farfield-exclusion.md",
+      "sha256": "004ce7d1f178d70aa920c8a08a11857da6bfc58cf54a7daf3061c0a67f1ccfc4"
+    },
+    {
+      "path": "vault/burdens/bur-location-to-object-attribution.md",
+      "sha256": "da15ae80230a485b863eda250972223131ab206c7d7ece90dee411110899e35d"
+    },
+    {
+      "path": "vault/burdens/bur-optflow-energy-bridge.md",
+      "sha256": "f3b1bb491cecc85627abfb1f3c665dd506dec75524f04243d4017e4a79e7bab1"
+    },
+    {
+      "path": "vault/burdens/bur-optflow-pressure-bridge.md",
+      "sha256": "e630e5c4c8aba45fee0b535b050f0454997cf21548874d96b84ab874a0290c74"
+    },
+    {
+      "path": "vault/burdens/bur-pcb-color-arithmetic.md",
+      "sha256": "7c9f96556c3527eddca67da33d6981ba63e2b6b61b3d6512435e600d0d740f21"
+    },
+    {
+      "path": "vault/burdens/bur-pcb-projective-calibration.md",
+      "sha256": "cc714d9183f9353491739ddf00a4f77c306327d0994a434058564dd89487a832"
+    },
+    {
+      "path": "vault/burdens/bur-pcb-size-ontology.md",
+      "sha256": "623f4a81f45d2cdf4ead7a101d21b9be9d8e6ffda2cca7b495859018fd4d4723"
+    },
+    {
+      "path": "vault/burdens/bur-rode-petn-acoustic-consistency.md",
+      "sha256": "2acd1e295e989d37cf07121f77d92f89e68b5b5978ea4ae28f2e5fed938445c7"
+    },
+    {
+      "path": "vault/burdens/bur-theory-mutation-evidence.md",
+      "sha256": "2a5ea002e48b8a115b25eea4ca4f6759d2a0e738910b81602e96cae754738a85"
+    },
+    {
+      "path": "vault/claims/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/claims/clm-4940-ballistic-gel.md",
+      "sha256": "1e57f0226bf0909b95b627a5c71aa59b5ea1b6e493ce9f66cd5e6872f628648a"
+    },
+    {
+      "path": "vault/claims/clm-4940-cavitation-confirmation.md",
+      "sha256": "03349a901782d1ed147168f4d93d6ea6c5075453b1fbe88b8ff75440270b1b20"
+    },
+    {
+      "path": "vault/claims/clm-4940-strouhal.md",
+      "sha256": "59ca2d8cd07f19d40d2a3ffd6569207c6d827f133cf4ed037a9157534f454ef7"
+    },
+    {
+      "path": "vault/claims/clm-4940-van-association.md",
+      "sha256": "2513b57200af8607874fd13764fa09f4e56d2b0a71da776d8c3119503928395c"
+    },
+    {
+      "path": "vault/claims/clm-4940-velocity-188.md",
+      "sha256": "dc94abf6d4ba26419dcf4b16c6ac9cff85a25e02649c5190f1f0044b3c7ca52e"
+    },
+    {
+      "path": "vault/claims/clm-blood-delay-429-461.md",
+      "sha256": "6a688df6700017fa12b9be92c4d19d0360d40077c48d112fdbda6f18b56b1b7a"
+    },
+    {
+      "path": "vault/claims/clm-blood-photo-resolvable-1ml.md",
+      "sha256": "147e2895d3bace359f43c092b6250c1593d0ef35091193afa71a6e97ebfe9fb9"
+    },
+    {
+      "path": "vault/claims/clm-blood-three-predictions-fail.md",
+      "sha256": "e196c23828541c68384219e4596b6302fd0313b61864946aaa6762eed595d299"
+    },
+    {
+      "path": "vault/claims/clm-component-ejection-pcb-battery-magnet.md",
+      "sha256": "2f4439afe5a34b2e341588a61d1436eedef8a06369a165ba9377f4c3f0c3ad49"
+    },
+    {
+      "path": "vault/claims/clm-coordinated-multisource-event.md",
+      "sha256": "19c18ed37fede824385df5c0124ef0a9cf91cc633f898a53a1079b30a8dd1ddd"
+    },
+    {
+      "path": "vault/claims/clm-exclusion-not-attribution.md",
+      "sha256": "1601eb4c78a2421ab9086b5ea25019ec8c7dabeaeb0c55e6dc54a365afe1d59c"
+    },
+    {
+      "path": "vault/claims/clm-first-audio-nondiscriminating.md",
+      "sha256": "ffaee1731f45e7677a8d2ee738f9fca4cdf0a284e6d18b0c115b14396ed44392"
+    },
+    {
+      "path": "vault/claims/clm-five-distinct-acoustic-sources.md",
+      "sha256": "3cf0e6702422e85be980e7a7356f2009e3b68e4c8393d6fecd70ebd02ee719e0"
+    },
+    {
+      "path": "vault/claims/clm-itd-geometric-proof.md",
+      "sha256": "b52d6ac9706d8a37a017740710498ea35824ea5befa6db3ed756effe211527fb"
+    },
+    {
+      "path": "vault/claims/clm-itd-nearfield-only.md",
+      "sha256": "b1ad6d74c27b9b36f9eed8ce0d4467aff42339c2690a89a22743657f84a242bb"
+    },
+    {
+      "path": "vault/claims/clm-july-radial-battery.md",
+      "sha256": "f4c14011f08b574cd3e8ef27e52b6e3423b634735e0f34304256ddf9f79a3307"
+    },
+    {
+      "path": "vault/claims/clm-medical-no-single-mechanism.md",
+      "sha256": "d3414449552291d8a2b0198f7fd7d168945426a111103e2f698fd707179e109b"
+    },
+    {
+      "path": "vault/claims/clm-neck-wound-shrapnel-petn.md",
+      "sha256": "c3f94399ea28c0c69e8a9f99d9f3a47907a0717d2a59b2ef73e6d99d481681ad"
+    },
+    {
+      "path": "vault/claims/clm-optflow-energy-distribution.md",
+      "sha256": "1e256e6f0cb75c9866ee8ae42c497338002522deaac4589072c02f19aaf55e19"
+    },
+    {
+      "path": "vault/claims/clm-optflow-pressure-signature.md",
+      "sha256": "0b1b491c1b3d7146234c1ce4f7da3e58b6c9000a233870e617f471b562090933"
+    },
+    {
+      "path": "vault/claims/clm-pcb-color-support.md",
+      "sha256": "a67b0887a93875a0d0781334e2ff18bad8921cd7bb1e5232a049e639dc5be8a7"
+    },
+    {
+      "path": "vault/claims/clm-pcb-dimensional-30x28-support.md",
+      "sha256": "0b6e96613d7ca8defb7834f1fb6f85754ce8837cf47d47fea5ccfe874e5ec5b2"
+    },
+    {
+      "path": "vault/claims/clm-pcb-dimensional-44mm-support.md",
+      "sha256": "cb01aff336e58a20ec9795ada5b104cf434a22a5cd8ddc93b98cf146b5d13319"
+    },
+    {
+      "path": "vault/claims/clm-pcb-four-independent-lines.md",
+      "sha256": "0e77da9d00951e6dd604b5245f1b1bcfba30913e580d1c62494f6b6ddd490a6c"
+    },
+    {
+      "path": "vault/claims/clm-pcb-object-exceeds-shirt-br.md",
+      "sha256": "efe2374ccae9636dc017b88ab3915fde65a711dacb558411cf62d9c36a5ceee5"
+    },
+    {
+      "path": "vault/claims/clm-pcb-object-identity.md",
+      "sha256": "8da12285b7d5760b784cc18defe429d48b6fcd611cf58f1e40cff93288f4e59d"
+    },
+    {
+      "path": "vault/claims/clm-pcb-six-independent-lines.md",
+      "sha256": "c33029e473c2c975f7bbec68e280d59c1f9129030f2b12d0a4c3ba727c11e1eb"
+    },
+    {
+      "path": "vault/claims/clm-pcb-video-falling-support.md",
+      "sha256": "08bded09cc6288a865440a2d805186e5cec2e4daac51ba3d3b9580ca46e1f8ac"
+    },
+    {
+      "path": "vault/claims/clm-pcb-visible-shape-support.md",
+      "sha256": "4a78d6665a257e0bb0b3f1cf63e8b3c31149ff29ffa7c948039a8b781fb4086b"
+    },
+    {
+      "path": "vault/claims/clm-petn-case-rupture-internals.md",
+      "sha256": "24b5c74e08b8d6288c2519b8684826150c10e77ba1233183d867c93c1c3055b0"
+    },
+    {
+      "path": "vault/claims/clm-petn-recoil-22-5j.md",
+      "sha256": "4ea9c27893fd8567b16bf84b5bc198674f9dc622bd8c6d95071dd20bc589cace"
+    },
+    {
+      "path": "vault/claims/clm-petn-recoil-30ms.md",
+      "sha256": "0f9851fc2e895a2db99b2c1359f1db83ae6a6f69eabbbc1297bba63b924be728"
+    },
+    {
+      "path": "vault/claims/clm-petn-recoil-50g.md",
+      "sha256": "0d9061fd5d3bf33f4238cfccbe70ddd7fdbf9f578abfb9bac09f5df7ceee8fa2"
+    },
+    {
+      "path": "vault/claims/clm-petn-shaped-charge-hidden.md",
+      "sha256": "e6bd168fd03faa733c7085a6c7e891c43d7ab28af855a3acf2acc5c233d848e4"
+    },
+    {
+      "path": "vault/claims/clm-petn-shirt-force-80-120n.md",
+      "sha256": "4c609a0f3879095fa648a0a43dacdcf4e344ed4a964617a292ac49ffae139e73"
+    },
+    {
+      "path": "vault/claims/clm-radial-internal-pressure.md",
+      "sha256": "f9947a7d01e1ddb98bd65ba77283ee88a7807b08239ebef8ca3a109a315eb450"
+    },
+    {
+      "path": "vault/claims/clm-radial-outward-all-directions.md",
+      "sha256": "a82826e3ce0f78d1aeb7125353c7cbd1ea52b085a8028733ce071cbbf604e51f"
+    },
+    {
+      "path": "vault/claims/clm-rode-event-chemical.md",
+      "sha256": "23fa6f089c4aff85a68ac6d0eec12de0aaa0d02613b2dd04628d9be49c9aa767"
+    },
+    {
+      "path": "vault/claims/clm-rode-event-not-shockwave.md",
+      "sha256": "cb929d2d8ab986b23286cf63d14e821ea67f14d534a8b4079792a76a26736529"
+    },
+    {
+      "path": "vault/claims/clm-shaped-charge-13-of-13.md",
+      "sha256": "566179664d4780d5500e4a1f26da990ed7b5855c69029bbf9ea6c12a97d6137f"
+    },
+    {
+      "path": "vault/claims/clm-synthesis-each-piece-independent.md",
+      "sha256": "f326edda75106bca49518e0ecd04d07259748b7c48bbf6d190a1401cdb79aff4"
+    },
+    {
+      "path": "vault/derivations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/derivations/der-blood-delay-firstmark.md",
+      "sha256": "322b9461f643c5780e257892e0a664e22b7a90e259e8b8d323618e3a56fc5154"
+    },
+    {
+      "path": "vault/derivations/der-blood-delay-unambiguous.md",
+      "sha256": "684f07a222314a015abc6c8f888fbce433e8d74376dc9143e908cf987ac3f7f1"
+    },
+    {
+      "path": "vault/derivations/der-br-object-minus-shirt.md",
+      "sha256": "b00f5cd135d352ca67cce558b6c22d67164be0c3a59595f818f53ee93d66f134"
+    },
+    {
+      "path": "vault/derivations/der-itd-baseline-max.md",
+      "sha256": "8cc6d891b7a43c1856e8ee80cb4b8bb7f8306361481c052634c7eb60af8375a8"
+    },
+    {
+      "path": "vault/derivations/der-magclip-image-aspect.md",
+      "sha256": "4ba1a0c1140cad8324356f53c3bb871e54cc96bdbd8767c2192c9599636479aa"
+    },
+    {
+      "path": "vault/derivations/der-magclip-physical-aspect.md",
+      "sha256": "d6ca381cce773f0a4efbc83e0e3844db93d0033522372ec82d156898e767aca3"
+    },
+    {
+      "path": "vault/derivations/der-object-image-aspect.md",
+      "sha256": "7371611f093d6da7435d2c826f7648922c58084732ba59ae7daeaf158aa3dec3"
+    },
+    {
+      "path": "vault/derivations/der-velocity-from-4940.md",
+      "sha256": "fd779c0cec23ebb42777230207c1bf55308273174fa313f1505e9473b4fedd70"
+    },
+    {
+      "path": "vault/diagnostics/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/diagnostics/dgn-4940-circularity-review.md",
+      "sha256": "a074ead1a4c78a909d1f06ead38bfbb94eb7435895dc131b8f3ae75961d548cc"
+    },
+    {
+      "path": "vault/diagnostics/dgn-itd-nearfield-exclusivity.md",
+      "sha256": "a19ae8a76213e94b627ea070824ac6c5289dd96612d9973d69328f9bd79c8452"
+    },
+    {
+      "path": "vault/diagnostics/dgn-magclip-projection.md",
+      "sha256": "680df6675d33e431124a5965573cd2eeae82983c0c096cc3e643f90023283111"
+    },
+    {
+      "path": "vault/diagnostics/dgn-pcb-br-arithmetic.md",
+      "sha256": "5ce7272e121a9568f9f95cf61be237393c57fde82bfe8645355c6d18cfce06bc"
+    },
+    {
+      "path": "vault/edges/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/edges/edg-13of13-consistency-petn.md",
+      "sha256": "3dd475bbca12b3f96a24af9bd4227c65851e6b83d68d4d1cbd0d8cdf29b0ef66"
+    },
+    {
+      "path": "vault/edges/edg-13of13-requires-definition.md",
+      "sha256": "aa12870403c9310312774dd99624f54d41a69996b8a358c6bcb76cbbcceb2ab7"
+    },
+    {
+      "path": "vault/edges/edg-13of13-requires-strength.md",
+      "sha256": "30f59db92a0a8809a8da6d8f4d81540fa1cd255ac8c0200953470f8f4dcea223"
+    },
+    {
+      "path": "vault/edges/edg-4940-attribution-callback-provenance.md",
+      "sha256": "e7eb772aef2acf2b0232646e7687f6d040df333b43a668d5f698b98618fe0307"
+    },
+    {
+      "path": "vault/edges/edg-4940-cavitation-supports-gel.md",
+      "sha256": "03cf5b402f43d171a695ef4350649d64cd3e79a83bbe3a51bee861bac6cf774c"
+    },
+    {
+      "path": "vault/edges/edg-4940-gel-dep-cavitation.md",
+      "sha256": "0b641479f60d1edd581941fa2d8cd1d33717d063f7d71cc9718e7d90c8093aa0"
+    },
+    {
+      "path": "vault/edges/edg-4940-gel-dep-strouhal.md",
+      "sha256": "d1bf0a861d42820abfe334a0e9a5a4765bcae0a00312e8b5985ef5b0688fed9d"
+    },
+    {
+      "path": "vault/edges/edg-4940-gel-dep-van.md",
+      "sha256": "14cc9c6359c558278887548905ffb57e268b117a856407ca8bfb92f52fab8583"
+    },
+    {
+      "path": "vault/edges/edg-4940-gel-requires-id.md",
+      "sha256": "e182b0caf115a5ed0dc0d8467d97076d1d7be49454657500e6eab93d2979a733"
+    },
+    {
+      "path": "vault/edges/edg-4940-gel-requires-location-attribution.md",
+      "sha256": "5937c8a027c82b6422d6e2010b5f354801c09205032419ab86e4157ecef50522"
+    },
+    {
+      "path": "vault/edges/edg-4940-predicted-by-velocity.md",
+      "sha256": "4af5835f726faf81328cf9c825a67da416fbe42aff544e288f748fcc3459bdb4"
+    },
+    {
+      "path": "vault/edges/edg-4940-strouhal-assumes-d.md",
+      "sha256": "4907ad175ca69c2acf8289b78148b3fb704fad9e5799f02addf6c286827992dc"
+    },
+    {
+      "path": "vault/edges/edg-4940-strouhal-assumes-st.md",
+      "sha256": "f44214bdb36c93dead6b2e3e8ca3a825fe39088f1ae9703838906423b61f1386"
+    },
+    {
+      "path": "vault/edges/edg-4940-strouhal-dep-tone.md",
+      "sha256": "176405b4e3ae6b96a0d0a3055a905094e2ec77473b39906449acfb7416acc76f"
+    },
+    {
+      "path": "vault/edges/edg-4940-strouhal-dep-velocity.md",
+      "sha256": "d940a493b28920b2708be05500434c2f3bc2e21f8a682b898f3ba339f4d44a3c"
+    },
+    {
+      "path": "vault/edges/edg-4940-strouhal-supports-gel.md",
+      "sha256": "769c847f50332125bc4c3cc47b6e84b7baa7ee793cb387049ce6375bfdd5f31d"
+    },
+    {
+      "path": "vault/edges/edg-4940-tdoa-supports-van.md",
+      "sha256": "0b16af5cea306483c854fd165fa487fb5a2eef37d5f7c5566e7062cc7597f001"
+    },
+    {
+      "path": "vault/edges/edg-4940-van-dep-distance.md",
+      "sha256": "bd406bcb2dc6866ca95b1e3d05b4711593995c556ec5a8e9d1a7b219ca941077"
+    },
+    {
+      "path": "vault/edges/edg-4940-van-dep-x.md",
+      "sha256": "ab0666a9edd9234cc27869e13855618903c952ee0630774ef5217aa501626156"
+    },
+    {
+      "path": "vault/edges/edg-4940-van-dep-y.md",
+      "sha256": "531c1f294c1e97757b703491123361bead0735cac4297406798eb08cd963de5e"
+    },
+    {
+      "path": "vault/edges/edg-4940-van-requires-attribution.md",
+      "sha256": "0bccf97809f9413f01462efa5a0c56d44d5d3fa63d47cf798bb7a9cd77658e55"
+    },
+    {
+      "path": "vault/edges/edg-4940-velocity-requires-independent.md",
+      "sha256": "a4300dc3aee73b86e0d5cd2c81a147cefe570e7e4a9f48ec9c1fe7e4c920e187"
+    },
+    {
+      "path": "vault/edges/edg-4940-velocity-supported-by-derivation.md",
+      "sha256": "6799ed868e86f09eef15fe58b36c3c37e3a633832a76cf28c770d2eca142cc08"
+    },
+    {
+      "path": "vault/edges/edg-blood-delay-assumes-timezero.md",
+      "sha256": "2f192076c102a90ee8dc8ca396ecbb624b14cce4e3c60ac831f9f2cba1a55f18"
+    },
+    {
+      "path": "vault/edges/edg-blood-delay-requires-timezero.md",
+      "sha256": "7e8204b97a497375e549b169048facbbff1f9da2206e8d3a0e5de34571c9be65"
+    },
+    {
+      "path": "vault/edges/edg-blood-delay-supported-firstmark.md",
+      "sha256": "9debb679e794479ac9fea556801d246edf8a23728640a2bff7fb9c94c0532727"
+    },
+    {
+      "path": "vault/edges/edg-blood-delay-supported-unambiguous.md",
+      "sha256": "a626e1fac88c7b9cc444f8857c7afcba4b418e97d26691dfbc5b59dfabc03daa"
+    },
+    {
+      "path": "vault/edges/edg-blood-detectability-converges.md",
+      "sha256": "cec7f68bd141a6488f557da74e07d292fda5b88ef4d063aba56e45f3862fb985"
+    },
+    {
+      "path": "vault/edges/edg-blood-fail-requires-detectability.md",
+      "sha256": "1c4ac08913a3f5fcd56dbd6091f8245621a82ec7d2a3f798a2a75bf92e793234"
+    },
+    {
+      "path": "vault/edges/edg-blood-resolvable-requires-detectability.md",
+      "sha256": "6adbb503379197cbeaf784019be6c810f09714053149d69184e6d61a442005fc"
+    },
+    {
+      "path": "vault/edges/edg-blood-timezero-converges.md",
+      "sha256": "6109b22816bc4b0b440979eb44c3ffe425bef3b7bd868b8e4e79d67f45b88661"
+    },
+    {
+      "path": "vault/edges/edg-component-blocks-chaos.md",
+      "sha256": "d8302dc0fef7d25b588be6a07de41683af5c9627bd7eefd010335f5d04b81e62"
+    },
+    {
+      "path": "vault/edges/edg-component-blocks-directionality.md",
+      "sha256": "46ea0dd034efa20278f4ca5601585ff7112e703555173f9cf7caa0adb2e03eb3"
+    },
+    {
+      "path": "vault/edges/edg-component-ejection-dep-case-rupture.md",
+      "sha256": "9ff9e435a965ad139c0f708dcc68cf4b921a425ccdc5cc0e46f83c80fe1cd315"
+    },
+    {
+      "path": "vault/edges/edg-component-ejection-dep-pcb-identity.md",
+      "sha256": "fd09bcd9dffb02af4e88d69375b1ba2123b5297316adf5195a4608c59a0e863b"
+    },
+    {
+      "path": "vault/edges/edg-component-response-converges.md",
+      "sha256": "7062b1c87095c53cda18333b5d539c172b40d5ad65034b5085db20e11c0dde79"
+    },
+    {
+      "path": "vault/edges/edg-components-require-bookkeeping.md",
+      "sha256": "226f3213b9eb69227df4d7c6a9ba3e0f0ce7aae634d871969801a4be654ca75d"
+    },
+    {
+      "path": "vault/edges/edg-components-require-differential-model.md",
+      "sha256": "0d73bb2b4a70703e72d57013dc12ae31cd0c2737b2e0dbcb66d056db053de67d"
+    },
+    {
+      "path": "vault/edges/edg-components-require-output-assignment.md",
+      "sha256": "38ab67762866214809d4c83bf023bbed6cdd8f6e367edc10b9485b95f6956a29"
+    },
+    {
+      "path": "vault/edges/edg-current-4940-revises-battery-attribution.md",
+      "sha256": "9c8154907dd16c315ec1b8c9088c67747e010c367a797e893aa075ec383447de"
+    },
+    {
+      "path": "vault/edges/edg-current-blocks-mystery.md",
+      "sha256": "80b9daa30b13cc9d4f843e01956784f46ac9eb3815fea86d952bd93669e07a7e"
+    },
+    {
+      "path": "vault/edges/edg-current-theory-converges.md",
+      "sha256": "51eb3ec801a68d27ccc8425ce802708353d91064cb9611c6401e1d90728c3bba"
+    },
+    {
+      "path": "vault/edges/edg-current-theory-gel-requires-definition.md",
+      "sha256": "a317d2060e9edd79c2d4816c9c9bb1a0b4e962a36822b9e503beb78db0c743ae"
+    },
+    {
+      "path": "vault/edges/edg-current-theory-july-requires-definition.md",
+      "sha256": "cf0b9101e990464a6f5a2d4dcc977823320ad12e930f0dab9f69bec6dfc4e68f"
+    },
+    {
+      "path": "vault/edges/edg-current-theory-petn-requires-definition.md",
+      "sha256": "4917e7b2f6752580826a947e202460159e1eb284b89d7ea2fe8ba630cde78ced"
+    },
+    {
+      "path": "vault/edges/edg-device-blocks-allabove.md",
+      "sha256": "3be19cbf899831ef3a3d35c8e5417f55ba9f86e61f06184c2006c690c094ee17"
+    },
+    {
+      "path": "vault/edges/edg-device-taxonomy-converges.md",
+      "sha256": "aadecb01716544258ec90f9592d514254d57158a87ee034956d541039b216822"
+    },
+    {
+      "path": "vault/edges/edg-energy-converges.md",
+      "sha256": "809e76b4a57cc81e49578fbfe0344bcec246ec6b79afce74f715ae63274eea5c"
+    },
+    {
+      "path": "vault/edges/edg-exclusion-limit-requires-13of13-scope.md",
+      "sha256": "a4112d750a361555a1ddbd1c7c1900c46639695507089fb04ac35b07f9c83a20"
+    },
+    {
+      "path": "vault/edges/edg-first-audio-limits-discrimination.md",
+      "sha256": "1f3219dadb12abcd394417180f62736cbea67f77f17aabffa76cb8349d76cc87"
+    },
+    {
+      "path": "vault/edges/edg-first-audio-observation-supports-limit.md",
+      "sha256": "596e93d9b8e4b4d3df4c50862c56ab64060d498b145400c0d7f3f5d44b4a440e"
+    },
+    {
+      "path": "vault/edges/edg-five-sources-supports-multisource.md",
+      "sha256": "57a47083bda6a0c7697ccae14b136c786be313749cf760bcf71c528b2f4af72f"
+    },
+    {
+      "path": "vault/edges/edg-itd-claim-dep-measurement.md",
+      "sha256": "29817defa3209aa46bc107666210b9c27fc64f11e49effef527913fd10763313"
+    },
+    {
+      "path": "vault/edges/edg-itd-claim-requires-farfield.md",
+      "sha256": "022c1608dece74e935e98664be9ad54c24cbcc686c6214de650de0f172b1c329"
+    },
+    {
+      "path": "vault/edges/edg-itd-measurement-supports-nearfield.md",
+      "sha256": "336ac06b5429ebcb6352810138747b0207402aeb4d7fa6ba561d74f8fc8ab6a1"
+    },
+    {
+      "path": "vault/edges/edg-itd-proof-dep-nearfield.md",
+      "sha256": "d21d13de08e7103a3b536c2ff601c27f54f19f08a2bab6e4fffd789451bf3fe6"
+    },
+    {
+      "path": "vault/edges/edg-itd-proof-requires-farfield.md",
+      "sha256": "f9fd655bccc9c2e9bb7154dff5b84823e0fca04d2ed8a75306f6579a7bf166ed"
+    },
+    {
+      "path": "vault/edges/edg-medical-limits-tension-13of13.md",
+      "sha256": "66c68c2ffd8ced74a28c77d36a61522e7cba044309a9f59d8e367170da13ede9"
+    },
+    {
+      "path": "vault/edges/edg-meta-blocks-redefinition.md",
+      "sha256": "0ebe01c343b1f19858053ed1902a922883ed391f45ad7c9ae3dbef2a32092474"
+    },
+    {
+      "path": "vault/edges/edg-meta-blocks-unrelated.md",
+      "sha256": "0a1c0547918ee3e8f6f682e5e3e5b5d550d997b653eebac9f486dfcee56f4321"
+    },
+    {
+      "path": "vault/edges/edg-meta-independence-converges.md",
+      "sha256": "a6b09774a630ac5e330300c66e32398bbd163f9d411b3691ea57203e3ade330d"
+    },
+    {
+      "path": "vault/edges/edg-meta-strength-converges.md",
+      "sha256": "6ef0310e878663a4c56c15e5715dff7cfa21dbb9a9590bcd3b708eaf0d3ccfa1"
+    },
+    {
+      "path": "vault/edges/edg-multisource-dep-gel.md",
+      "sha256": "8b333a44e8649f71d6739f706c7376fd0306b58dc27c5fdb5f627cdf7503979a"
+    },
+    {
+      "path": "vault/edges/edg-multisource-dep-itd.md",
+      "sha256": "06dde97c19c21e72cb6ccc5f24aa5127322ba11e85af3a9b99031a7dfc186d69"
+    },
+    {
+      "path": "vault/edges/edg-multisource-dep-rode.md",
+      "sha256": "634f2373a41e8bfb8e234d5ae8d08ba8a14bd36a7d202e3a8b90550c496f9aed"
+    },
+    {
+      "path": "vault/edges/edg-multisource-dep-van.md",
+      "sha256": "995d281d5df3738b4374561d3a45b0fc6c80dc4e2dbf9928b4db0c07ddd9a885"
+    },
+    {
+      "path": "vault/edges/edg-neck-petn-dep-device.md",
+      "sha256": "12414127f0be4e7e1069992c20543c4c8692e74ca30bf57a4e59a6faf411a937"
+    },
+    {
+      "path": "vault/edges/edg-optflow-energy-requires-bridge.md",
+      "sha256": "4b2f8e85bf776370cce468b6179e0ca56fca0d5523d532f60fa042f047f59902"
+    },
+    {
+      "path": "vault/edges/edg-optflow-pressure-requires-bridge.md",
+      "sha256": "2060c4580af6d765ca22ba4cf6233d17459be078d464d568a67f438f198a871b"
+    },
+    {
+      "path": "vault/edges/edg-pcb-color-dep-objectbr.md",
+      "sha256": "a2592fe92ef828b5e2634c500e3d53936e2eb5821417a432c3162bec2d6220fe"
+    },
+    {
+      "path": "vault/edges/edg-pcb-color-dep-shirtbr.md",
+      "sha256": "19d042def050e42e75580fcc72fdf97e090f9d6a589590f01324ed5046553dac"
+    },
+    {
+      "path": "vault/edges/edg-pcb-color-dep-skinbr.md",
+      "sha256": "f3188b93fc85973e56cefc8a091b36816443e11b0412b52db75b63add40b321e"
+    },
+    {
+      "path": "vault/edges/edg-pcb-color-requires-arithmetic.md",
+      "sha256": "f14076884d630f8ce7b5a542d3f1a7dc7cc2c8dfb779e2668b9cb9ca5370e317"
+    },
+    {
+      "path": "vault/edges/edg-pcb-color-supports-identity.md",
+      "sha256": "b6ca25bf296f03c502c3316122f4efb0519cdd5720541419d5ed4d2f5bc90e24"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dim30-depends-object-px.md",
+      "sha256": "acc76fdcdf8c4abbf7850b84abcd62242579ede40ebd53ef8afb41bbdb735edb"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dim30-requires-projective.md",
+      "sha256": "9230b01414704da30fa527a6821855007ee09bcdc393357cb1ba8946ce33e92f"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dim30-requires-target.md",
+      "sha256": "03ddb09ae830393c75c0da82f20603862538434bc22df27660f41710e66f4e64"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dim30-supports-identity.md",
+      "sha256": "894ec2c9449fdb631496fc86e73286e15e20b592c1c59ffb7939a137d25c4ea2"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dim44-depends-magclip-px.md",
+      "sha256": "14300d05b87b3e4b0b15c75fad7fee448fadae808fb0ba458be949168bad5677"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dim44-depends-object-px.md",
+      "sha256": "3c7d2e122a57d59190ac70443c177f04114926a7d5cfda2db36e87f63b333154"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dim44-requires-projective.md",
+      "sha256": "cc21965dfb771d3664ec5b4d10895af0a96d42d8ce66f5f4a4ddfc588fff503f"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dim44-requires-target.md",
+      "sha256": "5f1d0fde48ebb035b3ea127388083799c6a6ff7a4e53b0d465e119ef947cd0fa"
+    },
+    {
+      "path": "vault/edges/edg-pcb-dimensions-converges-projective.md",
+      "sha256": "3b215f75afbf828a722cb23f30accf321ba6b28b3f774589eb054f0859f90c9c"
+    },
+    {
+      "path": "vault/edges/edg-pcb-exceeds-dep-object.md",
+      "sha256": "7acff2ee2287fa0f42d8053e230cf75bf91c736a4722acd87506bb77b2031a36"
+    },
+    {
+      "path": "vault/edges/edg-pcb-exceeds-dep-shirt.md",
+      "sha256": "84cc8b30dee951025454d06e022916a523df44dc6fb7066ca870de863882a4fa"
+    },
+    {
+      "path": "vault/edges/edg-pcb-four-independent-requires-provenance.md",
+      "sha256": "d1fd68bd9329305ced9ffee627b109384763fef437167b5536dbdf1d685ab108"
+    },
+    {
+      "path": "vault/edges/edg-pcb-identity-dep-color.md",
+      "sha256": "4750ab2ae9b4e2b3c0a9dfb43022cf27d1978f471e3ddef533a0847b5b845424"
+    },
+    {
+      "path": "vault/edges/edg-pcb-identity-dep-dim30.md",
+      "sha256": "b64cc0facf06394079edd6b48fd71265cff5a3b46ba9345d9f0ab82513c1ea89"
+    },
+    {
+      "path": "vault/edges/edg-pcb-identity-dep-shape.md",
+      "sha256": "f0099cc8b69bea792b6daf7ba8f7005e99b195cb472e094a2af29caaf6d701db"
+    },
+    {
+      "path": "vault/edges/edg-pcb-identity-dep-video.md",
+      "sha256": "6e8b9bd0819cf4b73eef68453e9ed62aa89e3ea6ab3ea481499674da3f8cfc53"
+    },
+    {
+      "path": "vault/edges/edg-pcb-shape-supports-identity.md",
+      "sha256": "9b918d2457f7eae1853f5b1f3a99c4890ae2ab2369063eb6cef55e29be1bc098"
+    },
+    {
+      "path": "vault/edges/edg-pcb-six-independent-requires-provenance.md",
+      "sha256": "7ed00ec749707ae13251c409c63c3d29d60cbcf124fae3d3c7fda471cfaeea18"
+    },
+    {
+      "path": "vault/edges/edg-pcb-video-supports-identity.md",
+      "sha256": "5d134a17922d8992922f7919f830eb1e698c59c27234d757cf52212b2f83cc0c"
+    },
+    {
+      "path": "vault/edges/edg-petn-case-dep-petn-device.md",
+      "sha256": "ac5c0bf356312159f9d97f869943a8d3c67ae6f38a958228663558e22b5d5757"
+    },
+    {
+      "path": "vault/edges/edg-petn-case-requires-output-assignment.md",
+      "sha256": "dee5b3d8e13713c805eea751307625d008209f1745e1f2387db03c60210c6067"
+    },
+    {
+      "path": "vault/edges/edg-petn-case-supports-component-ejection.md",
+      "sha256": "bfb3ed1e2041e733499af286d4c6de9bebbb4e241d55f3f120aa5d9442a9fd05"
+    },
+    {
+      "path": "vault/edges/edg-petn-neck-requires-output-assignment.md",
+      "sha256": "61cc23488f1936232f0ae2752bc893d556b8e6ba3ffd7bbe88be9d0b715e19a4"
+    },
+    {
+      "path": "vault/edges/edg-petn-requires-acoustic-consistency.md",
+      "sha256": "eee396de4b7ece5dcd1e3e856d450fb25fd86eaf9830625da59ebfd9cabeebca"
+    },
+    {
+      "path": "vault/edges/edg-pressure-signature-supports-pressure.md",
+      "sha256": "97feab7afa22be638a9da15a5ea66278ae7847665114da936b8737402df81593"
+    },
+    {
+      "path": "vault/edges/edg-radial-motion-supports-pressure.md",
+      "sha256": "d5d2693d9dbb7f4fb788efabebce7130a173dac4b639ef91e526bba66e14c0c0"
+    },
+    {
+      "path": "vault/edges/edg-radial-pressure-converges-bridge.md",
+      "sha256": "a5904a987902d8745bbf7480cbf36dff8e88287bfc1a4e7b33a13409fd1e02ac"
+    },
+    {
+      "path": "vault/edges/edg-radial-pressure-dep-motion.md",
+      "sha256": "1b8481893bf9a4dd4ba96af6c9ffaa2a9ef0ac8b44e37f71487a2a2e30f4ce89"
+    },
+    {
+      "path": "vault/edges/edg-radial-pressure-dep-signature.md",
+      "sha256": "0eabfcad7487f418563b0487527bcb52f84479a0353c4c93b8e4934e13d4a66e"
+    },
+    {
+      "path": "vault/edges/edg-radial-pressure-requires-bridge.md",
+      "sha256": "74640d408bd1d6d3232577a05d386ca6c98c803d6e652da99edac2a32a786543"
+    },
+    {
+      "path": "vault/edges/edg-radial-requires-bookkeeping.md",
+      "sha256": "e10c42e20d22973a0b574a179acdce466b07c3714ac0305d70719f7d3d900423"
+    },
+    {
+      "path": "vault/edges/edg-radial-requires-differential-model.md",
+      "sha256": "545154d70b6baedb6b9ed2dfc527aefb6976d14ea2859c34a54c2b2a22a76983"
+    },
+    {
+      "path": "vault/edges/edg-recoil-requires-bookkeeping.md",
+      "sha256": "7155d026d19a1735025f45fea00b86eec22c8e3175a167195822984c293d61a2"
+    },
+    {
+      "path": "vault/edges/edg-rode-event-dep-radial.md",
+      "sha256": "4c043a09dcdd735d5e68c6978badc85fe5f77a05ff61dd8be9964147c42951cd"
+    },
+    {
+      "path": "vault/edges/edg-rode-notshockwave-requires-consistency.md",
+      "sha256": "1cdbde3d750bd491a3886667eaa4d8a3ad25ecab2ec737d5be03b18c0ed2753b"
+    },
+    {
+      "path": "vault/edges/edg-rode-notshockwave-tension-petn.md",
+      "sha256": "6b2104c0c08d8637033a92e2898f20103351877d6478b5a3b3686b26afa6b268"
+    },
+    {
+      "path": "vault/edges/edg-synthesis-independent-requires-provenance.md",
+      "sha256": "85d63d831a5ba372dd5c011b72b1bf15457012aa7cb001ce2e02aac92d5de596"
+    },
+    {
+      "path": "vault/edges/edg-theory-blocks-hypothetical.md",
+      "sha256": "c6d07cb2de40290ab11ff21339a9afa2f69c9f37c0eeaae51bb84f91d88b737d"
+    },
+    {
+      "path": "vault/edges/edg-theory-blocks-malfunction.md",
+      "sha256": "637db772f31c6744c9ce32f30a557a886bcd22b3d4828abdf92874b043f4278b"
+    },
+    {
+      "path": "vault/edges/edg-theory-evolution-converges.md",
+      "sha256": "34100176417fdb399f6f40b783b000bbd9257f4995ae8ae35f94bf13d8333627"
+    },
+    {
+      "path": "vault/edges/edg-theory-mutation-requires-evidence.md",
+      "sha256": "fdfb5c02b3a93b4398120a43331f7cf94f4d80e1066607e78f875831a36fb42b"
+    },
+    {
+      "path": "vault/edges/edg-trigger-13of13-ratchet.md",
+      "sha256": "6c319800c47e338def5e8c1d4a259b7c0144d81fc73113fe46acb48364e600f7"
+    },
+    {
+      "path": "vault/edges/edg-trigger-4940-attribution.md",
+      "sha256": "321453d23905e213ca6c7e7db48fbce703e6dd6409488fdf2a9f2f341a1e3b71"
+    },
+    {
+      "path": "vault/edges/edg-trigger-4940-provenance.md",
+      "sha256": "54798cb5f2ba4bbdfd9ea3dd927e25d5eafecd1d93104e011d49c85ed8da37be"
+    },
+    {
+      "path": "vault/edges/edg-trigger-blood-detectability.md",
+      "sha256": "6c88e78f180f2aa60d7300d526c7e8569595d5692af7efcb92f9cf38ac117f28"
+    },
+    {
+      "path": "vault/edges/edg-trigger-blood-timezero.md",
+      "sha256": "497fea330908cb98001f11452a611fbd8700fb719f5146d620bec80e8ff93b9e"
+    },
+    {
+      "path": "vault/edges/edg-trigger-component-from-radial.md",
+      "sha256": "f7353e84b8f7d7307a3650d4f3c81a5b47b3dbc151d562cdc7229ac9b73526c3"
+    },
+    {
+      "path": "vault/edges/edg-trigger-component-response.md",
+      "sha256": "c15b0813fec3af2e330860efc3951ec071473b44db72fc3d3fb79f4213ae0268"
+    },
+    {
+      "path": "vault/edges/edg-trigger-current-theory.md",
+      "sha256": "b4b656904c4e25e52700c959a7f299e03da41fd5ec2345baf7a0c26d8b0b599e"
+    },
+    {
+      "path": "vault/edges/edg-trigger-device-taxonomy.md",
+      "sha256": "54915d2d5ecdff601b8d7e261dc4f691091f6f3b6f6d6b28e3be943143d39f4d"
+    },
+    {
+      "path": "vault/edges/edg-trigger-energy-bookkeeping.md",
+      "sha256": "4dbbbe30ac38cc10c61d217cde6ec3b79de0d01a125264b7d39019ae1fb77775"
+    },
+    {
+      "path": "vault/edges/edg-trigger-first-audio-ratchet.md",
+      "sha256": "50fab92c2b4a959247ef35259dfb5053683b84c00612d61f415b3703eb91230a"
+    },
+    {
+      "path": "vault/edges/edg-trigger-itd-ratchet.md",
+      "sha256": "5ee2d66e46ae6547e6657c77b05aeec64c1e3b7f0dde9333cfa84a0dbf555b8b"
+    },
+    {
+      "path": "vault/edges/edg-trigger-meta-independence-pcb4.md",
+      "sha256": "d45903452a0a99b81456bbe057dfdc70d1f42b9f8c6bdfd002e59a812712d0c9"
+    },
+    {
+      "path": "vault/edges/edg-trigger-meta-independence-pcb6.md",
+      "sha256": "53b096e8a0cecbea2b9127b18ac8b80b936ad90d38b80ea4f7c8ba548fe34486"
+    },
+    {
+      "path": "vault/edges/edg-trigger-meta-strength.md",
+      "sha256": "1af0b101254787b249e8f16fa903a62a682292842bc4f296255a65ba7b5a1f9b"
+    },
+    {
+      "path": "vault/edges/edg-trigger-optflow-energy-ratchet.md",
+      "sha256": "47bd406c5a3f486c71fe7803cd65d812811458914a6765fe5eed929f224d5b86"
+    },
+    {
+      "path": "vault/edges/edg-trigger-pcb-color.md",
+      "sha256": "2c36f32d89d5cf3f7869af5e7eaf6e7b0c74f86a6cc27ca4b80be666e1272e93"
+    },
+    {
+      "path": "vault/edges/edg-trigger-pcb-dimensions-30.md",
+      "sha256": "a793564be1db7e0db3897d8c254f64d1db0dab4c7ca4393a2ca7f1f0b84f5c89"
+    },
+    {
+      "path": "vault/edges/edg-trigger-pcb-dimensions-44.md",
+      "sha256": "7eb6a5567b3ba0616ac01a87d48c5ca38fcf8a18a233510fdfc44156e34313a7"
+    },
+    {
+      "path": "vault/edges/edg-trigger-radial-ratchet.md",
+      "sha256": "04e9b066bd08d21ab2105a6dc1e4d798eead8545efb99d3c8d1532c4897b16ba"
+    },
+    {
+      "path": "vault/edges/edg-trigger-rode-petn-ratchet.md",
+      "sha256": "9ec746d47e397416a1da134739f7829d5795dc02aabb8a5fca80e1703f515727"
+    },
+    {
+      "path": "vault/edges/edg-trigger-theory-evolution.md",
+      "sha256": "8d9c0d5da7839bebd86b4ae3defc0a9754d0ee817472b36062011597dc2a24f5"
+    },
+    {
+      "path": "vault/escapes/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/escapes/esc-all-of-the-above.md",
+      "sha256": "9e73a3a66fd2400f2c37924ac900a0cc32a93edde305980e33155e40f11a1eea"
+    },
+    {
+      "path": "vault/escapes/esc-chaotic-event.md",
+      "sha256": "f3a63b0cb61252b0b768a38b49d62bb67c906742a92c1ca8a3595b44694fddaa"
+    },
+    {
+      "path": "vault/escapes/esc-directionality.md",
+      "sha256": "7674b7607f5a6224143d8268106178fc270eaa9d271a83bfd99b102f798a8dc6"
+    },
+    {
+      "path": "vault/escapes/esc-false-dichotomy.md",
+      "sha256": "e02f20df08bc3d88fb381dda49fc3571d6003bdc3285ca94d0aac0e79c56f05a"
+    },
+    {
+      "path": "vault/escapes/esc-malfunction.md",
+      "sha256": "d8087c963b859f624cf2de8226b5344a9659b143e5e87ce6caf2e90680ab7856"
+    },
+    {
+      "path": "vault/escapes/esc-mystery.md",
+      "sha256": "0033132f2941c5aec3d7fd9dbcb3b26ab00a189239be51445d897a3f8c56f96b"
+    },
+    {
+      "path": "vault/escapes/esc-new-unrelated-evidence.md",
+      "sha256": "8a3875de031a65b97e193d9cc35c4c66d15de5cb98dc61c8bf3902d952e513b7"
+    },
+    {
+      "path": "vault/escapes/esc-redefinition.md",
+      "sha256": "0038c30e89e8cd72fe56bb01e0d09771e79c6dde3a344a464fee9dfae6eb801e"
+    },
+    {
+      "path": "vault/escapes/esc-unsupported-hypothetical.md",
+      "sha256": "0c906c0ff464edf0b9bbacb64b7baa881226138eb7e87943f668968b24ca09e9"
+    },
+    {
+      "path": "vault/inferences/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/invariants/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/locks/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/locks/lck-13of13-consistency.md",
+      "sha256": "81fd2f6dc07305a30600506732ec993f6971f8c2edf017fe9f0c14c8b1269017"
+    },
+    {
+      "path": "vault/locks/lck-13of13-define-explains.md",
+      "sha256": "a584d15b6ec69a6ec8dc93c3d7f42a6305397caeca456735da4c313048f29893"
+    },
+    {
+      "path": "vault/locks/lck-13of13-discrimination.md",
+      "sha256": "c0641e9c37f347cf4f23d63a41c73df059b27a8aa4a20bff672792f3bcb85aa3"
+    },
+    {
+      "path": "vault/locks/lck-13of13-prediction.md",
+      "sha256": "06864fdbc6b1b5469d8ba4652c577b10f1525039f18174330b41ff94c8ccd7e7"
+    },
+    {
+      "path": "vault/locks/lck-4940-derived.md",
+      "sha256": "770ca0ac8ef00ca86f1821c8e1ace25807cf035d43f48a4c8e7e4f58393869fe"
+    },
+    {
+      "path": "vault/locks/lck-4940-identify-gel.md",
+      "sha256": "a3afeab8a16dfdab04a61662e914191f268eec6f25641d1883294ee622a9e341"
+    },
+    {
+      "path": "vault/locks/lck-4940-location-or-identity.md",
+      "sha256": "c81604592b5c5c239cc30386d688a2eefab60390cb7065807d9ec0ad21d99ead"
+    },
+    {
+      "path": "vault/locks/lck-4940-show-independent.md",
+      "sha256": "a80f33470558ba61561ac9dad753b4a11524b9c24f97f46cdd378004515d4ffc"
+    },
+    {
+      "path": "vault/locks/lck-4940-source188.md",
+      "sha256": "304c735f5f075ffc3df70c2fea9c140fc201f557edef1cae9055a44c0b93802b"
+    },
+    {
+      "path": "vault/locks/lck-blood-camera-model.md",
+      "sha256": "bba31f4da1f96b141f9bb0c655361abda7e07c596c4753a03febd528c156756d"
+    },
+    {
+      "path": "vault/locks/lck-blood-detectability.md",
+      "sha256": "eab625b6705a7b1b9dbdf0eceb2843c00d19ce8643f1b45ca81ba568ffebedf5"
+    },
+    {
+      "path": "vault/locks/lck-blood-timezero-scope.md",
+      "sha256": "69da8cc53497e8f8c74d2f29c57e8e592a2b1e98f07234253eef8e5f16a566b6"
+    },
+    {
+      "path": "vault/locks/lck-blood-timezero-source.md",
+      "sha256": "8cc4a1c818daee77c5576228f54c03a674d47d01c55504d4c09380b1467add3b"
+    },
+    {
+      "path": "vault/locks/lck-blood-timezero.md",
+      "sha256": "eca064864b33d2c178fb348dc6efc6468ba6d86dcea303f7e6fe53c699c68385"
+    },
+    {
+      "path": "vault/locks/lck-blood-visibility-scope.md",
+      "sha256": "d2078f529546603d4f225c7749c6d75e321ca37e8c57357c7e8bd934a3c65280"
+    },
+    {
+      "path": "vault/locks/lck-component-directionality.md",
+      "sha256": "56a3fc788e78f6ac4130fcad218d2cd6e35d2a50c5fe43e2014c8d6500cab882"
+    },
+    {
+      "path": "vault/locks/lck-component-parameters.md",
+      "sha256": "f73a7ab3c0e38676857538116e9519ba25a20abd062f11335e3bfbf77288dfb2"
+    },
+    {
+      "path": "vault/locks/lck-component-response.md",
+      "sha256": "4616c84c64d8ac32737b03d6e784a233e1dc3fdaf7877830da7d112d5375f78d"
+    },
+    {
+      "path": "vault/locks/lck-device-formation-order.md",
+      "sha256": "db8111fc36d2318859156bdadf3091cca02da4dc89c71d753adc3d9b4985adc6"
+    },
+    {
+      "path": "vault/locks/lck-device-name-output.md",
+      "sha256": "953b80d14167afd133f89df9636b977b8c040327a8d5cb2bdcf657f4deac08a5"
+    },
+    {
+      "path": "vault/locks/lck-device-primary-output.md",
+      "sha256": "f42da0c4e473b69a15dc5772331da3d0a1b38d73dbe714e017a4023113b9c012"
+    },
+    {
+      "path": "vault/locks/lck-device-secondary-loading.md",
+      "sha256": "f22b5c76c0505e49c59cdab20c627147065574de39be13fd6eda13c0809549a3"
+    },
+    {
+      "path": "vault/locks/lck-energy-bookkeeping.md",
+      "sha256": "2a9c6364132bdab8f9d82594087fb5264b1b41fa64b4f82a3392fcac8c072631"
+    },
+    {
+      "path": "vault/locks/lck-energy-doublecount.md",
+      "sha256": "a0d7a427c4bff4f4fc5a413020883aad945f8ad789e6cb73922a241260cc03e4"
+    },
+    {
+      "path": "vault/locks/lck-first-audio-define.md",
+      "sha256": "c27f9f6c4cd305b77561a80bd6c08bae58b90e4a643676d8b3f0ec46401091b7"
+    },
+    {
+      "path": "vault/locks/lck-first-audio-scope.md",
+      "sha256": "4d8a71d28eb8af5314e556e0042161da4915deef6ad9b4e0e9a4d1b52321cd56"
+    },
+    {
+      "path": "vault/locks/lck-first-audio-standby.md",
+      "sha256": "3e45d993fdd25b919a3752070c466457d32a92b790b26e9a9bb57f660c673a9d"
+    },
+    {
+      "path": "vault/locks/lck-first-audio-supersede.md",
+      "sha256": "431d1407a20412fd19729986abe485b688bb46492fd516efdfe7607af9538fee"
+    },
+    {
+      "path": "vault/locks/lck-itd-baseline.md",
+      "sha256": "f040215bc582d2bfe256e354a5cd07f4c2e308d4b138cad784f0662451ac9407"
+    },
+    {
+      "path": "vault/locks/lck-itd-define.md",
+      "sha256": "ee375dc2d6bfb22b00fd9b0a571725ef9202cf2ba255922ae10e85edb2acdfc5"
+    },
+    {
+      "path": "vault/locks/lck-itd-orientation.md",
+      "sha256": "de59504dee03072f8374e9295293e0c8e8e340713e132ebb50c08e41afaa8178"
+    },
+    {
+      "path": "vault/locks/lck-itd-scope.md",
+      "sha256": "67ba27a726a4b90275ab52d2654c62fe6333b41824c4cd5ff0d580b6601f70ee"
+    },
+    {
+      "path": "vault/locks/lck-itd-standby.md",
+      "sha256": "7060c1e264100041bb3c57de9981041afe537b574c9e21e66fc53e8b19f1e66a"
+    },
+    {
+      "path": "vault/locks/lck-meta-evidence-consistency.md",
+      "sha256": "c88c883b4a678fe2d96507cf4a5ea5a0b548be01d067cd1f3a82df6f36741ca4"
+    },
+    {
+      "path": "vault/locks/lck-meta-evidence-discrimination.md",
+      "sha256": "3b783988efc400ea75ca55d8fa34c2834ca94e904b7b7c6adf2aabbb397aed85"
+    },
+    {
+      "path": "vault/locks/lck-meta-evidence-strength.md",
+      "sha256": "6a137322bd9dfca4642a23487422b193a17eaeecf0b44604be1efc56e31833a4"
+    },
+    {
+      "path": "vault/locks/lck-meta-independence-roots.md",
+      "sha256": "e6693d442d6168def532ddc35495cef616f8997b79eecb91bbdff24742232701"
+    },
+    {
+      "path": "vault/locks/lck-meta-independence-scope.md",
+      "sha256": "0c969626a47f14c6fe7649a36c784d79a13fea2e31bbfeb89cc724c994c8c022"
+    },
+    {
+      "path": "vault/locks/lck-meta-independence.md",
+      "sha256": "d8bebfe2743f1349a9248d4577208bf13196ce5293c8f5c0df7c0a0d3b9d976f"
+    },
+    {
+      "path": "vault/locks/lck-optflow-energy-calibration.md",
+      "sha256": "e80b777688d3eae74dfeb76731de36912e60dd07389dd55469d7d52a39d75afa"
+    },
+    {
+      "path": "vault/locks/lck-optflow-energy-define.md",
+      "sha256": "c6b83643b56d282e4d29140e3f52d4c38f9a45ad88af6e68ab448ce6780e9894"
+    },
+    {
+      "path": "vault/locks/lck-optflow-energy-meaning.md",
+      "sha256": "21fefe18df63dac73ad8364eb1f125a5810f52cf1531f4e14b804fd670928e9c"
+    },
+    {
+      "path": "vault/locks/lck-optflow-energy-scope.md",
+      "sha256": "dafcb7a7b7d06f76e6c8d152bbc0fcdbd3b09b70a03220e738b4747c16e6193f"
+    },
+    {
+      "path": "vault/locks/lck-pcb-color-arithmetic.md",
+      "sha256": "4849255c9abce5105f1b7460e25ce3917a539cfcf200809c532a678db794e945"
+    },
+    {
+      "path": "vault/locks/lck-pcb-color-correct.md",
+      "sha256": "cc92cf9627578a0af5782370b6bb01faeebf3cc9eaeaee2f5f9ba9a86cf9c6df"
+    },
+    {
+      "path": "vault/locks/lck-pcb-color-define.md",
+      "sha256": "2c462fa78868c1f20d47c285cbcce64e9ba1cdabbb1d1547dc04767e15a2961e"
+    },
+    {
+      "path": "vault/locks/lck-pcb-color-values.md",
+      "sha256": "7fabefa19a80de82f56a952d14825c5ba0e9f074b0cbada3300f5c9ac102f938"
+    },
+    {
+      "path": "vault/locks/lck-pcb-dim30.md",
+      "sha256": "a82398752d0243cb00284730cd38526420c70955ba38e94e995c3be16a5fb4e8"
+    },
+    {
+      "path": "vault/locks/lck-pcb-dim44.md",
+      "sha256": "bf52076ddc4dc3955485d1deab14153554c44d00ad529d060722e578e27fdc4e"
+    },
+    {
+      "path": "vault/locks/lck-pcb-projective-scale.md",
+      "sha256": "c9d1368cdf68f1d22631d7bafab3173813a091d53de62219780a326b0b05d2ef"
+    },
+    {
+      "path": "vault/locks/lck-pcb-which-dimensions.md",
+      "sha256": "079ca293dae501a437d5c5144da7d4872c46a2ac62952d56d0a3c0f1882d5e55"
+    },
+    {
+      "path": "vault/locks/lck-radial-conversion.md",
+      "sha256": "b6bd2adcb04c7e73b449736331e0a381c38a4122388d4a0ef5b6f2890f050c49"
+    },
+    {
+      "path": "vault/locks/lck-radial-define.md",
+      "sha256": "782451c799433d55d6c4681f717e1e9f40c24833d0f7ae3bc88f310bb6f18e06"
+    },
+    {
+      "path": "vault/locks/lck-radial-direct-measure.md",
+      "sha256": "af9700f94d66d2b4df661fa7c7417103b525158ee655b30fad8d589c42d0518e"
+    },
+    {
+      "path": "vault/locks/lck-radial-physical-model.md",
+      "sha256": "8080ba7b70b33f545a9514be13bc11efb9d3b2cffab54bf90cec85f93fa49aff"
+    },
+    {
+      "path": "vault/locks/lck-radial-scope.md",
+      "sha256": "18d64993f160fb3e41563aa10d03f3a2783311bd90c768910dfc5c8a72c26353"
+    },
+    {
+      "path": "vault/locks/lck-radial-standby.md",
+      "sha256": "277ff38c8d2d15a94fea066b853c767f39ebbd9d28303ad62c5f0600e1bd3731"
+    },
+    {
+      "path": "vault/locks/lck-rode-petn-define.md",
+      "sha256": "9aae51f268ecc7dc6dbcf572474852ceddad848ac8583ae153b6bbf95911dd9b"
+    },
+    {
+      "path": "vault/locks/lck-rode-petn-reconcile.md",
+      "sha256": "e8318d20f5cbff572c6608a9d3a5f5502969c1450bdda534281fb85066ba14c7"
+    },
+    {
+      "path": "vault/locks/lck-rode-petn-scope.md",
+      "sha256": "84d2b118157b6ec5189199dde96ab7381cb76324429145a8d9babbb6c234a0c4"
+    },
+    {
+      "path": "vault/locks/lck-rode-petn-smear.md",
+      "sha256": "6474fb71c83436838b23b243d68cac95c2756c5f2b998df0d724414539990754"
+    },
+    {
+      "path": "vault/locks/lck-rode-petn-standby.md",
+      "sha256": "fa096bc42f44e23200bc729787e7ce6565572041c202a7692ae9fa4d474356b2"
+    },
+    {
+      "path": "vault/locks/lck-theory-current-effects.md",
+      "sha256": "e88549986837ce55205657482351c13b237514e010f1733650ec7e6448d21caa"
+    },
+    {
+      "path": "vault/locks/lck-theory-current-model.md",
+      "sha256": "b9a1f2290960dcbef490137416ef93b32efd65e8e3e28ae2a45e80546670263e"
+    },
+    {
+      "path": "vault/locks/lck-theory-current-status.md",
+      "sha256": "7bcf5fd99af5b0b6d113dc774e468f60096bb1e6f7f1be369b83e01fec0d7056"
+    },
+    {
+      "path": "vault/locks/lck-theory-mutation-coexist.md",
+      "sha256": "196f8bc5b522805971411846e7f622eef3b4a3d16664b56937ea7bf3a736d225"
+    },
+    {
+      "path": "vault/locks/lck-theory-mutation-evidence.md",
+      "sha256": "fa4709768e97fefa279d74cefcef88ec077fd56ff5b0d11e990bd72ca05686e0"
+    },
+    {
+      "path": "vault/locks/lck-theory-mutation.md",
+      "sha256": "c1c272bbaf053364cf232b1a6c4002cd03ce243870153d2e84ccde385aab12e3"
+    },
+    {
+      "path": "vault/measurements/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/measurements/mea-4940-source-distance-from-van.md",
+      "sha256": "d304c6ea5f2e447338aecaec0bd91569f9444dbebe14ab1b5f2cb803d3318438"
+    },
+    {
+      "path": "vault/measurements/mea-4940-source-x-from-tent.md",
+      "sha256": "7bc4bb52c435cf5f2fc188c549cf288ddf97fff76c033ef32d0e14fa06f907a3"
+    },
+    {
+      "path": "vault/measurements/mea-4940-source-y-from-tent.md",
+      "sha256": "6510434bb1fb0f32fbd6a58c9e6926781f550af36a937256baece21196effcb3"
+    },
+    {
+      "path": "vault/measurements/mea-blood-f68-time.md",
+      "sha256": "c1083ac9c3ce24ea3794a571c015ce4f841dcbc2d75c930dcc4b149f94a95bc4"
+    },
+    {
+      "path": "vault/measurements/mea-blood-f81-time.md",
+      "sha256": "50a8718be2d003a00418508f8f18a53c1868bda3c8d818a35bdeb6b8ac36dc68"
+    },
+    {
+      "path": "vault/measurements/mea-blood-f82-time.md",
+      "sha256": "040a46b23373aa9a283c3b079fcfed27ffbf67bd4024f240eb713244c69941aa"
+    },
+    {
+      "path": "vault/measurements/mea-magclip-pixels-x.md",
+      "sha256": "fd444e19f796f8e05334cdcb667b73fd1b4b9dc2026379ede032422387723c01"
+    },
+    {
+      "path": "vault/measurements/mea-magclip-pixels-y.md",
+      "sha256": "9dab94d6004fdd812ff6fa8158240a532244571a056f389d0d4037e2b740342c"
+    },
+    {
+      "path": "vault/measurements/mea-object-pixels-x.md",
+      "sha256": "3a583a8f9a3cbbccbd9d1cec799a0ade0419cf531292d143fb75c7d19ed3f68f"
+    },
+    {
+      "path": "vault/measurements/mea-object-pixels-y.md",
+      "sha256": "5847c043498d5d958ff817706669c992d668aec238a04145610751e0b80947c2"
+    },
+    {
+      "path": "vault/measurements/mea-pcb-object-br.md",
+      "sha256": "af9588f2b28d98977013d9d841c9f72cfc9086e1d47b1047e10bfa2a19247c32"
+    },
+    {
+      "path": "vault/measurements/mea-pcb-reference-mask-br.md",
+      "sha256": "41f672a2fb4c83c375f34a1eb21124a17fa062e8d83646561c171feffa629a70"
+    },
+    {
+      "path": "vault/measurements/mea-pcb-shirt-br.md",
+      "sha256": "b10d859a304fd1c6551c8460f12e976bf25a6aa3e296209f3596ed4b9c7e4055"
+    },
+    {
+      "path": "vault/measurements/mea-pcb-skin-br.md",
+      "sha256": "c2f31bb8f62242b39290cb5002d4cd8485250ac15d55445a41a037b02cf99851"
+    },
+    {
+      "path": "vault/measurements/mea-rode-rise-max.md",
+      "sha256": "6ec7d6ea1ccdad662073547d43284664ad70e7b3209782a0472f11f9b936e1ef"
+    },
+    {
+      "path": "vault/measurements/mea-rode-rise-min.md",
+      "sha256": "f1cb47ac2ad7d24e2cfc28962016518e28d1cdd8693be2542cfdbcf901620487"
+    },
+    {
+      "path": "vault/measurements/mea-tone-frequency.md",
+      "sha256": "5924ce1567af47c8d4973270f94ad24a5a7e1bf6061d7f475735ed0d8e4ff0a6"
+    },
+    {
+      "path": "vault/measurements/mea-view13-itd.md",
+      "sha256": "abe9a41686c4164e239a6a3f0daff494414a25c89e8296801fd6379ab8a9188d"
+    },
+    {
+      "path": "vault/methods/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/methods/met-frame-timing.md",
+      "sha256": "a841aafc51ee3e895dd46996270aba1a2fce7962de67e1d78471ae9efc2c0659"
+    },
+    {
+      "path": "vault/methods/met-manual-image-transcription.md",
+      "sha256": "2e69b1f8ca93e6c5d73a5721776368991ac1448e6942a10ecc08b5efee2fb10d"
+    },
+    {
+      "path": "vault/methods/met-masked-optical-flow.md",
+      "sha256": "842265a5fd31abb4eb8def5d6510d6781bff47ca63e480e80bd9a11f84f2b1e3"
+    },
+    {
+      "path": "vault/methods/met-reported-color-analysis.md",
+      "sha256": "26915b6ec70ed255dff6a96340ba66efad4f427c4daec068db406e8f776d853e"
+    },
+    {
+      "path": "vault/methods/met-reported-pixel-dimensions.md",
+      "sha256": "0eb6f14eec54e118bd4a3391ff42d58cf58bb5109109668d359bb9d1bd5f4129"
+    },
+    {
+      "path": "vault/methods/met-source-transcription.md",
+      "sha256": "76933bda3eb46e2a79d14508970305424c0a1145da1e44258de1f9a400cc338a"
+    },
+    {
+      "path": "vault/methods/met-stereo-itd.md",
+      "sha256": "1e87260b737be5447f0cdb99bc0e334a12eb6231d670f60d2ca41dd79ee7f305"
+    },
+    {
+      "path": "vault/methods/met-strouhal-relation.md",
+      "sha256": "e1c52360c43d2eaeca8032590cf497ad2788f9e86c0c3da82e9aaa238d8ce5f4"
+    },
+    {
+      "path": "vault/methods/met-tdoa-localization.md",
+      "sha256": "f9cba8c2fbc083e426bb7d776738077a54d0a4fd872eb74dba1a2dd44c8a0558"
+    },
+    {
+      "path": "vault/observations/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/observations/obs-blood-f68-shirt-motion.md",
+      "sha256": "f1330029977fad4ab999977bcf6a125dad5e306b9d33151354345e03794b291a"
+    },
+    {
+      "path": "vault/observations/obs-blood-f81-first-mark.md",
+      "sha256": "58e205ce11aa1749b6c0cc224875146ae6162631c618b63a0864ffd6d02606d4"
+    },
+    {
+      "path": "vault/observations/obs-blood-f82-unambiguous.md",
+      "sha256": "439dc1949517d99f921f55bd93219a7f0a6dbba0b762eb3889c73a53d97955cc"
+    },
+    {
+      "path": "vault/observations/obs-bray-petn-recoil-social.md",
+      "sha256": "ac1836e24f702fa4a1436d64a7651d35ad938de9e4ecaba33b451df0e9a683a0"
+    },
+    {
+      "path": "vault/observations/obs-bray-petn-social.md",
+      "sha256": "daed9a516c6bd06f381befbc884d36f122150a43a6e8434b0f4b091a5bc1464c"
+    },
+    {
+      "path": "vault/observations/obs-component-ejection-report.md",
+      "sha256": "0a374ae2c8735a5ff034be6839546adc7c79eeacb0e071717a94867952280a20"
+    },
+    {
+      "path": "vault/observations/obs-first-audio-timing.md",
+      "sha256": "c0193d2a901934fe9cd9b640a07535b5b2e07a3cc16ce30b0b2b61651ef5fae0"
+    },
+    {
+      "path": "vault/observations/obs-pcb-color-report.md",
+      "sha256": "34c33c42a5b7abcbc6c69de88a19027b6a9943303b4dbd3a511fd58ad69b1a77"
+    },
+    {
+      "path": "vault/observations/obs-pcb-dimensions-report.md",
+      "sha256": "3151116997e3f5c108032b789fdd835a12ea649ab3441377cb5e668417e88617"
+    },
+    {
+      "path": "vault/observations/obs-radial-image-motion.md",
+      "sha256": "de7836859e49e54b540ef3ff8fc3d204ff73cc7880d4f6c54aa4e6680e02b764"
+    },
+    {
+      "path": "vault/observations/obs-rode-slow-rise.md",
+      "sha256": "99ee797549953d06191313bdf95c4ab2780d2eaa53b3be6a0f9983fd5b17ccd8"
+    },
+    {
+      "path": "vault/observations/obs-tdoa-4940-location.md",
+      "sha256": "301237b2d78748d435d754f5f39bf90434420435aae22e41446cbcda0f741c8a"
+    },
+    {
+      "path": "vault/observations/obs-tone-4940.md",
+      "sha256": "7975eb700269578a2c621825301d22a4011e7a64c78e2cd38265bfe176e5f2f0"
+    },
+    {
+      "path": "vault/observations/obs-view13-channel-delay.md",
+      "sha256": "037fdbe821f0380881af2b916b29d44a8b4f8c3abec065afa9064fdc157c84af"
+    },
+    {
+      "path": "vault/ratchets/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/ratchets/rat-13of13-meaning.md",
+      "sha256": "a2385683fa97b72cd7dc51f90f5d135bc521a1bee62dcd9d302ba1c7ed24a08d"
+    },
+    {
+      "path": "vault/ratchets/rat-4940-attribution.md",
+      "sha256": "14410bc013cf0c4dc73bb23987696401037d3e813c9ce622d3ba83b7dc9a0c9e"
+    },
+    {
+      "path": "vault/ratchets/rat-4940-provenance.md",
+      "sha256": "aa6e9c68c580618382dfd14453236252f7e81f05ef5a1e038083adf1d06831bf"
+    },
+    {
+      "path": "vault/ratchets/rat-blood-detectability.md",
+      "sha256": "924fb0155a3e92cc6eedb50af6cee9c7850fae56c9be09ec1aa42bb2650352ce"
+    },
+    {
+      "path": "vault/ratchets/rat-blood-timezero.md",
+      "sha256": "a66ca5842ba6a12e33756ccda179989bbd2068debfce8a8443c517ed03b93110"
+    },
+    {
+      "path": "vault/ratchets/rat-component-response.md",
+      "sha256": "3f2ef7307e70d65ec6e2bf264c7151733f523a396f8177a07638737e07782e1c"
+    },
+    {
+      "path": "vault/ratchets/rat-current-theory-model.md",
+      "sha256": "46ea5ed1e6c004096d22fb0a887a61f834e41b6ea74110b95cb65e8b6423cd7a"
+    },
+    {
+      "path": "vault/ratchets/rat-device-output-taxonomy.md",
+      "sha256": "2bd408be449382580b70fd58a82f0619a932eb4aa957e92dda0425c09a76143e"
+    },
+    {
+      "path": "vault/ratchets/rat-energy-bookkeeping.md",
+      "sha256": "499d6d9bc7b769e121648da0244ef648297d418568f0f71348b61f68c6036755"
+    },
+    {
+      "path": "vault/ratchets/rat-first-audio-discrimination.md",
+      "sha256": "104e9681a19b5c296ef38f1bd6189fe1e7e00ef48416128188c27b5a5259c56e"
+    },
+    {
+      "path": "vault/ratchets/rat-itd-nearfield.md",
+      "sha256": "d4bb3781fdd6b065896fab3aa58b79e3cf020b632588f4a0214529693501e30c"
+    },
+    {
+      "path": "vault/ratchets/rat-meta-evidence-strength.md",
+      "sha256": "d217d33e3a48642dd439410a758b09665d696bfebd8c11116a8d1a221eac97f3"
+    },
+    {
+      "path": "vault/ratchets/rat-meta-independence.md",
+      "sha256": "3e855077daf30d5ba1f92cf30ba4c6f67626ce5b9a834a05ec937a3c25a16f6a"
+    },
+    {
+      "path": "vault/ratchets/rat-optflow-energy.md",
+      "sha256": "3c37171a736802db322e52b73dadc05a21ed10744511cd4af6e0c44cd4e1d588"
+    },
+    {
+      "path": "vault/ratchets/rat-pcb-color.md",
+      "sha256": "f4ef8fa90515ff50b30105c015a0f5a7f8da4031ddc1fb2710f1bb4ecd0df537"
+    },
+    {
+      "path": "vault/ratchets/rat-pcb-dimensions.md",
+      "sha256": "a4b3a8ce423a67c75ab54cf060fc3a4feadf14b1bf2b7b94c3bd7d73f3dde721"
+    },
+    {
+      "path": "vault/ratchets/rat-radial-pressure.md",
+      "sha256": "09e56f161abb2eab1cce4c81ffc1f768579c70280897cc26533392d66cb7ae01"
+    },
+    {
+      "path": "vault/ratchets/rat-rode-petn-consistency.md",
+      "sha256": "17833d1b72d212b711dbe3aa23d3b5a5361d440255e5229f760d9a0e40b24d74"
+    },
+    {
+      "path": "vault/ratchets/rat-theory-evolution.md",
+      "sha256": "6906681b4e947bd6fe31e2e9c9c54e6bd858d808934f006ced82200a73e4b89d"
+    },
+    {
+      "path": "vault/receipts/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/receipts/rec-4940-strouhal.md",
+      "sha256": "bc0072d9a9b45489f09d90263704e2535bd2150312d501c8d7b7fde6b1010826"
+    },
+    {
+      "path": "vault/receipts/rec-blood-delay.md",
+      "sha256": "f1ef03ebe4ae96481dbda73de7878c3d3fdbe37b4eaab2a8c1d7cc7b5309effa"
+    },
+    {
+      "path": "vault/receipts/rec-blood-timezero.md",
+      "sha256": "c96bb23aaa080853ed2239724f988d848bd8bc91574fdbfeea7a960ed4774bfc"
+    },
+    {
+      "path": "vault/receipts/rec-bray-petn-05g.md",
+      "sha256": "16bb31af47fcbf14ed3812a2fc995621bc8ca2e4254779ce75291f4248abea9c"
+    },
+    {
+      "path": "vault/receipts/rec-bray-petn-recoil-05g.md",
+      "sha256": "6b5b1dad8442a864ad3d08f8b849c4891a71b4eeb38dda8f02eaaec8dcd45cd8"
+    },
+    {
+      "path": "vault/receipts/rec-component-ejection-timeline.md",
+      "sha256": "037b132f54f744cf4d5893447c245115d445619c5860db67374c0a95df144a89"
+    },
+    {
+      "path": "vault/receipts/rec-first-sound-nondiscriminating.md",
+      "sha256": "41ec992a485a9331b1226e748b766ec7bbba29fe2c22c16c3c055871d4822c12"
+    },
+    {
+      "path": "vault/receipts/rec-five-signatures-sources.md",
+      "sha256": "c5ff29e1cea84947c17863e99724d3761890a830d5e18a835cda30feaed430eb"
+    },
+    {
+      "path": "vault/receipts/rec-itd-nearfield.md",
+      "sha256": "fa9aff9d4b3acfb32e398ff755be7d270d1c59291e03b439460ee566a6984581"
+    },
+    {
+      "path": "vault/receipts/rec-july-radial-battery.md",
+      "sha256": "478651688604a55a91518bc45d4781fc9aa80bf14de4872052a810d004c94500"
+    },
+    {
+      "path": "vault/receipts/rec-medical-limits.md",
+      "sha256": "a67a02dd81131baf8ba0ff2929def77926668d3a589310f8d68c1d2ea81b000e"
+    },
+    {
+      "path": "vault/receipts/rec-pcb-color-values.md",
+      "sha256": "b17e2fd71e911a82ba50662ad076e4c736498464cc7f98e40dc0ad0a75cc815f"
+    },
+    {
+      "path": "vault/receipts/rec-pcb-dimensional-scale.md",
+      "sha256": "4a2ef39a3902acd15cc7c18c19299f9227ecb86faca407b115268ae2ee0b6ec1"
+    },
+    {
+      "path": "vault/receipts/rec-pcb-four-independent-lines.md",
+      "sha256": "bb9603ba1939156181b1cc9e3cf4d4c8750b0756be6356897e54241908069579"
+    },
+    {
+      "path": "vault/receipts/rec-pcb-six-independent-lines.md",
+      "sha256": "cf755546c8b4f7a92e2250d9a1ba5e15750c1d5a4662c3a66f9f6566b9e9affa"
+    },
+    {
+      "path": "vault/receipts/rec-radial-pressure.md",
+      "sha256": "1050460d3381357958f012dd87eda95bdc827e7eaaf36c6b01f10b052d45abe3"
+    },
+    {
+      "path": "vault/receipts/rec-rode-acoustic-classification.md",
+      "sha256": "a90e209d8435bd8dbb62272bb5c6b9707c438511edc9b30c146fcb1babb962a0"
+    },
+    {
+      "path": "vault/receipts/rec-shaped-charge-13-of-13.md",
+      "sha256": "5aea845ffda73a1820b8c16e4d7ad0a37f36c13651409f4363d9590e1317a257"
+    },
+    {
+      "path": "vault/receipts/rec-synthesis-independent-pieces.md",
+      "sha256": "8284715740fdb4839d95632b487a369cc90756311b4f42b6ff50e93a9ed48bff"
+    },
+    {
+      "path": "vault/sessions/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/sources/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/sources/src-bray-social-petn-05g.md",
+      "sha256": "fd1d93913159a3b45c43f036b4e1a37fd18e8cd4cfade3ce5cebce5a920747fe"
+    },
+    {
+      "path": "vault/sources/src-bray-social-petn-recoil-05g.md",
+      "sha256": "8494434d33cdd555531e8a7fc6422c3d5ec0ae3c6a71f2f0cee7a2ab89d47022"
+    },
+    {
+      "path": "vault/sources/src-epicenter-main-20260701.md",
+      "sha256": "bcbb211ad2321de4c5473da2f555d07138c28bb6334bf06252b06407c82a5e1e"
+    },
+    {
+      "path": "vault/sources/src-epicenter-main-20260926.md",
+      "sha256": "90b435057a113fe1ee407026a7e1af21632c333e0ffd8d8d3cccba0dbf468d60"
+    },
+    {
+      "path": "vault/theories/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vault/theories/thy-bray-petn-shaped-charge.md",
+      "sha256": "2a499783766f1921092d97b60e1619d5b5f94fc47238167c7c13deeb1f42b4bd"
+    },
+    {
+      "path": "vault/theories/thy-bray-site-current.md",
+      "sha256": "75986e4cacb1b5c8c867190ee6a20e5ea0bc10ce97c8a7a648162247add5d674"
+    },
+    {
+      "path": "vault/theories/thy-bray-site-july.md",
+      "sha256": "6d9e5667f9633a5c354684743ff4f19cf6be58b98452e862389a7205cdc57f48"
+    }
+  ],
+  "input_zip_sha256": "858f1a46be15d16969e0e777b7dfe82981f70012bc12b00ff2e7fa9d7df6c67c"
+}

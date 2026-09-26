@@ -1,0 +1,187 @@
+{
+  "schema_version": 2,
+  "build_id": "0ec41eea73991251024bdb3e3a0332b63136e27884ba4264a4db27c152476cf5",
+  "audit": {
+    "schema_version": 1,
+    "records": [
+      {
+        "id": "aud-physical-width",
+        "review_state": "reviewed",
+        "kind": "physical_quantity",
+        "node": "inf-width",
+        "entity": "marker",
+        "quantity": "width",
+        "scope": "frame-68-coplanar",
+        "unit": "mm"
+      },
+      {
+        "id": "aud-pixel-scale",
+        "review_state": "reviewed",
+        "kind": "calibration",
+        "method": "met-scale",
+        "input": "mea-pixels",
+        "output": "inf-width",
+        "entity": "marker",
+        "scope": "frame-68-coplanar",
+        "input_unit": "px",
+        "output_unit": "mm",
+        "scale": 0.3,
+        "offset": 0
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "inf-width",
+      "title": "inf-width",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "inference",
+      "statement": "Synthetic image span is used to infer physical width.",
+      "depends_on": [
+        "mea-pixels",
+        "met-scale"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "mea-pixels",
+      "title": "mea-pixels",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "measurement",
+      "quantity": "pixel_width",
+      "value": 87,
+      "unit": "px",
+      "method": "met-read",
+      "observed_from": [
+        "obs-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "met-read",
+      "title": "met-read",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "method",
+      "procedure": "Read the synthetic fixture values, not actual media.",
+      "references": [
+        "src-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "met-scale",
+      "title": "met-scale",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "method",
+      "procedure": "Synthetic affine scale: physical mm = pixel width * 0.3 + 0, scoped to frame 68 and the same plane.",
+      "references": [
+        "src-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "obs-record",
+      "title": "obs-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "observation",
+      "statement": "Inspect the synthetic record record.",
+      "receipts": [
+        "rec-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "rec-record",
+      "title": "rec-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "receipt",
+      "source": "src-record",
+      "locator": {
+        "kind": "lines",
+        "start": 1,
+        "end": 1
+      },
+      "quote": "SYNTHETIC missing-calibration record record. No real evidence or attributed quotation.",
+      "context": "Synthetic fixture record.",
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "src-record",
+      "title": "src-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "source",
+      "source_type": "text",
+      "author": null,
+      "original_url": null,
+      "published_at": null,
+      "captured_at": "2026-09-26T00:00:00Z",
+      "sha256": "cec78f86f30cb5a63be73f372d75d9b0a90efd007431b5c0b9f5dd40566ca8ca",
+      "artifact": "public/evidence/missing-calibration-record.txt",
+      "redistribution": "full_local",
+      "version": {
+        "family": "missing-calibration-record",
+        "sequence": 1
+      },
+      "body": "\nSynthetic software acceptance fixture.\n"
+    }
+  ],
+  "edges": [],
+  "derivations": [],
+  "content_fingerprint": "84c43e69106c9398a6722119e26e00dd623e6bd4aec3f936a3467644ed843144"
+}

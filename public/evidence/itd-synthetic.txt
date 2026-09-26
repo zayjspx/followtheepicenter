@@ -1,0 +1,3 @@
+SYNTHETIC TEST RECORD. Not a quotation from Jon Bray or any real source.
+Baseline assumption: 0.039 m. Reported interchannel delay: -113.4 us.
+Test model: maximum plane-wave delay = baseline / sound speed; sound speed = 343 m/s.

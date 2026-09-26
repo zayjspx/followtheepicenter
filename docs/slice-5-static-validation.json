@@ -1,0 +1,15 @@
+{
+  "slice": "5-self-guided-debunker",
+  "vault_records": 387,
+  "ratchets": 19,
+  "locks": 68,
+  "claims": 41,
+  "claims_with_guided_target": 31,
+  "all_locks_have_7_branches": true,
+  "guided_routes_present": true,
+  "operator_removed_from_primary_nav": true,
+  "canonical_vault_changed_by_slice": false,
+  "css_brace_balance": 0,
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+*.log
+
+work/
+
+dist-data/*.json
+public/data/

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "engine_version": "slice-2-v1",
+  "build_id": "a32343f7f4e98af18783b83a8a855681360149408da46fd80c5600a498699749",
+  "graph_fingerprint": "6a269dd1dbf470ec0bb88d8cc29937b2a2618da9581a31fb67a5b76c29c0c88d",
+  "detectors": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "pseudo_independence",
+    "assumption_laundering",
+    "missing_calibration",
+    "active_claim_conflict"
+  ],
+  "candidates": [
+    {
+      "id": "dgn-candidate-ca5daf0d11327974ee3dfbc6",
+      "detector": "missing_calibration",
+      "diagnostic_type": "missing_calibration",
+      "status": "candidate",
+      "review_state": "machine_proposed",
+      "triggering_nodes": [
+        "inf-width",
+        "mea-pixels"
+      ],
+      "triggering_edges": [],
+      "triggering_annotations": [
+        "aud-physical-width"
+      ],
+      "dependency_paths": [
+        {
+          "nodes": [
+            "inf-width",
+            "mea-pixels"
+          ],
+          "steps": [
+            {
+              "from": "inf-width",
+              "to": "mea-pixels",
+              "via": {
+                "kind": "field",
+                "id": "inf-width",
+                "field": "depends_on"
+              }
+            }
+          ]
+        }
+      ],
+      "explanation": "A declared physical quantity depends on image/audio-domain measurements without a connected, active, reviewed calibration matching the input, entity, scope and output dimensions.",
+      "evidence": {
+        "output": "inf-width",
+        "entity": "marker",
+        "scope": "frame-68-coplanar",
+        "unit": "mm",
+        "uncalibrated_inputs": [
+          "mea-pixels"
+        ]
+      },
+      "fingerprint": "37354b0baea13081983f06ae99f4492e793f70ed94cd8a076cc153e9bf5c2685"
+    }
+  ],
+  "fingerprint": "b8c7ad6a723d9904fa240d6aab8a07d93f428eaa74fe7df9534ad9750557026d"
+}

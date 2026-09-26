@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "engine_version": "slice-2-v1",
+  "build_id": "c47d8bab0cb4fb01f4d4b6715b5534b79400d2788640d21a409544178b1ea743",
+  "graph_fingerprint": "a9c7ad2577a709c17b1c0d5b89c4e69becb2f1f3fc45a071d406c7683bddc69f",
+  "detectors": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "pseudo_independence",
+    "assumption_laundering",
+    "missing_calibration",
+    "active_claim_conflict"
+  ],
+  "candidates": [
+    {
+      "id": "dgn-candidate-fbd56836ba786406a217d08e",
+      "detector": "pseudo_independence",
+      "diagnostic_type": "pseudo_independence",
+      "status": "candidate",
+      "review_state": "machine_proposed",
+      "triggering_nodes": [
+        "clm-convergence",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "triggering_edges": [
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "triggering_annotations": [
+        "aud-independence"
+      ],
+      "dependency_paths": [
+        {
+          "nodes": [
+            "clm-convergence",
+            "inf-clahe",
+            "obs-record",
+            "rec-record",
+            "src-record"
+          ],
+          "steps": [
+            {
+              "from": "clm-convergence",
+              "to": "inf-clahe",
+              "via": {
+                "kind": "edge",
+                "id": "edg-clahe",
+                "field": "supports"
+              }
+            },
+            {
+              "from": "inf-clahe",
+              "to": "obs-record",
+              "via": {
+                "kind": "field",
+                "id": "inf-clahe",
+                "field": "depends_on"
+              }
+            },
+            {
+              "from": "obs-record",
+              "to": "rec-record",
+              "via": {
+                "kind": "field",
+                "id": "obs-record",
+                "field": "receipts"
+              }
+            },
+            {
+              "from": "rec-record",
+              "to": "src-record",
+              "via": {
+                "kind": "field",
+                "id": "rec-record",
+                "field": "source"
+              }
+            }
+          ]
+        },
+        {
+          "nodes": [
+            "clm-convergence",
+            "inf-false-color",
+            "obs-record",
+            "rec-record",
+            "src-record"
+          ],
+          "steps": [
+            {
+              "from": "clm-convergence",
+              "to": "inf-false-color",
+              "via": {
+                "kind": "edge",
+                "id": "edg-false-color",
+                "field": "supports"
+              }
+            },
+            {
+              "from": "inf-false-color",
+              "to": "obs-record",
+              "via": {
+                "kind": "field",
+                "id": "inf-false-color",
+                "field": "depends_on"
+              }
+            },
+            {
+              "from": "obs-record",
+              "to": "rec-record",
+              "via": {
+                "kind": "field",
+                "id": "obs-record",
+                "field": "receipts"
+              }
+            },
+            {
+              "from": "rec-record",
+              "to": "src-record",
+              "via": {
+                "kind": "field",
+                "id": "rec-record",
+                "field": "source"
+              }
+            }
+          ]
+        },
+        {
+          "nodes": [
+            "clm-convergence",
+            "inf-optical-flow",
+            "obs-record",
+            "rec-record",
+            "src-record"
+          ],
+          "steps": [
+            {
+              "from": "clm-convergence",
+              "to": "inf-optical-flow",
+              "via": {
+                "kind": "edge",
+                "id": "edg-optical-flow",
+                "field": "supports"
+              }
+            },
+            {
+              "from": "inf-optical-flow",
+              "to": "obs-record",
+              "via": {
+                "kind": "field",
+                "id": "inf-optical-flow",
+                "field": "depends_on"
+              }
+            },
+            {
+              "from": "obs-record",
+              "to": "rec-record",
+              "via": {
+                "kind": "field",
+                "id": "obs-record",
+                "field": "receipts"
+              }
+            },
+            {
+              "from": "rec-record",
+              "to": "src-record",
+              "via": {
+                "kind": "field",
+                "id": "rec-record",
+                "field": "source"
+              }
+            }
+          ]
+        }
+      ],
+      "explanation": "Support paths asserted as independent share preserved evidence roots. Different transforms do not establish independent observations; this is a review candidate, not a statistical dependence proof.",
+      "evidence": {
+        "shared_roots": [
+          "src-record"
+        ],
+        "groups": [
+          {
+            "root": "src-record",
+            "support_nodes": [
+              "inf-clahe",
+              "inf-false-color",
+              "inf-optical-flow"
+            ],
+            "support_edges": [
+              "edg-clahe",
+              "edg-false-color",
+              "edg-optical-flow"
+            ]
+          }
+        ]
+      },
+      "fingerprint": "daf69f9af63a48aef20042f6b6a5c824c9dcb867aeceb8aa6a9464fe210a15c6"
+    }
+  ],
+  "fingerprint": "0b78392e6715c8377057627f7a7837a44d2d374fc5726cd80595aa0289d66322"
+}

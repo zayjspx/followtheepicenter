@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "engine_version": "slice-2-v1",
+  "build_id": "861d4adf5ee5c81b72beae8e92262c3d0901a2bbdb8fb84f95f2db5b9bbf590e",
+  "graph_fingerprint": "23e0055dc422b22a101f0820a8e7322f067c1c31270f89e6d128c4e56bc979b7",
+  "detectors": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "pseudo_independence",
+    "assumption_laundering",
+    "missing_calibration",
+    "active_claim_conflict"
+  ],
+  "candidates": [
+    {
+      "id": "dgn-candidate-bbfb8dc3ac2c480ca2029ffd",
+      "detector": "circular_support",
+      "diagnostic_type": "circular_support",
+      "status": "candidate",
+      "review_state": "machine_proposed",
+      "triggering_nodes": [
+        "der-velocity",
+        "mea-frequency",
+        "obs-record"
+      ],
+      "triggering_edges": [
+        "edg-prediction"
+      ],
+      "triggering_annotations": [],
+      "dependency_paths": [
+        {
+          "nodes": [
+            "der-velocity",
+            "mea-frequency",
+            "obs-record",
+            "der-velocity"
+          ],
+          "steps": [
+            {
+              "from": "der-velocity",
+              "to": "mea-frequency",
+              "via": {
+                "kind": "field",
+                "id": "der-velocity",
+                "field": "inputs.frequency"
+              }
+            },
+            {
+              "from": "mea-frequency",
+              "to": "obs-record",
+              "via": {
+                "kind": "field",
+                "id": "mea-frequency",
+                "field": "observed_from"
+              }
+            },
+            {
+              "from": "obs-record",
+              "to": "der-velocity",
+              "via": {
+                "kind": "edge",
+                "id": "edg-prediction",
+                "field": "predicted_by"
+              }
+            }
+          ]
+        }
+      ],
+      "explanation": "der-velocity is offered as support/prediction of obs-record but already depends on it. The path closes through edg-prediction.",
+      "evidence": {
+        "cycle": [
+          "der-velocity",
+          "mea-frequency",
+          "obs-record",
+          "der-velocity"
+        ],
+        "corroboration_edge": "edg-prediction"
+      },
+      "fingerprint": "13cb0ce9b6206c41fe74b2e39034b353f911437d47354c80ad4eadf5e96e6964"
+    }
+  ],
+  "fingerprint": "dff919fb18a45cf2135b5b0af869c20150cb55a743c746f5c5ef5a6abadc7220"
+}

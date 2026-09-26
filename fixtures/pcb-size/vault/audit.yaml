@@ -1,0 +1,22 @@
+schema_version: 1
+records:
+  - review_state: reviewed
+    id: aud-width-a
+    kind: typed_value
+    claim: clm-width-a
+    entity: pcb
+    quantity: width
+    scope: same-object-frame-68
+    value: 30
+    unit: mm
+    tolerance: 0.5
+  - review_state: reviewed
+    id: aud-width-b
+    kind: typed_value
+    claim: clm-width-b
+    entity: pcb
+    quantity: width
+    scope: same-object-frame-68
+    value: 44
+    unit: mm
+    tolerance: 0.5

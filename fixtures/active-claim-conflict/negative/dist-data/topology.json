@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "build_id": "92c860e15553c554e2afe6b8f514625d0d13f47bf66ce0fedd70c433f7332e42",
+  "claim_state": {
+    "clm-a": {
+      "direct_burdens": [],
+      "inherited_burdens": [],
+      "all_burdens": [],
+      "support_paths": [],
+      "downstream_claims": [],
+      "structural_state": "unscored",
+      "note": "Structural state only; not a truth judgment."
+    },
+    "clm-b": {
+      "direct_burdens": [],
+      "inherited_burdens": [],
+      "all_burdens": [],
+      "support_paths": [],
+      "downstream_claims": [],
+      "structural_state": "unscored",
+      "note": "Structural state only; not a truth judgment."
+    }
+  },
+  "ratchets": {},
+  "response_patterns": {},
+  "fingerprint": "16c2772a19cae63564e962358e38fc757302c91a3ca412cafe71a2575e82257c"
+}

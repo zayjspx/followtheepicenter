@@ -1,0 +1,28 @@
+{
+  "schema": "static-topology-validation-v1",
+  "record_count": 387,
+  "counts": {
+    "assumption": 13,
+    "burden": 21,
+    "claim": 41,
+    "derivation": 8,
+    "diagnostic": 4,
+    "edge": 137,
+    "escape": 9,
+    "lock": 68,
+    "measurement": 18,
+    "method": 9,
+    "observation": 14,
+    "ratchet": 19,
+    "receipt": 19,
+    "source": 4,
+    "theory": 3
+  },
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "Static validation only; npm/tsx compiler execution deferred to operator environment.",
+    "Line receipts and local source hashes were checked.",
+    "Ratchet branch closure and all authored references were checked."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "engine_version": "slice-2-v1",
+  "build_id": "83127f44fedfc8d93ec70cb1472dc154d59a095c2aece3afc8c38dc6aa6a20ae",
+  "graph_fingerprint": "9130773097aac08571a212183a7ee4e26a109c0b342ca87a2fefa8b90eb7383c",
+  "detectors": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "pseudo_independence",
+    "assumption_laundering",
+    "missing_calibration",
+    "active_claim_conflict"
+  ],
+  "candidates": [
+    {
+      "id": "dgn-candidate-4bb87e0063bc27baa6b4253d",
+      "detector": "active_claim_conflict",
+      "diagnostic_type": "hard_contradiction",
+      "status": "candidate",
+      "review_state": "machine_proposed",
+      "triggering_nodes": [
+        "clm-width-a",
+        "clm-width-b"
+      ],
+      "triggering_edges": [],
+      "triggering_annotations": [
+        "aud-width-a",
+        "aud-width-b"
+      ],
+      "dependency_paths": [
+        {
+          "nodes": [
+            "clm-width-a"
+          ],
+          "steps": []
+        },
+        {
+          "nodes": [
+            "clm-width-b"
+          ],
+          "steps": []
+        }
+      ],
+      "explanation": "Reviewed active claims have an explicit reviewed contradiction relation or disjoint typed value intervals for the same defined entity, quantity and scope. No prose contradiction was inferred.",
+      "evidence": {
+        "reasons": [
+          {
+            "entity": "pcb",
+            "quantity": "width",
+            "scope": "same-object-frame-68",
+            "unit": "mm",
+            "left": {
+              "claim": "clm-width-a",
+              "value": 30,
+              "tolerance": 0.5
+            },
+            "right": {
+              "claim": "clm-width-b",
+              "value": 44,
+              "tolerance": 0.5
+            },
+            "intervals_overlap": false
+          }
+        ]
+      },
+      "fingerprint": "c4e1875a8f0d2da187a921ba9a451315ae6c4ad5a1e6055fdbd066a8c3c09f47"
+    }
+  ],
+  "fingerprint": "03bdfd3eba618b231581e853ea9272dc340595d41f3d68fe2a01b8a49ebfd410"
+}

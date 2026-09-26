@@ -1,0 +1,628 @@
+{
+  "schema_version": 2,
+  "build_id": "e5d5e58dcd6ce49f2dec0d0a6b41162bd5c1d425eec9b0d8181f8ce39162c6fe",
+  "graph_fingerprint": "63eefb020dd429142a53abef7324790275afc178907b027aecd3792f8a384c21",
+  "nodes": {
+    "clm-convergence": {
+      "direct": [
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "rec-record"
+      ],
+      "ancestors": [
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-false-color",
+        "obs-optical-flow",
+        "obs-record",
+        "rec-false-color",
+        "rec-optical-flow",
+        "rec-record",
+        "src-false-color",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-false-color",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "descendants": [
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "fingerprint": "487dd8cd64934dae4cdcd729d8b59b75bf0250b35e1ee05d544855cc185eccab"
+    },
+    "edg-clahe": {
+      "direct": [
+        "clm-convergence",
+        "inf-clahe"
+      ],
+      "ancestors": [
+        "clm-convergence",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-false-color",
+        "obs-optical-flow",
+        "obs-record",
+        "rec-false-color",
+        "rec-optical-flow",
+        "rec-record",
+        "src-false-color",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-false-color",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "83834065402056fc9afa20073ecfaecde4d9f505fb80444ae108b448105a745f"
+    },
+    "edg-false-color": {
+      "direct": [
+        "clm-convergence",
+        "inf-false-color"
+      ],
+      "ancestors": [
+        "clm-convergence",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-false-color",
+        "obs-optical-flow",
+        "obs-record",
+        "rec-false-color",
+        "rec-optical-flow",
+        "rec-record",
+        "src-false-color",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-false-color",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "5d39ebc9c01b64e72f7f0c3f7957e6ace992b900a7fae264316c78600a5da789"
+    },
+    "edg-optical-flow": {
+      "direct": [
+        "clm-convergence",
+        "inf-optical-flow"
+      ],
+      "ancestors": [
+        "clm-convergence",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-false-color",
+        "obs-optical-flow",
+        "obs-record",
+        "rec-false-color",
+        "rec-optical-flow",
+        "rec-record",
+        "src-false-color",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-false-color",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "97f0bb34b49f5737718c6b5beb9ae97bc2f690c553fbebe5384f6d01d53509f2"
+    },
+    "inf-clahe": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "fingerprint": "beeeb2241aa312e4ccd9567c7231de0030547e5c28d6adb4feceba6a5dd2b833"
+    },
+    "inf-false-color": {
+      "direct": [
+        "met-read",
+        "obs-false-color"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-false-color",
+        "rec-false-color",
+        "src-false-color",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-false-color",
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "fingerprint": "feb189b71e559d3deb4afaffc29ee6716aba3aade9f2f80bc9e7b5e1c2e21d24"
+    },
+    "inf-optical-flow": {
+      "direct": [
+        "met-read",
+        "obs-optical-flow"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-optical-flow",
+        "rec-optical-flow",
+        "src-optical-flow",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-optical-flow",
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "fingerprint": "91ee45277dacd52b3d1a13d55b5feed88462bcd99fe2bb7b5f78f1de2f81d15c"
+    },
+    "met-read": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow"
+      ],
+      "fingerprint": "c67a644694ef376c021cfd95ecd4f8f18e98c24012f466a6e07d855e825d785d"
+    },
+    "obs-false-color": {
+      "direct": [
+        "rec-false-color"
+      ],
+      "ancestors": [
+        "rec-false-color",
+        "src-false-color"
+      ],
+      "source_roots": [
+        "src-false-color"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-false-color"
+      ],
+      "fingerprint": "82d5cce01ac76ed41e30fcb092d1af267dcd567a46af1cf216b6489a092f7644"
+    },
+    "obs-optical-flow": {
+      "direct": [
+        "rec-optical-flow"
+      ],
+      "ancestors": [
+        "rec-optical-flow",
+        "src-optical-flow"
+      ],
+      "source_roots": [
+        "src-optical-flow"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-optical-flow"
+      ],
+      "fingerprint": "c33437d867b0d51172d9c64aa6b7b3e2c25093d307af8e711541dcd6d84381f8"
+    },
+    "obs-record": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-clahe"
+      ],
+      "fingerprint": "6259159a65dbe70ad7bf2d84a6cdb5dd1899c90b71c323e5586d19ebbc27320b"
+    },
+    "rec-false-color": {
+      "direct": [
+        "src-false-color"
+      ],
+      "ancestors": [
+        "src-false-color"
+      ],
+      "source_roots": [
+        "src-false-color"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-false-color",
+        "obs-false-color"
+      ],
+      "fingerprint": "c972fe9c6752dc7c288adb2693363fd713ed76a54167cdebf8f7f2e710138b8b"
+    },
+    "rec-optical-flow": {
+      "direct": [
+        "src-optical-flow"
+      ],
+      "ancestors": [
+        "src-optical-flow"
+      ],
+      "source_roots": [
+        "src-optical-flow"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-optical-flow",
+        "obs-optical-flow"
+      ],
+      "fingerprint": "6ba7ea6be22ed467e2ce6b41922e37fbb90e2097d0b0b51b305b5d6751eac52f"
+    },
+    "rec-record": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-clahe",
+        "obs-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "9ab9ae1cb069b07202f088328f5d4979e5e0d2345cca9b6310f5eee6436d3a96"
+    },
+    "src-false-color": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-false-color"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-false-color",
+        "obs-false-color",
+        "rec-false-color"
+      ],
+      "fingerprint": "0e4e901087d8a2c5232b89f6e6a2007fdc57e7afc5053a576d76e846968da838"
+    },
+    "src-optical-flow": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-optical-flow"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-optical-flow",
+        "obs-optical-flow",
+        "rec-optical-flow"
+      ],
+      "fingerprint": "3024f4f01ceb77fb3bb3d42f1f32a05c3378ecf8a5dc25f1f776639088bc1f25"
+    },
+    "src-record": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "e10d5ffa988611a8390981d63a2ae104acb6e0d49330ab72a4d32b04bdac2682"
+    },
+    "thy-fixture": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "acb1563ff17c604e38bcbb5a595bff1d838caf5e7f6f5c9ddd95e8481eb65e3b"
+    }
+  },
+  "links": [
+    {
+      "from": "clm-convergence",
+      "to": "inf-clahe",
+      "via": {
+        "kind": "edge",
+        "id": "edg-clahe",
+        "field": "supports"
+      }
+    },
+    {
+      "from": "clm-convergence",
+      "to": "inf-false-color",
+      "via": {
+        "kind": "edge",
+        "id": "edg-false-color",
+        "field": "supports"
+      }
+    },
+    {
+      "from": "clm-convergence",
+      "to": "inf-optical-flow",
+      "via": {
+        "kind": "edge",
+        "id": "edg-optical-flow",
+        "field": "supports"
+      }
+    },
+    {
+      "from": "clm-convergence",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "clm-convergence",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "edg-clahe",
+      "to": "clm-convergence",
+      "via": {
+        "kind": "field",
+        "id": "edg-clahe",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-clahe",
+      "to": "inf-clahe",
+      "via": {
+        "kind": "field",
+        "id": "edg-clahe",
+        "field": "from"
+      }
+    },
+    {
+      "from": "edg-false-color",
+      "to": "clm-convergence",
+      "via": {
+        "kind": "field",
+        "id": "edg-false-color",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-false-color",
+      "to": "inf-false-color",
+      "via": {
+        "kind": "field",
+        "id": "edg-false-color",
+        "field": "from"
+      }
+    },
+    {
+      "from": "edg-optical-flow",
+      "to": "clm-convergence",
+      "via": {
+        "kind": "field",
+        "id": "edg-optical-flow",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-optical-flow",
+      "to": "inf-optical-flow",
+      "via": {
+        "kind": "field",
+        "id": "edg-optical-flow",
+        "field": "from"
+      }
+    },
+    {
+      "from": "inf-clahe",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "inf-clahe",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-clahe",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "inf-clahe",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-false-color",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "inf-false-color",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-false-color",
+      "to": "obs-false-color",
+      "via": {
+        "kind": "field",
+        "id": "inf-false-color",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-optical-flow",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "inf-optical-flow",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-optical-flow",
+      "to": "obs-optical-flow",
+      "via": {
+        "kind": "field",
+        "id": "inf-optical-flow",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "met-read",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-read",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-false-color",
+      "to": "rec-false-color",
+      "via": {
+        "kind": "field",
+        "id": "obs-false-color",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "obs-optical-flow",
+      "to": "rec-optical-flow",
+      "via": {
+        "kind": "field",
+        "id": "obs-optical-flow",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "obs-record",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-false-color",
+      "to": "src-false-color",
+      "via": {
+        "kind": "field",
+        "id": "rec-false-color",
+        "field": "source"
+      }
+    },
+    {
+      "from": "rec-optical-flow",
+      "to": "src-optical-flow",
+      "via": {
+        "kind": "field",
+        "id": "rec-optical-flow",
+        "field": "source"
+      }
+    },
+    {
+      "from": "rec-record",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "rec-record",
+        "field": "source"
+      }
+    },
+    {
+      "from": "thy-fixture",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "thy-fixture",
+        "field": "receipts"
+      }
+    }
+  ],
+  "content_fingerprint": "cfc2a5b39ed855f71b947f05ed0f7859dc44b02664ac47208ecc15dcd45684d6"
+}

@@ -1,0 +1,19 @@
+schema_version: 1
+records:
+- review_state: reviewed
+  id: aud-pcb-br-gt-shirt
+  kind: comparison
+  claim: clm-pcb-object-exceeds-shirt-br
+  left: mea-pcb-object-br
+  right: mea-pcb-shirt-br
+  operator: gt
+  unit: '1'
+  tolerance: 0
+- review_state: reviewed
+  id: aud-pcb-physical-size
+  kind: physical_quantity
+  node: clm-pcb-dimensional-44mm-support
+  entity: collar-object
+  quantity: physical_size
+  scope: collar-dimensional-analysis
+  unit: mm

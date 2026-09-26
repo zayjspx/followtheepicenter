@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "build_id": "83127f44fedfc8d93ec70cb1472dc154d59a095c2aece3afc8c38dc6aa6a20ae",
+  "compiler_version": "slice-2-v1",
+  "authored_count": 7,
+  "published_count": 7,
+  "excluded_ids": [],
+  "inputs": [
+    {
+      "path": "clm-width-a.md",
+      "id": "clm-width-a",
+      "sha256": "8b8a766ae3e7d25fef89e5a99c9cde1e8c234055edcb52987512abb145438533"
+    },
+    {
+      "path": "clm-width-b.md",
+      "id": "clm-width-b",
+      "sha256": "72df91c13e02b920f4d835da9ddead7de91ffcf71e511c24b87f93af3a1b61cd"
+    },
+    {
+      "path": "met-read.md",
+      "id": "met-read",
+      "sha256": "3ecb1bb228a7a8c182415a3434749fce8cac7f37d5aeee3b0398cc965e6f3944"
+    },
+    {
+      "path": "obs-record.md",
+      "id": "obs-record",
+      "sha256": "af40e4d7848f27602727f3c8a8d8139e0afbb7d302df7565f2486a9d050db6ca"
+    },
+    {
+      "path": "rec-record.md",
+      "id": "rec-record",
+      "sha256": "5f4c9a04c33538b7e9188f2cbf8146b3067eaba40beeea9f342515c2d44c4dd0"
+    },
+    {
+      "path": "src-record.md",
+      "id": "src-record",
+      "sha256": "0491d6dc7d80c5e25a569a50a1803f23dbed175f4cc25a58de37c4a79252595a"
+    },
+    {
+      "path": "thy-fixture.md",
+      "id": "thy-fixture",
+      "sha256": "f472231036a10697aa47a24c232547f73739c56bfcc1a2db86c542aae0ab4d96"
+    }
+  ],
+  "integrity": {
+    "sources": [
+      {
+        "id": "src-record",
+        "sha256": "1341859d311699c743d7dd2886c9f5245d85a8fd08410feb38aa7c3520d2f8e6",
+        "verification": "local_bytes_verified"
+      }
+    ],
+    "receipts": [
+      {
+        "id": "rec-record",
+        "verification": "quote_verified_at_lines"
+      }
+    ]
+  },
+  "audit_annotations_sha256": "d703b3c9b32707d9ec964714254b76dc7b1879ac16210a7df84c3148e0efed59",
+  "excluded_annotation_ids": [],
+  "graph_fingerprint": "9130773097aac08571a212183a7ee4e26a109c0b342ca87a2fefa8b90eb7383c",
+  "scope": "Slice 2 compiler: hardened schemas, typed audit annotations and explicit provenance paths; no graph UI or runtime",
+  "audit": {
+    "engine_version": "slice-2-v1",
+    "detectors": [
+      "arithmetic_contradiction",
+      "circular_support",
+      "pseudo_independence",
+      "assumption_laundering",
+      "missing_calibration",
+      "active_claim_conflict"
+    ],
+    "candidate_count": 1,
+    "fingerprint": "03bdfd3eba618b231581e853ea9272dc340595d41f3d68fe2a01b8a49ebfd410"
+  },
+  "topology": {
+    "fingerprint": "96a340a9a9292662db59a81b627afced45f04af0771cba84a8629f77984a9417",
+    "blast_radius_fingerprint": "109e4649bfcd42160bd5a2f5b561dc4ea78073c84a5065b99f0cdf9e71c710f6",
+    "interrogation_order_fingerprint": "a198e01786fb85b7e26f9b86ae61f958739f989142c2c98bea17b9a23bd829bc"
+  }
+}

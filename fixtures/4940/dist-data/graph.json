@@ -1,0 +1,245 @@
+{
+  "schema_version": 2,
+  "build_id": "861d4adf5ee5c81b72beae8e92262c3d0901a2bbdb8fb84f95f2db5b9bbf590e",
+  "audit": {
+    "schema_version": 1,
+    "records": []
+  },
+  "nodes": [
+    {
+      "id": "asm-diameter",
+      "title": "asm-diameter",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "assumption",
+      "quantity": "orifice_diameter",
+      "value": 0.00762,
+      "unit": "m",
+      "basis": "operator_supplied",
+      "receipts": [
+        "rec-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "asm-strouhal",
+      "title": "asm-strouhal",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "assumption",
+      "quantity": "strouhal",
+      "value": 0.2,
+      "unit": "1",
+      "basis": "operator_supplied",
+      "receipts": [
+        "rec-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "der-velocity",
+      "title": "der-velocity",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "derivation",
+      "expression": "frequency * diameter / strouhal",
+      "inputs": {
+        "frequency": {
+          "node": "mea-frequency"
+        },
+        "diameter": {
+          "node": "asm-diameter"
+        },
+        "strouhal": {
+          "node": "asm-strouhal"
+        }
+      },
+      "output": {
+        "quantity": "gas_velocity",
+        "unit": "m/s"
+      },
+      "expected": {
+        "value": 188.214,
+        "tolerance": 0.001
+      },
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "mea-frequency",
+      "title": "mea-frequency",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "measurement",
+      "quantity": "frequency",
+      "value": 4940,
+      "unit": "Hz",
+      "method": "met-read",
+      "observed_from": [
+        "obs-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "met-read",
+      "title": "met-read",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "method",
+      "procedure": "Read the synthetic fixture values, not actual media.",
+      "references": [
+        "src-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "obs-record",
+      "title": "obs-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "observation",
+      "statement": "Synthetic observation reports a 4940 Hz tone.",
+      "receipts": [
+        "rec-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "rec-record",
+      "title": "rec-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "receipt",
+      "source": "src-record",
+      "locator": {
+        "kind": "lines",
+        "start": 1,
+        "end": 1
+      },
+      "quote": "SYNTHETIC 4940 record record. No real evidence or attributed quotation.",
+      "context": "Synthetic fixture record.",
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "src-record",
+      "title": "src-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "source",
+      "source_type": "text",
+      "author": null,
+      "original_url": null,
+      "published_at": null,
+      "captured_at": "2026-09-26T00:00:00Z",
+      "sha256": "074999874e9fdbe49837a95ff88a64a8f118e7e88afcf3f44b9dffcc166dc641",
+      "artifact": "public/evidence/4940-record.txt",
+      "redistribution": "full_local",
+      "version": {
+        "family": "4940-record",
+        "sequence": 1
+      },
+      "body": "\nSynthetic software acceptance fixture.\n"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edg-prediction",
+      "title": "edg-prediction",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "edge",
+      "from": "obs-record",
+      "relation": "predicted_by",
+      "to": "der-velocity",
+      "rationale": "Explicit synthetic relationship for deterministic testing."
+    }
+  ],
+  "derivations": [
+    {
+      "id": "der-velocity",
+      "quantity": "gas_velocity",
+      "value": 188.214,
+      "unit": "m/s",
+      "inputs": {
+        "frequency": {
+          "node": "mea-frequency"
+        },
+        "diameter": {
+          "node": "asm-diameter"
+        },
+        "strouhal": {
+          "node": "asm-strouhal"
+        }
+      },
+      "expression": "frequency * diameter / strouhal",
+      "expected": {
+        "value": 188.214,
+        "tolerance": 0.001
+      },
+      "absolute_error": 0
+    }
+  ],
+  "content_fingerprint": "23e0055dc422b22a101f0820a8e7322f067c1c31270f89e6d128c4e56bc979b7"
+}

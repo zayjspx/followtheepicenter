@@ -1,0 +1,10 @@
+schema_version: 1
+records:
+  - review_state: reviewed
+    id: aud-independence
+    kind: independence
+    claim: clm-convergence
+    edges:
+      - edg-clahe
+      - edg-optical-flow
+      - edg-false-color

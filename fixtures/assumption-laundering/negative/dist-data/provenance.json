@@ -1,0 +1,269 @@
+{
+  "schema_version": 2,
+  "build_id": "1a3110f777d2060a5b3662ee85e16d5342b4e750189a274756d71b56b9be65ce",
+  "graph_fingerprint": "3d5009b9ac2a4326fba34441e0cadfa73ab426ff09696758716af7eb5d60bd30",
+  "nodes": {
+    "asm-speed": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "96697304703aa093a62dede41af0b19fb3f8f49cd539f027b7c1ee5332027bc5"
+    },
+    "clm-speed": {
+      "direct": [
+        "mea-speed",
+        "rec-record"
+      ],
+      "ancestors": [
+        "mea-speed",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "edg-support"
+      ],
+      "fingerprint": "6fd460b7d54005cd7c3bb2a02ff683c740cbb5d03f095f92ee1c98bcccf673fa"
+    },
+    "edg-support": {
+      "direct": [
+        "clm-speed",
+        "mea-speed"
+      ],
+      "ancestors": [
+        "clm-speed",
+        "mea-speed",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "8c0ddd450fcb693f94e53de335abc9ce399afcceec3bc824cbf294165e4bad67"
+    },
+    "mea-speed": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-speed",
+        "edg-support"
+      ],
+      "fingerprint": "cc27e59f956d5803c0d045cbabe3f7c4c947d99cfa14254883b01e719680bc58"
+    },
+    "met-read": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-speed",
+        "edg-support",
+        "mea-speed"
+      ],
+      "fingerprint": "16f164061aa4e915b998dbabea82c90eadcdffac04522269ad01978915b80615"
+    },
+    "obs-record": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-speed",
+        "edg-support",
+        "mea-speed"
+      ],
+      "fingerprint": "6a9fe58113c20f1887f16f7327df46bc57281b77e3662a2fc538815e46400811"
+    },
+    "rec-record": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "asm-speed",
+        "clm-speed",
+        "edg-support",
+        "mea-speed",
+        "obs-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "ed857482de5f97f7550e881737a97e3c41c57e9e9f5ba7ec5d210bf0084d8172"
+    },
+    "src-record": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "asm-speed",
+        "clm-speed",
+        "edg-support",
+        "mea-speed",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "29c17f67ff7ce94b0a085f6cb3270e1172171d3c10911c84b564294fe5f40c61"
+    },
+    "thy-fixture": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "8dbedbdb8373106087cd7b601c8a7efc8b907e4e129e26ac45b2044da7fbdd81"
+    }
+  },
+  "links": [
+    {
+      "from": "asm-speed",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "asm-speed",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "clm-speed",
+      "to": "mea-speed",
+      "via": {
+        "kind": "edge",
+        "id": "edg-support",
+        "field": "supports"
+      }
+    },
+    {
+      "from": "clm-speed",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "clm-speed",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "edg-support",
+      "to": "clm-speed",
+      "via": {
+        "kind": "field",
+        "id": "edg-support",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-support",
+      "to": "mea-speed",
+      "via": {
+        "kind": "field",
+        "id": "edg-support",
+        "field": "from"
+      }
+    },
+    {
+      "from": "mea-speed",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "mea-speed",
+        "field": "method"
+      }
+    },
+    {
+      "from": "mea-speed",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "mea-speed",
+        "field": "observed_from"
+      }
+    },
+    {
+      "from": "met-read",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-read",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "obs-record",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-record",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "rec-record",
+        "field": "source"
+      }
+    },
+    {
+      "from": "thy-fixture",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "thy-fixture",
+        "field": "receipts"
+      }
+    }
+  ],
+  "content_fingerprint": "27bf54d4ba9c94928e8dcb19c38148629506ac17c0fc6bc70f697a05ebac872e"
+}

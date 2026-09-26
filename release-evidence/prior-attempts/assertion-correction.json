@@ -1,0 +1,49 @@
+{
+  "base": "http://127.0.0.1:4173/rc-preview/",
+  "label": "production",
+  "started_at": "2026-09-26T19:32:04.194Z",
+  "checks": [
+    {
+      "name": "home renders"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-itd-nearfield"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-4940-provenance"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-pcb-dimensions"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-pcb-color"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-radial-pressure"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-13of13-meaning"
+    },
+    {
+      "name": "direct guided route isolation"
+    },
+    {
+      "name": "claim detail, WHY and downstream blast radius"
+    },
+    {
+      "name": "focused graph, two-hop expansion, node selection and graph search"
+    }
+  ],
+  "errors": [],
+  "http_errors": [],
+  "screenshots": [
+    "home.png",
+    "guided.png",
+    "graph.png",
+    "failure.png"
+  ],
+  "browser": "153.0.8010.48",
+  "status": "failed",
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(count>=5)\n\n    at C:\\Users\\zay\\Documents\\Codex\\2026-09-26\\debunk-shaped-charge-claims-chatgpt-conversation\\outputs\\interrogation-system-rc1\\scripts\\browser-smoke.cjs:48:250",
+  "finished_at": "2026-09-26T19:33:09.912Z"
+}

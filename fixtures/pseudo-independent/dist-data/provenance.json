@@ -1,0 +1,446 @@
+{
+  "schema_version": 2,
+  "build_id": "c47d8bab0cb4fb01f4d4b6715b5534b79400d2788640d21a409544178b1ea743",
+  "graph_fingerprint": "a9c7ad2577a709c17b1c0d5b89c4e69becb2f1f3fc45a071d406c7683bddc69f",
+  "nodes": {
+    "clm-convergence": {
+      "direct": [
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "rec-record"
+      ],
+      "ancestors": [
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "fingerprint": "e3a02a61e5a81d4963150416558fde159987fe124d1e71de61f1d68ef47f52c7"
+    },
+    "edg-clahe": {
+      "direct": [
+        "clm-convergence",
+        "inf-clahe"
+      ],
+      "ancestors": [
+        "clm-convergence",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "c521e75b20653fad4533a31d58a537159d8e205c64fd4271d36e87a97ba88372"
+    },
+    "edg-false-color": {
+      "direct": [
+        "clm-convergence",
+        "inf-false-color"
+      ],
+      "ancestors": [
+        "clm-convergence",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "a4efc6b275c81f49265378146b76ee819467401063298b62f8f229dfae8562dd"
+    },
+    "edg-optical-flow": {
+      "direct": [
+        "clm-convergence",
+        "inf-optical-flow"
+      ],
+      "ancestors": [
+        "clm-convergence",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "5de77fe3746d36ffb6a97745885c317963bf9a3846d13e360bacc6d9189cd5d2"
+    },
+    "inf-clahe": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "fingerprint": "beeeb2241aa312e4ccd9567c7231de0030547e5c28d6adb4feceba6a5dd2b833"
+    },
+    "inf-false-color": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "fingerprint": "59b54286678bbf85cca61ce0130609ff992f7a967feb99a6b65e675173bf9237"
+    },
+    "inf-optical-flow": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow"
+      ],
+      "fingerprint": "8cccdccebad3fd40c1ca111597249d2f3b8fcda0828b4a4d5428d11a8bec00f5"
+    },
+    "met-read": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow"
+      ],
+      "fingerprint": "c67a644694ef376c021cfd95ecd4f8f18e98c24012f466a6e07d855e825d785d"
+    },
+    "obs-record": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow"
+      ],
+      "fingerprint": "6259159a65dbe70ad7bf2d84a6cdb5dd1899c90b71c323e5586d19ebbc27320b"
+    },
+    "rec-record": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "obs-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "9ab9ae1cb069b07202f088328f5d4979e5e0d2345cca9b6310f5eee6436d3a96"
+    },
+    "src-record": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-convergence",
+        "edg-clahe",
+        "edg-false-color",
+        "edg-optical-flow",
+        "inf-clahe",
+        "inf-false-color",
+        "inf-optical-flow",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "e10d5ffa988611a8390981d63a2ae104acb6e0d49330ab72a4d32b04bdac2682"
+    },
+    "thy-fixture": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "acb1563ff17c604e38bcbb5a595bff1d838caf5e7f6f5c9ddd95e8481eb65e3b"
+    }
+  },
+  "links": [
+    {
+      "from": "clm-convergence",
+      "to": "inf-clahe",
+      "via": {
+        "kind": "edge",
+        "id": "edg-clahe",
+        "field": "supports"
+      }
+    },
+    {
+      "from": "clm-convergence",
+      "to": "inf-false-color",
+      "via": {
+        "kind": "edge",
+        "id": "edg-false-color",
+        "field": "supports"
+      }
+    },
+    {
+      "from": "clm-convergence",
+      "to": "inf-optical-flow",
+      "via": {
+        "kind": "edge",
+        "id": "edg-optical-flow",
+        "field": "supports"
+      }
+    },
+    {
+      "from": "clm-convergence",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "clm-convergence",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "edg-clahe",
+      "to": "clm-convergence",
+      "via": {
+        "kind": "field",
+        "id": "edg-clahe",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-clahe",
+      "to": "inf-clahe",
+      "via": {
+        "kind": "field",
+        "id": "edg-clahe",
+        "field": "from"
+      }
+    },
+    {
+      "from": "edg-false-color",
+      "to": "clm-convergence",
+      "via": {
+        "kind": "field",
+        "id": "edg-false-color",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-false-color",
+      "to": "inf-false-color",
+      "via": {
+        "kind": "field",
+        "id": "edg-false-color",
+        "field": "from"
+      }
+    },
+    {
+      "from": "edg-optical-flow",
+      "to": "clm-convergence",
+      "via": {
+        "kind": "field",
+        "id": "edg-optical-flow",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-optical-flow",
+      "to": "inf-optical-flow",
+      "via": {
+        "kind": "field",
+        "id": "edg-optical-flow",
+        "field": "from"
+      }
+    },
+    {
+      "from": "inf-clahe",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "inf-clahe",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-clahe",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "inf-clahe",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-false-color",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "inf-false-color",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-false-color",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "inf-false-color",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-optical-flow",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "inf-optical-flow",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-optical-flow",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "inf-optical-flow",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "met-read",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-read",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "obs-record",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-record",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "rec-record",
+        "field": "source"
+      }
+    },
+    {
+      "from": "thy-fixture",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "thy-fixture",
+        "field": "receipts"
+      }
+    }
+  ],
+  "content_fingerprint": "cf9b22815a0d5cf9e4ae8ac6424c4915f5564d958cd2ee6b8fa836c5de0ec45b"
+}

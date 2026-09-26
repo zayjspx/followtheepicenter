@@ -1,0 +1,1068 @@
+{
+  "ratchet_order": [
+    {
+      "ratchet": "rat-4940-provenance",
+      "downstream_claim_count": 2,
+      "diagnostic_count": 0,
+      "trigger_count": 2,
+      "burden_count": 1,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal"
+      ],
+      "activated_by": [
+        "clm-4940-strouhal",
+        "rat-4940-attribution"
+      ]
+    },
+    {
+      "ratchet": "rat-pcb-dimensions",
+      "downstream_claim_count": 1,
+      "diagnostic_count": 0,
+      "trigger_count": 2,
+      "burden_count": 2,
+      "downstream_claims": [
+        "clm-pcb-object-identity"
+      ],
+      "activated_by": [
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-dimensional-44mm-support"
+      ]
+    },
+    {
+      "ratchet": "rat-4940-attribution",
+      "downstream_claim_count": 1,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 2,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel"
+      ],
+      "activated_by": [
+        "clm-4940-ballistic-gel"
+      ]
+    },
+    {
+      "ratchet": "rat-radial-pressure",
+      "downstream_claim_count": 1,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [
+        "clm-radial-internal-pressure"
+      ],
+      "activated_by": [
+        "clm-radial-internal-pressure"
+      ]
+    },
+    {
+      "ratchet": "rat-pcb-color",
+      "downstream_claim_count": 1,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [
+        "clm-pcb-object-identity"
+      ],
+      "activated_by": [
+        "clm-pcb-object-exceeds-shirt-br"
+      ]
+    },
+    {
+      "ratchet": "rat-itd-nearfield",
+      "downstream_claim_count": 1,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [
+        "clm-itd-geometric-proof"
+      ],
+      "activated_by": [
+        "clm-itd-nearfield-only"
+      ]
+    },
+    {
+      "ratchet": "rat-device-output-taxonomy",
+      "downstream_claim_count": 1,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [
+        "clm-component-ejection-pcb-battery-magnet"
+      ],
+      "activated_by": [
+        "clm-neck-wound-shrapnel-petn"
+      ]
+    },
+    {
+      "ratchet": "rat-13of13-meaning",
+      "downstream_claim_count": 1,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [
+        "clm-shaped-charge-13-of-13"
+      ],
+      "activated_by": [
+        "clm-shaped-charge-13-of-13"
+      ]
+    },
+    {
+      "ratchet": "rat-meta-independence",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 2,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-pcb-four-independent-lines",
+        "clm-pcb-six-independent-lines"
+      ]
+    },
+    {
+      "ratchet": "rat-component-response",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 2,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-component-ejection-pcb-battery-magnet",
+        "clm-radial-internal-pressure"
+      ]
+    },
+    {
+      "ratchet": "rat-theory-evolution",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-4940-ballistic-gel"
+      ]
+    },
+    {
+      "ratchet": "rat-rode-petn-consistency",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-petn-shaped-charge-hidden"
+      ]
+    },
+    {
+      "ratchet": "rat-optflow-energy",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-optflow-energy-distribution"
+      ]
+    },
+    {
+      "ratchet": "rat-meta-evidence-strength",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-shaped-charge-13-of-13"
+      ]
+    },
+    {
+      "ratchet": "rat-first-audio-discrimination",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-first-audio-nondiscriminating"
+      ]
+    },
+    {
+      "ratchet": "rat-energy-bookkeeping",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-petn-recoil-22-5j"
+      ]
+    },
+    {
+      "ratchet": "rat-current-theory-model",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-petn-shaped-charge-hidden"
+      ]
+    },
+    {
+      "ratchet": "rat-blood-timezero",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "ratchet": "rat-blood-detectability",
+      "downstream_claim_count": 0,
+      "diagnostic_count": 0,
+      "trigger_count": 1,
+      "burden_count": 1,
+      "downstream_claims": [],
+      "activated_by": [
+        "clm-blood-three-predictions-fail"
+      ]
+    }
+  ],
+  "load_bearing": [
+    {
+      "id": "src-epicenter-main-20260926",
+      "type": "source",
+      "downstream_claim_count": 31,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-cavitation-confirmation",
+        "clm-4940-strouhal",
+        "clm-4940-van-association",
+        "clm-4940-velocity-188",
+        "clm-blood-delay-429-461",
+        "clm-blood-photo-resolvable-1ml",
+        "clm-blood-three-predictions-fail",
+        "clm-component-ejection-pcb-battery-magnet",
+        "clm-exclusion-not-attribution",
+        "clm-first-audio-nondiscriminating",
+        "clm-itd-geometric-proof",
+        "clm-itd-nearfield-only",
+        "clm-medical-no-single-mechanism",
+        "clm-optflow-energy-distribution",
+        "clm-optflow-pressure-signature",
+        "clm-pcb-color-support",
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-dimensional-44mm-support",
+        "clm-pcb-four-independent-lines",
+        "clm-pcb-object-exceeds-shirt-br",
+        "clm-pcb-object-identity",
+        "clm-pcb-six-independent-lines",
+        "clm-pcb-video-falling-support",
+        "clm-pcb-visible-shape-support",
+        "clm-radial-internal-pressure",
+        "clm-radial-outward-all-directions",
+        "clm-rode-event-chemical",
+        "clm-rode-event-not-shockwave",
+        "clm-shaped-charge-13-of-13",
+        "clm-synthesis-each-piece-independent"
+      ]
+    },
+    {
+      "id": "rec-pcb-four-independent-lines",
+      "type": "receipt",
+      "downstream_claim_count": 5,
+      "downstream_claims": [
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-four-independent-lines",
+        "clm-pcb-object-identity",
+        "clm-pcb-video-falling-support",
+        "clm-pcb-visible-shape-support"
+      ]
+    },
+    {
+      "id": "rec-4940-strouhal",
+      "type": "receipt",
+      "downstream_claim_count": 5,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-cavitation-confirmation",
+        "clm-4940-strouhal",
+        "clm-4940-van-association",
+        "clm-4940-velocity-188"
+      ]
+    },
+    {
+      "id": "src-bray-social-petn-recoil-05g",
+      "type": "source",
+      "downstream_claim_count": 4,
+      "downstream_claims": [
+        "clm-petn-recoil-22-5j",
+        "clm-petn-recoil-30ms",
+        "clm-petn-recoil-50g",
+        "clm-petn-shirt-force-80-120n"
+      ]
+    },
+    {
+      "id": "src-bray-social-petn-05g",
+      "type": "source",
+      "downstream_claim_count": 4,
+      "downstream_claims": [
+        "clm-component-ejection-pcb-battery-magnet",
+        "clm-neck-wound-shrapnel-petn",
+        "clm-petn-case-rupture-internals",
+        "clm-petn-shaped-charge-hidden"
+      ]
+    },
+    {
+      "id": "rec-radial-pressure",
+      "type": "receipt",
+      "downstream_claim_count": 4,
+      "downstream_claims": [
+        "clm-optflow-energy-distribution",
+        "clm-optflow-pressure-signature",
+        "clm-radial-internal-pressure",
+        "clm-radial-outward-all-directions"
+      ]
+    },
+    {
+      "id": "rec-bray-petn-recoil-05g",
+      "type": "receipt",
+      "downstream_claim_count": 4,
+      "downstream_claims": [
+        "clm-petn-recoil-22-5j",
+        "clm-petn-recoil-30ms",
+        "clm-petn-recoil-50g",
+        "clm-petn-shirt-force-80-120n"
+      ]
+    },
+    {
+      "id": "rec-bray-petn-05g",
+      "type": "receipt",
+      "downstream_claim_count": 4,
+      "downstream_claims": [
+        "clm-component-ejection-pcb-battery-magnet",
+        "clm-neck-wound-shrapnel-petn",
+        "clm-petn-case-rupture-internals",
+        "clm-petn-shaped-charge-hidden"
+      ]
+    },
+    {
+      "id": "rec-pcb-dimensional-scale",
+      "type": "receipt",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-dimensional-44mm-support",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "rec-pcb-color-values",
+      "type": "receipt",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-color-support",
+        "clm-pcb-object-exceeds-shirt-br",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "rec-medical-limits",
+      "type": "receipt",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-exclusion-not-attribution",
+        "clm-medical-no-single-mechanism",
+        "clm-shaped-charge-13-of-13"
+      ]
+    },
+    {
+      "id": "rec-blood-delay",
+      "type": "receipt",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-blood-delay-429-461",
+        "clm-blood-photo-resolvable-1ml",
+        "clm-blood-three-predictions-fail"
+      ]
+    },
+    {
+      "id": "obs-tone-4940",
+      "type": "observation",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal",
+        "clm-4940-velocity-188"
+      ]
+    },
+    {
+      "id": "obs-pcb-dimensions-report",
+      "type": "observation",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-dimensional-44mm-support",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "obs-pcb-color-report",
+      "type": "observation",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-color-support",
+        "clm-pcb-object-exceeds-shirt-br",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "met-source-transcription",
+      "type": "method",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal",
+        "clm-4940-velocity-188"
+      ]
+    },
+    {
+      "id": "met-reported-pixel-dimensions",
+      "type": "method",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-dimensional-44mm-support",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "met-reported-color-analysis",
+      "type": "method",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-color-support",
+        "clm-pcb-object-exceeds-shirt-br",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "mea-tone-frequency",
+      "type": "measurement",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal",
+        "clm-4940-velocity-188"
+      ]
+    },
+    {
+      "id": "mea-pcb-shirt-br",
+      "type": "measurement",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-color-support",
+        "clm-pcb-object-exceeds-shirt-br",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "mea-pcb-object-br",
+      "type": "measurement",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-color-support",
+        "clm-pcb-object-exceeds-shirt-br",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "mea-object-pixels-x",
+      "type": "measurement",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-dimensional-44mm-support",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "der-velocity-from-4940",
+      "type": "derivation",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal",
+        "clm-4940-velocity-188"
+      ]
+    },
+    {
+      "id": "bur-pcb-size-ontology",
+      "type": "burden",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-dimensional-44mm-support",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "bur-pcb-projective-calibration",
+      "type": "burden",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-dimensional-30x28-support",
+        "clm-pcb-dimensional-44mm-support",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "bur-evidence-independence-provenance",
+      "type": "burden",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-pcb-four-independent-lines",
+        "clm-pcb-six-independent-lines",
+        "clm-synthesis-each-piece-independent"
+      ]
+    },
+    {
+      "id": "bur-energy-impulse-bookkeeping",
+      "type": "burden",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-component-ejection-pcb-battery-magnet",
+        "clm-petn-recoil-22-5j",
+        "clm-radial-internal-pressure"
+      ]
+    },
+    {
+      "id": "bur-device-output-assignment",
+      "type": "burden",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-component-ejection-pcb-battery-magnet",
+        "clm-neck-wound-shrapnel-petn",
+        "clm-petn-case-rupture-internals"
+      ]
+    },
+    {
+      "id": "bur-current-theory-definition",
+      "type": "burden",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-july-radial-battery",
+        "clm-petn-shaped-charge-hidden"
+      ]
+    },
+    {
+      "id": "bur-188-independent-provenance",
+      "type": "burden",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal",
+        "clm-4940-velocity-188"
+      ]
+    },
+    {
+      "id": "asm-strouhal-02",
+      "type": "assumption",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal",
+        "clm-4940-velocity-188"
+      ]
+    },
+    {
+      "id": "asm-orifice-762mm",
+      "type": "assumption",
+      "downstream_claim_count": 3,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal",
+        "clm-4940-velocity-188"
+      ]
+    },
+    {
+      "id": "rec-rode-acoustic-classification",
+      "type": "receipt",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-rode-event-chemical",
+        "clm-rode-event-not-shockwave"
+      ]
+    },
+    {
+      "id": "rec-itd-nearfield",
+      "type": "receipt",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-itd-geometric-proof",
+        "clm-itd-nearfield-only"
+      ]
+    },
+    {
+      "id": "obs-view13-channel-delay",
+      "type": "observation",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-itd-geometric-proof",
+        "clm-itd-nearfield-only"
+      ]
+    },
+    {
+      "id": "obs-tdoa-4940-location",
+      "type": "observation",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-van-association"
+      ]
+    },
+    {
+      "id": "met-tdoa-localization",
+      "type": "method",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-van-association"
+      ]
+    },
+    {
+      "id": "met-stereo-itd",
+      "type": "method",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-itd-geometric-proof",
+        "clm-itd-nearfield-only"
+      ]
+    },
+    {
+      "id": "mea-view13-itd",
+      "type": "measurement",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-itd-geometric-proof",
+        "clm-itd-nearfield-only"
+      ]
+    },
+    {
+      "id": "mea-pcb-skin-br",
+      "type": "measurement",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-pcb-color-support",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "mea-4940-source-y-from-tent",
+      "type": "measurement",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-van-association"
+      ]
+    },
+    {
+      "id": "mea-4940-source-x-from-tent",
+      "type": "measurement",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-van-association"
+      ]
+    },
+    {
+      "id": "mea-4940-source-distance-from-van",
+      "type": "measurement",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-van-association"
+      ]
+    },
+    {
+      "id": "clm-4940-velocity-188",
+      "type": "claim",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-strouhal"
+      ]
+    },
+    {
+      "id": "bur-rode-petn-acoustic-consistency",
+      "type": "burden",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-petn-shaped-charge-hidden",
+        "clm-rode-event-not-shockwave"
+      ]
+    },
+    {
+      "id": "bur-pcb-color-arithmetic",
+      "type": "burden",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-pcb-color-support",
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "bur-optflow-pressure-bridge",
+      "type": "burden",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-optflow-pressure-signature",
+        "clm-radial-internal-pressure"
+      ]
+    },
+    {
+      "id": "bur-location-to-object-attribution",
+      "type": "burden",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel",
+        "clm-4940-van-association"
+      ]
+    },
+    {
+      "id": "bur-itd-farfield-exclusion",
+      "type": "burden",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-itd-geometric-proof",
+        "clm-itd-nearfield-only"
+      ]
+    },
+    {
+      "id": "bur-component-differential-model",
+      "type": "burden",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-component-ejection-pcb-battery-magnet",
+        "clm-radial-internal-pressure"
+      ]
+    },
+    {
+      "id": "bur-blood-detectability",
+      "type": "burden",
+      "downstream_claim_count": 2,
+      "downstream_claims": [
+        "clm-blood-photo-resolvable-1ml",
+        "clm-blood-three-predictions-fail"
+      ]
+    },
+    {
+      "id": "src-epicenter-main-20260701",
+      "type": "source",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-july-radial-battery"
+      ]
+    },
+    {
+      "id": "rec-synthesis-independent-pieces",
+      "type": "receipt",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-synthesis-each-piece-independent"
+      ]
+    },
+    {
+      "id": "rec-shaped-charge-13-of-13",
+      "type": "receipt",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-shaped-charge-13-of-13"
+      ]
+    },
+    {
+      "id": "rec-pcb-six-independent-lines",
+      "type": "receipt",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-pcb-six-independent-lines"
+      ]
+    },
+    {
+      "id": "rec-july-radial-battery",
+      "type": "receipt",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-july-radial-battery"
+      ]
+    },
+    {
+      "id": "rec-first-sound-nondiscriminating",
+      "type": "receipt",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-first-audio-nondiscriminating"
+      ]
+    },
+    {
+      "id": "rec-component-ejection-timeline",
+      "type": "receipt",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-component-ejection-pcb-battery-magnet"
+      ]
+    },
+    {
+      "id": "rec-blood-timezero",
+      "type": "receipt",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "obs-radial-image-motion",
+      "type": "observation",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-radial-internal-pressure"
+      ]
+    },
+    {
+      "id": "obs-first-audio-timing",
+      "type": "observation",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-first-audio-nondiscriminating"
+      ]
+    },
+    {
+      "id": "obs-blood-f82-unambiguous",
+      "type": "observation",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "obs-blood-f81-first-mark",
+      "type": "observation",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "obs-blood-f68-shirt-motion",
+      "type": "observation",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "met-frame-timing",
+      "type": "method",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "mea-magclip-pixels-x",
+      "type": "measurement",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-pcb-dimensional-44mm-support"
+      ]
+    },
+    {
+      "id": "mea-blood-f82-time",
+      "type": "measurement",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "mea-blood-f81-time",
+      "type": "measurement",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "mea-blood-f68-time",
+      "type": "measurement",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "der-blood-delay-unambiguous",
+      "type": "derivation",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "der-blood-delay-firstmark",
+      "type": "derivation",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "clm-petn-case-rupture-internals",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-component-ejection-pcb-battery-magnet"
+      ]
+    },
+    {
+      "id": "clm-pcb-visible-shape-support",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "clm-pcb-video-falling-support",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "clm-pcb-dimensional-30x28-support",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "clm-pcb-color-support",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-pcb-object-identity"
+      ]
+    },
+    {
+      "id": "clm-optflow-pressure-signature",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-radial-internal-pressure"
+      ]
+    },
+    {
+      "id": "clm-itd-nearfield-only",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-itd-geometric-proof"
+      ]
+    },
+    {
+      "id": "clm-exclusion-not-attribution",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-shaped-charge-13-of-13"
+      ]
+    },
+    {
+      "id": "clm-4940-van-association",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel"
+      ]
+    },
+    {
+      "id": "clm-4940-strouhal",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel"
+      ]
+    },
+    {
+      "id": "clm-4940-cavitation-confirmation",
+      "type": "claim",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel"
+      ]
+    },
+    {
+      "id": "bur-theory-mutation-evidence",
+      "type": "burden",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel"
+      ]
+    },
+    {
+      "id": "bur-optflow-energy-bridge",
+      "type": "burden",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-optflow-energy-distribution"
+      ]
+    },
+    {
+      "id": "bur-gel-source-identification",
+      "type": "burden",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-4940-ballistic-gel"
+      ]
+    },
+    {
+      "id": "bur-evidence-strength-definition",
+      "type": "burden",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-shaped-charge-13-of-13"
+      ]
+    },
+    {
+      "id": "bur-blood-timezero",
+      "type": "burden",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    },
+    {
+      "id": "bur-13of13-definition",
+      "type": "burden",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-shaped-charge-13-of-13"
+      ]
+    },
+    {
+      "id": "asm-blood-f68-vascular-breach",
+      "type": "assumption",
+      "downstream_claim_count": 1,
+      "downstream_claims": [
+        "clm-blood-delay-429-461"
+      ]
+    }
+  ]
+}

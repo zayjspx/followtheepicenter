@@ -1,0 +1,22 @@
+schema_version: 1
+records:
+  - review_state: reviewed
+    id: aud-physical-width
+    kind: physical_quantity
+    node: inf-width
+    entity: marker
+    quantity: width
+    scope: frame-68-coplanar
+    unit: mm
+  - review_state: reviewed
+    id: aud-pixel-scale
+    kind: calibration
+    method: met-scale
+    input: mea-pixels
+    output: inf-width
+    entity: marker
+    scope: frame-68-coplanar
+    input_unit: px
+    output_unit: mm
+    scale: 0.3
+    offset: 0

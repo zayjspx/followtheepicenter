@@ -1,0 +1,77 @@
+{
+  "schema": "interrogation-system.topology-completion-receipt.v1",
+  "date": "2026-09-26",
+  "base": "Bray Core Corpus v0.1 / Slice 2",
+  "before_records": 209,
+  "after_records": 387,
+  "added_records": 178,
+  "before_counts": {
+    "records": 209,
+    "assumption": 12,
+    "burden": 12,
+    "claim": 33,
+    "derivation": 6,
+    "diagnostic": 4,
+    "edge": 34,
+    "lock": 41,
+    "measurement": 15,
+    "method": 9,
+    "observation": 11,
+    "ratchet": 10,
+    "receipt": 15,
+    "source": 4,
+    "theory": 3,
+    "escape": 0
+  },
+  "after_counts": {
+    "assumption": 13,
+    "burden": 21,
+    "claim": 41,
+    "derivation": 8,
+    "diagnostic": 4,
+    "edge": 137,
+    "escape": 9,
+    "lock": 68,
+    "measurement": 18,
+    "method": 9,
+    "observation": 14,
+    "ratchet": 19,
+    "receipt": 19,
+    "source": 4,
+    "theory": 3
+  },
+  "implemented": [
+    "master current-theory ratchet",
+    "meta evidentiary-strength ratchet",
+    "meta evidence-independence ratchet",
+    "theory-evolution ratchet",
+    "device-output taxonomy and chronology ratchet",
+    "component differential-response ratchet",
+    "energy/impulse bookkeeping ratchet",
+    "blood time-zero ratchet",
+    "blood photographic-detectability ratchet",
+    "nine reusable response/escape pattern nodes",
+    "full cross-ratchet trigger/convergence/escape edges",
+    "fuller claim dependency/support/required-burden edge compilation",
+    "burden inheritance/topology analysis code",
+    "dependency blast-radius generator",
+    "baseline interrogation-order compiler",
+    "synthesis bridge claims for five acoustic sources and coordinated multi-source conclusion"
+  ],
+  "generated_outputs_expected_after_compile": [
+    "topology.json",
+    "dependency-blast-radius.json",
+    "interrogation-order.json"
+  ],
+  "static_validation": {
+    "errors": 0,
+    "warnings": 0,
+    "record_count": 387
+  },
+  "runtime_compile_status": "deferred: current sandbox has no local tsx executable; operator environment may run npm ci && npm run compile",
+  "notes": [
+    "No truth score or actor credibility score added.",
+    "Blast radius is structural dependency only; it does not declare downstream claims false.",
+    "New rescue mechanisms are represented by added graph structure/burdens, not a numeric penalty."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slice": 3,
+  "status": "implemented_source_pending_operator_build_smoke",
+  "implemented": [
+    "public GitHub Pages React application",
+    "hash permalink router",
+    "focused semantic graph explorer",
+    "claim browser and node detail pages",
+    "receipt and preserved-source pages",
+    "WHY upstream provenance traversal",
+    "WHAT DEPENDS ON THIS downstream dependency traversal",
+    "diagnostics view separating reviewed records from machine-proposed candidates",
+    "ratchet index using structural interrogation order",
+    "ratchet detail with locks, seven response branches, convergence burdens, activators, callbacks and response patterns",
+    "static graph search",
+    "production compiler mirror from dist-data to public/data",
+    "GitHub Pages build/deploy workflow"
+  ],
+  "not_implemented": [
+    "operator live interrogation runtime",
+    "session event log controls",
+    "commitment ledger controls",
+    "tangent parking controls",
+    "real-time audience synchronization",
+    "session replay UI"
+  ],
+  "environment_note": "No npm install/build smoke test was required in this environment. TypeScript/TSX source was parsed with the available TypeScript compiler and produced zero syntax diagnostics. Run npm ci && npm run build on disk.",
+  "architecture_variance": "Cytoscape.js was not added because registry retrieval timed out. The public graph uses a dependency-free focused SVG renderer over the unchanged compiled graph contract. See docs/slice-3-architecture-conflicts.md."
+}

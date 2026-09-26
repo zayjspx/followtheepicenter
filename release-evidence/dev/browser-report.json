@@ -1,0 +1,124 @@
+{
+  "base": "http://127.0.0.1:5173/",
+  "label": "dev",
+  "started_at": "2026-09-26T19:37:06.443Z",
+  "checks": [
+    {
+      "name": "home renders"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-itd-nearfield"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-4940-provenance"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-pcb-dimensions"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-pcb-color"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-radial-pressure"
+    },
+    {
+      "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-13of13-meaning"
+    },
+    {
+      "name": "direct guided route isolation"
+    },
+    {
+      "name": "claim detail, WHY and downstream blast radius"
+    },
+    {
+      "name": "focused graph, two-hop expansion, node selection and graph search"
+    },
+    {
+      "name": "substantial downstream and WHY link traversal",
+      "details": {
+        "downstream_links": 4
+      }
+    },
+    {
+      "name": "receipt quote and preserved source link"
+    },
+    {
+      "name": "local evidence asset: src-bray-social-petn-05g",
+      "details": {
+        "url": "http://127.0.0.1:5173/evidence/bray/bray-petn-05g.png",
+        "status": 200
+      }
+    },
+    {
+      "name": "local evidence asset: src-bray-social-petn-recoil-05g",
+      "details": {
+        "url": "http://127.0.0.1:5173/evidence/bray/bray-petn-recoil-05g.png",
+        "status": 200
+      }
+    },
+    {
+      "name": "local evidence asset: src-epicenter-main-20260701",
+      "details": {
+        "url": "http://127.0.0.1:5173/evidence/bray/epicenter-july-archive.html",
+        "status": 200
+      }
+    },
+    {
+      "name": "local evidence asset: src-epicenter-main-20260926",
+      "details": {
+        "url": "http://127.0.0.1:5173/evidence/bray/epicenter-current.html",
+        "status": 200
+      }
+    },
+    {
+      "name": "evidence index"
+    },
+    {
+      "name": "diagnostics render candidate/review distinction"
+    },
+    {
+      "name": "ratchet index and detail"
+    },
+    {
+      "name": "search and result navigation"
+    },
+    {
+      "name": "operator classification, commitment ledger and conflict callback"
+    },
+    {
+      "name": "parking tangent preserves active lock"
+    },
+    {
+      "name": "operator export and import",
+      "details": {
+        "events": 10
+      }
+    },
+    {
+      "name": "replay timeline, scrubber, event reconstruction and import"
+    },
+    {
+      "name": "mobile home and guided layout fit viewport"
+    },
+    {
+      "name": "hash permalink reload at served base"
+    },
+    {
+      "name": "no app console errors, page errors or failed HTTP responses"
+    }
+  ],
+  "errors": [],
+  "http_errors": [],
+  "screenshots": [
+    "home.png",
+    "guided.png",
+    "graph.png",
+    "operator.png",
+    "replay.png",
+    "mobile-home.png",
+    "mobile-guided.png"
+  ],
+  "browser": "153.0.8010.48",
+  "status": "passed",
+  "finished_at": "2026-09-26T19:38:50.069Z"
+}

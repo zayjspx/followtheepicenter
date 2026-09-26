@@ -1,0 +1,165 @@
+{
+  "schema_version": 2,
+  "build_id": "a32343f7f4e98af18783b83a8a855681360149408da46fd80c5600a498699749",
+  "graph_fingerprint": "6a269dd1dbf470ec0bb88d8cc29937b2a2618da9581a31fb67a5b76c29c0c88d",
+  "nodes": {
+    "inf-width": {
+      "direct": [
+        "mea-pixels"
+      ],
+      "ancestors": [
+        "mea-pixels",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "941fa03b038269c9e7e46dd7c357df8ab536ab09bce094497b3659d27ca5cd12"
+    },
+    "mea-pixels": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width"
+      ],
+      "fingerprint": "9df26b0cc3205b17b3d7ab75b4e375b630853e7b55bbce919a3e0bba4ec06d64"
+    },
+    "met-read": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width",
+        "mea-pixels"
+      ],
+      "fingerprint": "ee052e0440cf2413091b8ff9aff0986e32fa898fc5b695cfa4f9a8d58d2c7c26"
+    },
+    "obs-record": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width",
+        "mea-pixels"
+      ],
+      "fingerprint": "22e567a80da2720522c77a8d07eeff572d2dfaf0e2082fdc8bed71e02be1aaec"
+    },
+    "rec-record": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width",
+        "mea-pixels",
+        "obs-record"
+      ],
+      "fingerprint": "cd4b07676773b2316cec0808b574f600e48d24c39dd3220b8c2ab08e193b6aae"
+    },
+    "src-record": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width",
+        "mea-pixels",
+        "met-read",
+        "obs-record",
+        "rec-record"
+      ],
+      "fingerprint": "5e02a425c1c56a6781aabcfb1b9bb481a17be5f0678af0cfc225a900519cfa7f"
+    }
+  },
+  "links": [
+    {
+      "from": "inf-width",
+      "to": "mea-pixels",
+      "via": {
+        "kind": "field",
+        "id": "inf-width",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "mea-pixels",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "mea-pixels",
+        "field": "method"
+      }
+    },
+    {
+      "from": "mea-pixels",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "mea-pixels",
+        "field": "observed_from"
+      }
+    },
+    {
+      "from": "met-read",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-read",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "obs-record",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-record",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "rec-record",
+        "field": "source"
+      }
+    }
+  ],
+  "content_fingerprint": "12222a4cffcd4fd658e8b6efbb82156e6cf395ffe5a9163742341f851df668b4"
+}

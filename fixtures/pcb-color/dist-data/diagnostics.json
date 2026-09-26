@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "engine_version": "slice-2-v1",
+  "build_id": "be593aac7a5dfa88d137a55c98f2534d3a481f94f7636a4f859b0a3686d4c24b",
+  "graph_fingerprint": "2fe22fe41f98adbdbddb8befd91380fb08df7dfbb9aae48fc4e54fa63e355c83",
+  "detectors": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "pseudo_independence",
+    "assumption_laundering",
+    "missing_calibration",
+    "active_claim_conflict"
+  ],
+  "candidates": [
+    {
+      "id": "dgn-candidate-55d6b21d72fa31606153576a",
+      "detector": "arithmetic_contradiction",
+      "diagnostic_type": "arithmetic_error",
+      "status": "candidate",
+      "review_state": "machine_proposed",
+      "triggering_nodes": [
+        "clm-exceeds",
+        "mea-object",
+        "mea-shirt"
+      ],
+      "triggering_edges": [],
+      "triggering_annotations": [
+        "aud-ratio"
+      ],
+      "dependency_paths": [
+        {
+          "nodes": [
+            "clm-exceeds",
+            "mea-object"
+          ],
+          "steps": [
+            {
+              "from": "clm-exceeds",
+              "to": "mea-object",
+              "via": {
+                "kind": "annotation",
+                "id": "aud-ratio",
+                "field": "left"
+              }
+            }
+          ]
+        },
+        {
+          "nodes": [
+            "clm-exceeds",
+            "mea-shirt"
+          ],
+          "steps": [
+            {
+              "from": "clm-exceeds",
+              "to": "mea-shirt",
+              "via": {
+                "kind": "annotation",
+                "id": "aud-ratio",
+                "field": "right"
+              }
+            }
+          ]
+        }
+      ],
+      "explanation": "The authored numeric relation does not hold: 0.567 gt 0.718 (1, tolerance 0).",
+      "evidence": {
+        "left": 0.567,
+        "right": 0.718,
+        "unit": "1",
+        "operator": "gt",
+        "tolerance": 0,
+        "relation_holds": false
+      },
+      "fingerprint": "896990195a093a8ba04c0df6ecaeaff9cfa6620f67a0d2d277579ab29648efb2"
+    }
+  ],
+  "fingerprint": "28a4462dc246b07879a08b6cbcdac01fa9884f9b8c951cb11e3c277fa7f44292"
+}

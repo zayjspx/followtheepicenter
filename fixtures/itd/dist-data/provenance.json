@@ -1,0 +1,293 @@
+{
+  "schema_version": 2,
+  "build_id": "309639f350789e8ed6013fb9bd66153527bee3e52cd82379dfa36636c21f1451",
+  "graph_fingerprint": "14061940148d90b0000f3f80c2a5dd8bfb1e87143c30917dbf11818c33f3c883",
+  "nodes": {
+    "asm-phone-baseline-39mm": {
+      "direct": [
+        "rec-itd-inputs"
+      ],
+      "ancestors": [
+        "rec-itd-inputs",
+        "src-itd-synthetic"
+      ],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [
+        "der-itd-max",
+        "edg-itd-baseline"
+      ],
+      "fingerprint": "accb12371f8b55e7f3a92df1fbe01db9b491d15a13b414f853f88fa9e6d2b879"
+    },
+    "der-itd-max": {
+      "direct": [
+        "asm-phone-baseline-39mm",
+        "inv-plane-wave-itd",
+        "rec-itd-inputs"
+      ],
+      "ancestors": [
+        "asm-phone-baseline-39mm",
+        "inv-plane-wave-itd",
+        "rec-itd-inputs",
+        "src-itd-synthetic"
+      ],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [
+        "edg-itd-baseline"
+      ],
+      "fingerprint": "c067a45f7a7e9903ff829d4c81ff3ad6022a095b8dc7fad0316859771d1e8ce5"
+    },
+    "edg-itd-baseline": {
+      "direct": [
+        "asm-phone-baseline-39mm",
+        "der-itd-max",
+        "rec-itd-inputs"
+      ],
+      "ancestors": [
+        "asm-phone-baseline-39mm",
+        "der-itd-max",
+        "inv-plane-wave-itd",
+        "rec-itd-inputs",
+        "src-itd-synthetic"
+      ],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [],
+      "fingerprint": "7ff297bcb7847dff7fc0570e81964ddca40e154117f0814f1aeae1fd617103f5"
+    },
+    "inv-plane-wave-itd": {
+      "direct": [
+        "src-itd-synthetic"
+      ],
+      "ancestors": [
+        "src-itd-synthetic"
+      ],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [
+        "der-itd-max",
+        "edg-itd-baseline"
+      ],
+      "fingerprint": "c7c1724a2d43e139e35eca50e52bd6740ce4e73bae7ad3b3d35372cfa6a5558d"
+    },
+    "mea-itd-reported": {
+      "direct": [
+        "met-fixture-transcription",
+        "obs-itd-reported"
+      ],
+      "ancestors": [
+        "met-fixture-transcription",
+        "obs-itd-reported",
+        "rec-itd-inputs",
+        "src-itd-synthetic"
+      ],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [],
+      "fingerprint": "d383da213d572554556257f8950126f548eb687186890ede8ee1a417ebb482ec"
+    },
+    "met-fixture-transcription": {
+      "direct": [
+        "src-itd-synthetic"
+      ],
+      "ancestors": [
+        "src-itd-synthetic"
+      ],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [
+        "mea-itd-reported"
+      ],
+      "fingerprint": "9491f758b6b48bdec87f7b9aae40696393f3fdb1f967dc090a05d0ba5a840fdd"
+    },
+    "obs-itd-reported": {
+      "direct": [
+        "rec-itd-inputs"
+      ],
+      "ancestors": [
+        "rec-itd-inputs",
+        "src-itd-synthetic"
+      ],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [
+        "mea-itd-reported"
+      ],
+      "fingerprint": "4c7c9c0ac30b3fb2223a81f9f3e189cff88a8df6706190ffd1ca0a2887e58dc6"
+    },
+    "rec-itd-inputs": {
+      "direct": [
+        "src-itd-synthetic"
+      ],
+      "ancestors": [
+        "src-itd-synthetic"
+      ],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [
+        "asm-phone-baseline-39mm",
+        "der-itd-max",
+        "edg-itd-baseline",
+        "mea-itd-reported",
+        "obs-itd-reported"
+      ],
+      "fingerprint": "92cc2585ce2aecf10846fc813e80fb9f7f205e631808b3f06631125bed94c595"
+    },
+    "src-itd-synthetic": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-itd-synthetic"
+      ],
+      "descendants": [
+        "asm-phone-baseline-39mm",
+        "der-itd-max",
+        "edg-itd-baseline",
+        "inv-plane-wave-itd",
+        "mea-itd-reported",
+        "met-fixture-transcription",
+        "obs-itd-reported",
+        "rec-itd-inputs"
+      ],
+      "fingerprint": "30488d6594b587814e2f4df085aadd9a4488f652f0afeebb9623c369f04e9775"
+    }
+  },
+  "links": [
+    {
+      "from": "asm-phone-baseline-39mm",
+      "to": "rec-itd-inputs",
+      "via": {
+        "kind": "field",
+        "id": "asm-phone-baseline-39mm",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "der-itd-max",
+      "to": "asm-phone-baseline-39mm",
+      "via": {
+        "kind": "edge",
+        "id": "edg-itd-baseline",
+        "field": "assumes"
+      }
+    },
+    {
+      "from": "der-itd-max",
+      "to": "asm-phone-baseline-39mm",
+      "via": {
+        "kind": "field",
+        "id": "der-itd-max",
+        "field": "inputs.baseline"
+      }
+    },
+    {
+      "from": "der-itd-max",
+      "to": "inv-plane-wave-itd",
+      "via": {
+        "kind": "field",
+        "id": "der-itd-max",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "der-itd-max",
+      "to": "rec-itd-inputs",
+      "via": {
+        "kind": "edge",
+        "id": "edg-itd-baseline",
+        "field": "rationale_dependency"
+      }
+    },
+    {
+      "from": "edg-itd-baseline",
+      "to": "asm-phone-baseline-39mm",
+      "via": {
+        "kind": "field",
+        "id": "edg-itd-baseline",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-itd-baseline",
+      "to": "der-itd-max",
+      "via": {
+        "kind": "field",
+        "id": "edg-itd-baseline",
+        "field": "from"
+      }
+    },
+    {
+      "from": "edg-itd-baseline",
+      "to": "rec-itd-inputs",
+      "via": {
+        "kind": "field",
+        "id": "edg-itd-baseline",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "inv-plane-wave-itd",
+      "to": "src-itd-synthetic",
+      "via": {
+        "kind": "field",
+        "id": "inv-plane-wave-itd",
+        "field": "references"
+      }
+    },
+    {
+      "from": "mea-itd-reported",
+      "to": "met-fixture-transcription",
+      "via": {
+        "kind": "field",
+        "id": "mea-itd-reported",
+        "field": "method"
+      }
+    },
+    {
+      "from": "mea-itd-reported",
+      "to": "obs-itd-reported",
+      "via": {
+        "kind": "field",
+        "id": "mea-itd-reported",
+        "field": "observed_from"
+      }
+    },
+    {
+      "from": "met-fixture-transcription",
+      "to": "src-itd-synthetic",
+      "via": {
+        "kind": "field",
+        "id": "met-fixture-transcription",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-itd-reported",
+      "to": "rec-itd-inputs",
+      "via": {
+        "kind": "field",
+        "id": "obs-itd-reported",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-itd-inputs",
+      "to": "src-itd-synthetic",
+      "via": {
+        "kind": "field",
+        "id": "rec-itd-inputs",
+        "field": "source"
+      }
+    }
+  ],
+  "content_fingerprint": "b5de6e2a305b0a637ea34c9c5635b5150c2a91562aee9e6bffc320ef783e3608"
+}

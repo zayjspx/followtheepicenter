@@ -1,0 +1,10 @@
+export type NodeRecord = Record<string, any> & { id:string; type:string; title?:string; summary?:string; status?:string; review_state?:string };
+export type EdgeRecord = NodeRecord & { type:'edge'; from:string; to:string; relation:string; rationale:string };
+export type GraphData = { schema_version:number; build_id:string; content_fingerprint:string; nodes:NodeRecord[]; edges:EdgeRecord[]; derivations:Array<Record<string,any>>; audit?:Record<string,any> };
+export type ProvenanceRecord = { direct:string[]; ancestors:string[]; source_roots:string[]; descendants:string[]; fingerprint:string };
+export type ProvenanceData = { schema_version:number; build_id:string; nodes:Record<string,ProvenanceRecord>; links:Array<Record<string,any>>; content_fingerprint?:string };
+export type DiagnosticsData = { schema_version?:number; build_id?:string; candidates:Array<Record<string,any>>; fingerprint?:string; detectors?:string[]; engine_version?:string };
+export type TopologyData = { schema_version:number; build_id:string; claim_state:Record<string,Record<string,any>>; ratchets:Record<string,Record<string,any>>; response_patterns:Record<string,Record<string,any>>; fingerprint:string };
+export type BlastRadiusData = { schema_version:number; build_id:string; records:Record<string,Record<string,any>>; fingerprint:string };
+export type InterrogationOrderData = { schema_version:number; build_id:string; baseline_order:Array<Record<string,any>>; fingerprint:string };
+export type DataBundle = { graph:GraphData; provenance:ProvenanceData; diagnostics:DiagnosticsData; topology:TopologyData; blast:BlastRadiusData; order:InterrogationOrderData };

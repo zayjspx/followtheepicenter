@@ -1,0 +1,11 @@
+schema_version: 1
+records:
+  - review_state: reviewed
+    id: aud-ratio
+    kind: comparison
+    claim: clm-exceeds
+    left: mea-object
+    right: mea-shirt
+    operator: gt
+    unit: "1"
+    tolerance: 0

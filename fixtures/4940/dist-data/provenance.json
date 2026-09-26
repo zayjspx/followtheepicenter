@@ -1,0 +1,315 @@
+{
+  "schema_version": 2,
+  "build_id": "861d4adf5ee5c81b72beae8e92262c3d0901a2bbdb8fb84f95f2db5b9bbf590e",
+  "graph_fingerprint": "23e0055dc422b22a101f0820a8e7322f067c1c31270f89e6d128c4e56bc979b7",
+  "nodes": {
+    "asm-diameter": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "der-velocity",
+        "edg-prediction",
+        "mea-frequency",
+        "obs-record"
+      ],
+      "fingerprint": "f46beb8202612316019a44df5cc397046cae32c9eab1b78e0c3455b3418e5ee1"
+    },
+    "asm-strouhal": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "der-velocity",
+        "edg-prediction",
+        "mea-frequency",
+        "obs-record"
+      ],
+      "fingerprint": "aed5c3f06935c8955d28d05deed568bc8d6f31887855bfed09a41e040cd5794e"
+    },
+    "der-velocity": {
+      "direct": [
+        "asm-diameter",
+        "asm-strouhal",
+        "mea-frequency"
+      ],
+      "ancestors": [
+        "asm-diameter",
+        "asm-strouhal",
+        "mea-frequency",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "edg-prediction",
+        "mea-frequency",
+        "obs-record"
+      ],
+      "fingerprint": "582957e08edf0baf9243bc95f6647387997bda97845adac9d8f4719439c0a6ca"
+    },
+    "edg-prediction": {
+      "direct": [
+        "der-velocity",
+        "obs-record"
+      ],
+      "ancestors": [
+        "asm-diameter",
+        "asm-strouhal",
+        "der-velocity",
+        "mea-frequency",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "8269cd969449a4d219ec6470c258bd1f1a757c2b7b0c299326ceff9669514185"
+    },
+    "mea-frequency": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "asm-diameter",
+        "asm-strouhal",
+        "der-velocity",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "der-velocity",
+        "edg-prediction",
+        "obs-record"
+      ],
+      "fingerprint": "582957e08edf0baf9243bc95f6647387997bda97845adac9d8f4719439c0a6ca"
+    },
+    "met-read": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "der-velocity",
+        "edg-prediction",
+        "mea-frequency",
+        "obs-record"
+      ],
+      "fingerprint": "c11af869335524daa9812058cde23466794e777bc726ba77f07bda0e31141cb8"
+    },
+    "obs-record": {
+      "direct": [
+        "der-velocity",
+        "rec-record"
+      ],
+      "ancestors": [
+        "asm-diameter",
+        "asm-strouhal",
+        "der-velocity",
+        "mea-frequency",
+        "met-read",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "der-velocity",
+        "edg-prediction",
+        "mea-frequency"
+      ],
+      "fingerprint": "582957e08edf0baf9243bc95f6647387997bda97845adac9d8f4719439c0a6ca"
+    },
+    "rec-record": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "asm-diameter",
+        "asm-strouhal",
+        "der-velocity",
+        "edg-prediction",
+        "mea-frequency",
+        "obs-record"
+      ],
+      "fingerprint": "00fa9f46becb20ed6bfa28fc0047af135568788303c63473211d28f574fff808"
+    },
+    "src-record": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "asm-diameter",
+        "asm-strouhal",
+        "der-velocity",
+        "edg-prediction",
+        "mea-frequency",
+        "met-read",
+        "obs-record",
+        "rec-record"
+      ],
+      "fingerprint": "3b4bf4ce23e45d0014eeb2690a3070a275287678a801dd3245ea10736f82c787"
+    }
+  },
+  "links": [
+    {
+      "from": "asm-diameter",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "asm-diameter",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "asm-strouhal",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "asm-strouhal",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "der-velocity",
+      "to": "asm-diameter",
+      "via": {
+        "kind": "field",
+        "id": "der-velocity",
+        "field": "inputs.diameter"
+      }
+    },
+    {
+      "from": "der-velocity",
+      "to": "asm-strouhal",
+      "via": {
+        "kind": "field",
+        "id": "der-velocity",
+        "field": "inputs.strouhal"
+      }
+    },
+    {
+      "from": "der-velocity",
+      "to": "mea-frequency",
+      "via": {
+        "kind": "field",
+        "id": "der-velocity",
+        "field": "inputs.frequency"
+      }
+    },
+    {
+      "from": "edg-prediction",
+      "to": "der-velocity",
+      "via": {
+        "kind": "field",
+        "id": "edg-prediction",
+        "field": "to"
+      }
+    },
+    {
+      "from": "edg-prediction",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "edg-prediction",
+        "field": "from"
+      }
+    },
+    {
+      "from": "mea-frequency",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "mea-frequency",
+        "field": "method"
+      }
+    },
+    {
+      "from": "mea-frequency",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "mea-frequency",
+        "field": "observed_from"
+      }
+    },
+    {
+      "from": "met-read",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-read",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "der-velocity",
+      "via": {
+        "kind": "edge",
+        "id": "edg-prediction",
+        "field": "predicted_by"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "obs-record",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-record",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "rec-record",
+        "field": "source"
+      }
+    }
+  ],
+  "content_fingerprint": "5637a78ec7a0e3daf79095e31054aa2a7c8da73ca41b4999d0ef7ec21283d436"
+}

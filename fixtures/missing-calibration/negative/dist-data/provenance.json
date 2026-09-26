@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "build_id": "0ec41eea73991251024bdb3e3a0332b63136e27884ba4264a4db27c152476cf5",
+  "graph_fingerprint": "84c43e69106c9398a6722119e26e00dd623e6bd4aec3f936a3467644ed843144",
+  "nodes": {
+    "inf-width": {
+      "direct": [
+        "mea-pixels",
+        "met-scale"
+      ],
+      "ancestors": [
+        "mea-pixels",
+        "met-read",
+        "met-scale",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "5d48cfd32d91e894c701ba2ec40b79cc4e98f6799fa26cfe329b23d7eb9d7f9d"
+    },
+    "mea-pixels": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width"
+      ],
+      "fingerprint": "9df26b0cc3205b17b3d7ab75b4e375b630853e7b55bbce919a3e0bba4ec06d64"
+    },
+    "met-read": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width",
+        "mea-pixels"
+      ],
+      "fingerprint": "ee052e0440cf2413091b8ff9aff0986e32fa898fc5b695cfa4f9a8d58d2c7c26"
+    },
+    "met-scale": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width"
+      ],
+      "fingerprint": "3f5f04e7974acf32d616dfcbb1118ed24de1ba0c501dd53781a1463948db5ccc"
+    },
+    "obs-record": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width",
+        "mea-pixels"
+      ],
+      "fingerprint": "22e567a80da2720522c77a8d07eeff572d2dfaf0e2082fdc8bed71e02be1aaec"
+    },
+    "rec-record": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width",
+        "mea-pixels",
+        "obs-record"
+      ],
+      "fingerprint": "cd4b07676773b2316cec0808b574f600e48d24c39dd3220b8c2ab08e193b6aae"
+    },
+    "src-record": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "inf-width",
+        "mea-pixels",
+        "met-read",
+        "met-scale",
+        "obs-record",
+        "rec-record"
+      ],
+      "fingerprint": "5e02a425c1c56a6781aabcfb1b9bb481a17be5f0678af0cfc225a900519cfa7f"
+    }
+  },
+  "links": [
+    {
+      "from": "inf-width",
+      "to": "mea-pixels",
+      "via": {
+        "kind": "field",
+        "id": "inf-width",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "inf-width",
+      "to": "met-scale",
+      "via": {
+        "kind": "field",
+        "id": "inf-width",
+        "field": "depends_on"
+      }
+    },
+    {
+      "from": "mea-pixels",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "mea-pixels",
+        "field": "method"
+      }
+    },
+    {
+      "from": "mea-pixels",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "mea-pixels",
+        "field": "observed_from"
+      }
+    },
+    {
+      "from": "met-read",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-read",
+        "field": "references"
+      }
+    },
+    {
+      "from": "met-scale",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-scale",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "obs-record",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-record",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "rec-record",
+        "field": "source"
+      }
+    }
+  ],
+  "content_fingerprint": "4c5094eede2386865e5137068c27e26a6597ca3654745ca2a1f22c8fe459e7bb"
+}

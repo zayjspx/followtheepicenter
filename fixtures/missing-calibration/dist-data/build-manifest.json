@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "build_id": "a32343f7f4e98af18783b83a8a855681360149408da46fd80c5600a498699749",
+  "compiler_version": "slice-2-v1",
+  "authored_count": 6,
+  "published_count": 6,
+  "excluded_ids": [],
+  "inputs": [
+    {
+      "path": "inf-width.md",
+      "id": "inf-width",
+      "sha256": "d562f3b319a3e1ceca74bb18eb43a05de83ede02a9145de68419f9f1b016851b"
+    },
+    {
+      "path": "mea-pixels.md",
+      "id": "mea-pixels",
+      "sha256": "647f3cadb827a23d9b6b58e0611f3f162f1c945eb03bb90f083ed6f1de1ba19e"
+    },
+    {
+      "path": "met-read.md",
+      "id": "met-read",
+      "sha256": "3ecb1bb228a7a8c182415a3434749fce8cac7f37d5aeee3b0398cc965e6f3944"
+    },
+    {
+      "path": "obs-record.md",
+      "id": "obs-record",
+      "sha256": "af40e4d7848f27602727f3c8a8d8139e0afbb7d302df7565f2486a9d050db6ca"
+    },
+    {
+      "path": "rec-record.md",
+      "id": "rec-record",
+      "sha256": "c62596f00ffa5e45e6d4b0504eca51b714d8cf300f74ed55af05ab737fcdf439"
+    },
+    {
+      "path": "src-record.md",
+      "id": "src-record",
+      "sha256": "d01740f2e013ff8f78aad6f6bea0ff92a4e6947ee34b430d79063481269748b1"
+    }
+  ],
+  "integrity": {
+    "sources": [
+      {
+        "id": "src-record",
+        "sha256": "cec78f86f30cb5a63be73f372d75d9b0a90efd007431b5c0b9f5dd40566ca8ca",
+        "verification": "local_bytes_verified"
+      }
+    ],
+    "receipts": [
+      {
+        "id": "rec-record",
+        "verification": "quote_verified_at_lines"
+      }
+    ]
+  },
+  "audit_annotations_sha256": "e9179f99745c8f584d4070e641b5249f935c2ec1f3b5ac35a210b012afbe1e1d",
+  "excluded_annotation_ids": [],
+  "graph_fingerprint": "6a269dd1dbf470ec0bb88d8cc29937b2a2618da9581a31fb67a5b76c29c0c88d",
+  "scope": "Slice 2 compiler: hardened schemas, typed audit annotations and explicit provenance paths; no graph UI or runtime",
+  "audit": {
+    "engine_version": "slice-2-v1",
+    "detectors": [
+      "arithmetic_contradiction",
+      "circular_support",
+      "pseudo_independence",
+      "assumption_laundering",
+      "missing_calibration",
+      "active_claim_conflict"
+    ],
+    "candidate_count": 1,
+    "fingerprint": "b8c7ad6a723d9904fa240d6aab8a07d93f428eaa74fe7df9534ad9750557026d"
+  },
+  "topology": {
+    "fingerprint": "51a9907275d87407e25bf0ab64b95c409b2f4bf0f67e0559bdeb1e46e47d6d7b",
+    "blast_radius_fingerprint": "0dcea3ff01cac02ca718fa250011e96b2809fe55ee31b85b1fbfecfe614760e7",
+    "interrogation_order_fingerprint": "0067876f1c44f23755458903a76da6a23650fcbb5d5bafde33fb83a984904d3c"
+  }
+}

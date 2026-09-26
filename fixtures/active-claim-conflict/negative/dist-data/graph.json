@@ -1,0 +1,191 @@
+{
+  "schema_version": 2,
+  "build_id": "92c860e15553c554e2afe6b8f514625d0d13f47bf66ce0fedd70c433f7332e42",
+  "audit": {
+    "schema_version": 1,
+    "records": []
+  },
+  "nodes": [
+    {
+      "id": "clm-a",
+      "title": "clm-a",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "claim",
+      "statement": "Synthetic proposition A.",
+      "asserted_by": "synthetic-fixture",
+      "receipts": [
+        "rec-record"
+      ],
+      "theory_models": [
+        "thy-fixture"
+      ],
+      "epistemic_state": "documented",
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "clm-b",
+      "title": "clm-b",
+      "status": "withdrawn",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "claim",
+      "statement": "Synthetic proposition B.",
+      "asserted_by": "synthetic-fixture",
+      "receipts": [
+        "rec-record"
+      ],
+      "theory_models": [
+        "thy-fixture"
+      ],
+      "epistemic_state": "documented",
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "met-read",
+      "title": "met-read",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "method",
+      "procedure": "Read the synthetic fixture values, not actual media.",
+      "references": [
+        "src-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "obs-record",
+      "title": "obs-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "observation",
+      "statement": "Inspect the synthetic record record.",
+      "receipts": [
+        "rec-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "rec-record",
+      "title": "rec-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "receipt",
+      "source": "src-record",
+      "locator": {
+        "kind": "lines",
+        "start": 1,
+        "end": 1
+      },
+      "quote": "SYNTHETIC active-claim-conflict record record. No real evidence or attributed quotation.",
+      "context": "Synthetic fixture record.",
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "src-record",
+      "title": "src-record",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "source",
+      "source_type": "text",
+      "author": null,
+      "original_url": null,
+      "published_at": null,
+      "captured_at": "2026-09-26T00:00:00Z",
+      "sha256": "64a3227360fd18b13254a47af25ee2c114e840ba6d46cd9933fb050d7ed5e3a1",
+      "artifact": "public/evidence/active-claim-conflict-record.txt",
+      "redistribution": "full_local",
+      "version": {
+        "family": "active-claim-conflict-record",
+        "sequence": 1
+      },
+      "body": "\nSynthetic software acceptance fixture.\n"
+    },
+    {
+      "id": "thy-fixture",
+      "title": "thy-fixture",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "theory",
+      "valid_from": "2026-09-26",
+      "claims": [
+        "clm-a",
+        "clm-b"
+      ],
+      "receipts": [
+        "rec-record"
+      ],
+      "body": "\nSynthetic software acceptance fixture.\n"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edg-conflict",
+      "title": "edg-conflict",
+      "status": "active",
+      "review_state": "reviewed",
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "tags": [
+        "synthetic",
+        "slice-2"
+      ],
+      "summary": "Synthetic audit test data. Not evidence about any real person or event.",
+      "type": "edge",
+      "from": "clm-a",
+      "relation": "contradicts",
+      "to": "clm-b",
+      "rationale": "Explicit synthetic relationship for deterministic testing."
+    }
+  ],
+  "derivations": [],
+  "content_fingerprint": "f712e8d14842d30d0c258ea658aad2c33b6522b2101bc63434a6e2ad2001dc04"
+}

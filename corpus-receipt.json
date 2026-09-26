@@ -1,0 +1,49 @@
+{
+  "schema": "interrogation-system.corpus-receipt.v1",
+  "corpus": "Bray Core Corpus v0.1",
+  "authored_at": "2026-09-26",
+  "canonical_vault_populated": true,
+  "record_count": 209,
+  "record_counts": {
+    "source": 4,
+    "receipt": 15,
+    "observation": 11,
+    "measurement": 15,
+    "assumption": 12,
+    "method": 9,
+    "derivation": 6,
+    "claim": 33,
+    "burden": 12,
+    "diagnostic": 4,
+    "edge": 34,
+    "lock": 41,
+    "ratchet": 10,
+    "theory": 3
+  },
+  "preserved_sources": {
+    "src-epicenter-main-20260926": "9289906bc10ebc37c4ad2c2b9b80556f12506fceb3f6d1e7f6f88e65e3da802e",
+    "src-epicenter-main-20260701": "f097e03da2aa4786bc760c9720f924219ca63d276b53b9ccbbc024022a7a9563",
+    "src-bray-social-petn-05g": "271fafb09ea82c77deb1bbb9c1615153de64453029c41db960299805b359894c",
+    "src-bray-social-petn-recoil-05g": "328f444c0447dbf26d138c604fa6e6c160fa4bb1e32429fd03947cdcf1e80d55"
+  },
+  "static_validation": {
+    "status": "passed",
+    "report": "docs/bray-core-corpus-v0.1-static-validation.json",
+    "checked": [
+      "unique IDs and prefixes",
+      "typed reference existence",
+      "local source hashes",
+      "line-receipt quote containment",
+      "image-region bounds",
+      "ratchet branch closure within declared lock sets",
+      "known derivation oracles"
+    ]
+  },
+  "official_typescript_compile_run": false,
+  "reason": "Node dependencies were not installed in this environment; canonical authored corpus and static validation are complete. Run npm run compile on disk to produce current generated JSON.",
+  "expected_first_audit_candidates_after_compile": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "missing_calibration"
+  ]
+}

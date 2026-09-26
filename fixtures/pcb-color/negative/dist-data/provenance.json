@@ -1,0 +1,222 @@
+{
+  "schema_version": 2,
+  "build_id": "b6d30a1529d880961bf709a69e8fd054f4d096d5da575ee9f5b0ad012ba8b411",
+  "graph_fingerprint": "15b3edff3e20d789f088d95366a2d180d76be03811a6e02ae25f5e456b163982",
+  "nodes": {
+    "clm-exceeds": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "feeb4d0531286bcbec533905446b54098c71adc1d0f3c60131a7cf84b959ab91"
+    },
+    "mea-object": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "f7f547cebb1157f25caaf772f9392cf8f5eb46eb1b8892b924156796150ab87c"
+    },
+    "mea-shirt": {
+      "direct": [
+        "met-read",
+        "obs-record"
+      ],
+      "ancestors": [
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "a61d99b3fcdb86c3c4df637a4edc4d92845ea539ba16565a67affff9c7c2f60d"
+    },
+    "met-read": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "mea-object",
+        "mea-shirt"
+      ],
+      "fingerprint": "252da0040b2900bc70e0279363b12185f6bc4c3629973d2a9b2371c4e92b83d1"
+    },
+    "obs-record": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "mea-object",
+        "mea-shirt"
+      ],
+      "fingerprint": "138424a799296c9384b441f1b1ec8a59772d3f3390aa874f7f215b86854f6934"
+    },
+    "rec-record": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-exceeds",
+        "mea-object",
+        "mea-shirt",
+        "obs-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "09ca3c5a03c32cc85e686ba54e182f3096d087045c9dba22cb184e478056f2b3"
+    },
+    "src-record": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-exceeds",
+        "mea-object",
+        "mea-shirt",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "b80f3f3a48745bc6179a1c37a84be040b372679679090e448cd9cd5838e145f1"
+    },
+    "thy-fixture": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "c229871476c5e4b4b5151181764bc2d8639b55b14063c7ec5703ffedb0c831de"
+    }
+  },
+  "links": [
+    {
+      "from": "clm-exceeds",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "clm-exceeds",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "mea-object",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "mea-object",
+        "field": "method"
+      }
+    },
+    {
+      "from": "mea-object",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "mea-object",
+        "field": "observed_from"
+      }
+    },
+    {
+      "from": "mea-shirt",
+      "to": "met-read",
+      "via": {
+        "kind": "field",
+        "id": "mea-shirt",
+        "field": "method"
+      }
+    },
+    {
+      "from": "mea-shirt",
+      "to": "obs-record",
+      "via": {
+        "kind": "field",
+        "id": "mea-shirt",
+        "field": "observed_from"
+      }
+    },
+    {
+      "from": "met-read",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-read",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "obs-record",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-record",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "rec-record",
+        "field": "source"
+      }
+    },
+    {
+      "from": "thy-fixture",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "thy-fixture",
+        "field": "receipts"
+      }
+    }
+  ],
+  "content_fingerprint": "bdf52f2c625595fd61bbca8aa397c5c85d5bbd5d39f1d4ed9d6f6eebae7be3c6"
+}

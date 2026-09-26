@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "build_id": "92c860e15553c554e2afe6b8f514625d0d13f47bf66ce0fedd70c433f7332e42",
+  "records": {
+    "clm-a": {
+      "type": "claim",
+      "downstream_claims": [],
+      "downstream_burdens": [],
+      "downstream_diagnostics": [],
+      "downstream_ratchets": [],
+      "descendant_count": 1,
+      "note": "Dependency blast radius is structural ancestry, not a claim that descendants become false if this node changes."
+    },
+    "clm-b": {
+      "type": "claim",
+      "downstream_claims": [],
+      "downstream_burdens": [],
+      "downstream_diagnostics": [],
+      "downstream_ratchets": [],
+      "descendant_count": 1,
+      "note": "Dependency blast radius is structural ancestry, not a claim that descendants become false if this node changes."
+    },
+    "met-read": {
+      "type": "method",
+      "downstream_claims": [],
+      "downstream_burdens": [],
+      "downstream_diagnostics": [],
+      "downstream_ratchets": [],
+      "descendant_count": 0,
+      "note": "Dependency blast radius is structural ancestry, not a claim that descendants become false if this node changes."
+    },
+    "obs-record": {
+      "type": "observation",
+      "downstream_claims": [],
+      "downstream_burdens": [],
+      "downstream_diagnostics": [],
+      "downstream_ratchets": [],
+      "descendant_count": 0,
+      "note": "Dependency blast radius is structural ancestry, not a claim that descendants become false if this node changes."
+    },
+    "rec-record": {
+      "type": "receipt",
+      "downstream_claims": [
+        "clm-a",
+        "clm-b"
+      ],
+      "downstream_burdens": [],
+      "downstream_diagnostics": [],
+      "downstream_ratchets": [],
+      "descendant_count": 5,
+      "note": "Dependency blast radius is structural ancestry, not a claim that descendants become false if this node changes."
+    },
+    "src-record": {
+      "type": "source",
+      "downstream_claims": [
+        "clm-a",
+        "clm-b"
+      ],
+      "downstream_burdens": [],
+      "downstream_diagnostics": [],
+      "downstream_ratchets": [],
+      "descendant_count": 7,
+      "note": "Dependency blast radius is structural ancestry, not a claim that descendants become false if this node changes."
+    },
+    "thy-fixture": {
+      "type": "theory",
+      "downstream_claims": [],
+      "downstream_burdens": [],
+      "downstream_diagnostics": [],
+      "downstream_ratchets": [],
+      "descendant_count": 0,
+      "note": "Dependency blast radius is structural ancestry, not a claim that descendants become false if this node changes."
+    }
+  },
+  "fingerprint": "4517d2a435809c502dce6434ddb833f5d5444b710f76e0b65980115f50e715ed"
+}

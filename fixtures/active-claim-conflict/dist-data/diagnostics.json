@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "engine_version": "slice-2-v1",
+  "build_id": "182f499d6943f98af9ca1d71249c37281b9b8f9f11aff584251736f2d7f0b55f",
+  "graph_fingerprint": "4faba5590c5140f47fafac8b0c1649d67c5a8b604221f8e8ce2ceb978cdeb78c",
+  "detectors": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "pseudo_independence",
+    "assumption_laundering",
+    "missing_calibration",
+    "active_claim_conflict"
+  ],
+  "candidates": [
+    {
+      "id": "dgn-candidate-b1b37b5cc563a7c48ab448c4",
+      "detector": "active_claim_conflict",
+      "diagnostic_type": "hard_contradiction",
+      "status": "candidate",
+      "review_state": "machine_proposed",
+      "triggering_nodes": [
+        "clm-a",
+        "clm-b"
+      ],
+      "triggering_edges": [
+        "edg-conflict"
+      ],
+      "triggering_annotations": [],
+      "dependency_paths": [
+        {
+          "nodes": [
+            "clm-a",
+            "clm-b"
+          ],
+          "steps": [
+            {
+              "from": "clm-a",
+              "to": "clm-b",
+              "via": {
+                "kind": "edge",
+                "id": "edg-conflict",
+                "field": "contradicts"
+              }
+            }
+          ]
+        }
+      ],
+      "explanation": "Reviewed active claims have an explicit reviewed contradiction relation or disjoint typed value intervals for the same defined entity, quantity and scope. No prose contradiction was inferred.",
+      "evidence": {
+        "reasons": [
+          {
+            "contradiction_edge": "edg-conflict"
+          }
+        ]
+      },
+      "fingerprint": "b3cb4042566e3ba46cdcf101a56e9b7c727ca9157d5f4a540ebc69cb563ac72e"
+    }
+  ],
+  "fingerprint": "8fc97d8c55f384d9d7c961d87ed865b4f7abe3a9623f3ccb8e49d19d25c53343"
+}

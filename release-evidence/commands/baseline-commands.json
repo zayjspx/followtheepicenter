@@ -1,0 +1,27 @@
+[
+  {
+    "command": "npm run compile",
+    "started_at": "2026-09-26T19:08:48.0142925Z",
+    "exit_code": 1
+  },
+  {
+    "command": "npm run test",
+    "started_at": "2026-09-26T19:09:02.6678473Z",
+    "exit_code": 0
+  },
+  {
+    "command": "npm run build",
+    "started_at": "2026-09-26T19:09:37.5627197Z",
+    "exit_code": 1
+  },
+  {
+    "command": "npm run typecheck",
+    "started_at": "2026-09-26T19:09:58.8201979Z",
+    "exit_code": 0
+  },
+  {
+    "command": "npm run verify",
+    "started_at": "2026-09-26T19:10:20.2222467Z",
+    "exit_code": 1
+  }
+]

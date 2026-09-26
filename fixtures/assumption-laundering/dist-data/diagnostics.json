@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "engine_version": "slice-2-v1",
+  "build_id": "22b736790eb741d8510fcce483e6d42bca8b2f793bb4736df6e25ed6143c75de",
+  "graph_fingerprint": "41c862268791234cad004729e6d031b9b24107ff684d46b4aefb86b2dc96d418",
+  "detectors": [
+    "arithmetic_contradiction",
+    "circular_support",
+    "pseudo_independence",
+    "assumption_laundering",
+    "missing_calibration",
+    "active_claim_conflict"
+  ],
+  "candidates": [
+    {
+      "id": "dgn-candidate-316add65c23c2d03a4281c22",
+      "detector": "assumption_laundering",
+      "diagnostic_type": "assumption_laundering",
+      "status": "candidate",
+      "review_state": "machine_proposed",
+      "triggering_nodes": [
+        "asm-speed",
+        "clm-speed",
+        "mea-speed"
+      ],
+      "triggering_edges": [
+        "edg-origin",
+        "edg-support"
+      ],
+      "triggering_annotations": [
+        "aud-independent-speed"
+      ],
+      "dependency_paths": [
+        {
+          "nodes": [
+            "clm-speed",
+            "mea-speed",
+            "asm-speed"
+          ],
+          "steps": [
+            {
+              "from": "clm-speed",
+              "to": "mea-speed",
+              "via": {
+                "kind": "edge",
+                "id": "edg-support",
+                "field": "supports"
+              }
+            },
+            {
+              "from": "mea-speed",
+              "to": "asm-speed",
+              "via": {
+                "kind": "edge",
+                "id": "edg-origin",
+                "field": "derived_from"
+              }
+            }
+          ]
+        }
+      ],
+      "explanation": "Support explicitly represented as independently measured has an assumption or derivation in its ancestry. Review the claimed independence; ancestry is not itself a finding that the value is false.",
+      "evidence": {
+        "independent_support_edge": "edg-support",
+        "origins": [
+          "asm-speed"
+        ]
+      },
+      "fingerprint": "8584153fde7762a8a8ee9eff30c520fe1496235eaf574ec290f437d084f42b94"
+    }
+  ],
+  "fingerprint": "336022a60e0bfb7e26f5e43121eeed00dd9c4d91f1058b3d3ed290109198cbaa"
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "build_id": "83127f44fedfc8d93ec70cb1472dc154d59a095c2aece3afc8c38dc6aa6a20ae",
+  "graph_fingerprint": "9130773097aac08571a212183a7ee4e26a109c0b342ca87a2fefa8b90eb7383c",
+  "nodes": {
+    "clm-width-a": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "1002233be3baba019b1089df8089422c2c4f3bf498b70971b414ebe46f1a7480"
+    },
+    "clm-width-b": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "7caf607334cef66a16f032078736e990841f3581e406fd37274b0cb92be3330e"
+    },
+    "met-read": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "8cf86530bc3783964f24026186c42e6b3ee508b336ea6918f1605f80f553638c"
+    },
+    "obs-record": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "d4eff0f89ee47eed6bdf6d20a439fccb8dac48e6f0823c9ec9821e98cb676082"
+    },
+    "rec-record": {
+      "direct": [
+        "src-record"
+      ],
+      "ancestors": [
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-width-a",
+        "clm-width-b",
+        "obs-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "2782976a13b5e99c2efa4f5c3209a370132c29ff3af2cd9ee53bdfb131af6ace"
+    },
+    "src-record": {
+      "direct": [],
+      "ancestors": [],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [
+        "clm-width-a",
+        "clm-width-b",
+        "met-read",
+        "obs-record",
+        "rec-record",
+        "thy-fixture"
+      ],
+      "fingerprint": "f193e803f5e7f2f7f9b7d2d2ddc39a9241eb14f6a6364476a6ca794e1c6faa17"
+    },
+    "thy-fixture": {
+      "direct": [
+        "rec-record"
+      ],
+      "ancestors": [
+        "rec-record",
+        "src-record"
+      ],
+      "source_roots": [
+        "src-record"
+      ],
+      "descendants": [],
+      "fingerprint": "426806686a9b8fb614cf170b279cd57ff5c482339d341c690d8c774690663e83"
+    }
+  },
+  "links": [
+    {
+      "from": "clm-width-a",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "clm-width-a",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "clm-width-b",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "clm-width-b",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "met-read",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "met-read",
+        "field": "references"
+      }
+    },
+    {
+      "from": "obs-record",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "obs-record",
+        "field": "receipts"
+      }
+    },
+    {
+      "from": "rec-record",
+      "to": "src-record",
+      "via": {
+        "kind": "field",
+        "id": "rec-record",
+        "field": "source"
+      }
+    },
+    {
+      "from": "thy-fixture",
+      "to": "rec-record",
+      "via": {
+        "kind": "field",
+        "id": "thy-fixture",
+        "field": "receipts"
+      }
+    }
+  ],
+  "content_fingerprint": "203e01359d33d6c2605c89f3f2c010c948ce1616e2d494adc0befaa83598d562"
+}

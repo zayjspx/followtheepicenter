@@ -1,0 +1,784 @@
+{
+  "status": "locally_verified_release_candidate",
+  "release": "RC1",
+  "recorded_at": "2026-09-26T19:54:50.516Z",
+  "authority": {
+    "archive": "interrogation-system-slice-5-self-guided-debunker.zip",
+    "sha256": "858f1a46be15d16969e0e777b7dfe82981f70012bc12b00ff2e7fa9d7df6c67c",
+    "work_order": "Release Candidate Integration Pass"
+  },
+  "environment": {
+    "node": "v24.18.0",
+    "npm": "11.16.0",
+    "platform": "win32",
+    "architecture": "x64",
+    "browser": "153.0.8010.48",
+    "browser_tool": "Bundled Playwright driving installed Chrome; isolated headless contexts; screenshots visually inspected"
+  },
+  "baseline": {
+    "checks": [
+      {
+        "command": "npm run compile",
+        "started_at": "2026-09-26T19:08:48.0142925Z",
+        "exit_code": 1
+      },
+      {
+        "command": "npm run test",
+        "started_at": "2026-09-26T19:09:02.6678473Z",
+        "exit_code": 0
+      },
+      {
+        "command": "npm run build",
+        "started_at": "2026-09-26T19:09:37.5627197Z",
+        "exit_code": 1
+      },
+      {
+        "command": "npm run typecheck",
+        "started_at": "2026-09-26T19:09:58.8201979Z",
+        "exit_code": 0
+      },
+      {
+        "command": "npm run verify",
+        "started_at": "2026-09-26T19:10:20.2222467Z",
+        "exit_code": 1
+      }
+    ],
+    "tests_passed": 137,
+    "failure": "Production compilation and build failed: Unsupported unit: px"
+  },
+  "commands": {
+    "install": {
+      "command": "npm ci --no-audit --no-fund --fetch-retries=0 --fetch-timeout=30000",
+      "exit_code": 0,
+      "packages_added": 63
+    },
+    "final_verify": {
+      "command": "npm run verify",
+      "exit_code": 0,
+      "checks": [
+        {
+          "command": "npm run test",
+          "exit_code": 0
+        },
+        {
+          "command": "npm run build",
+          "exit_code": 0
+        }
+      ],
+      "log": "release-evidence/commands/final-verify.log"
+    },
+    "compile": {
+      "command": "npm run compile",
+      "exit_code": 0,
+      "executed_by": "npm run build, within final npm run verify"
+    },
+    "fixture_compile": {
+      "command": "npm run compile:fixtures",
+      "exit_code": 0,
+      "executed_by": "npm run build, within final npm run verify"
+    },
+    "tests": {
+      "command": "npm run test",
+      "exit_code": 0,
+      "total": 139,
+      "passed": 139,
+      "failed": 0,
+      "files": 6
+    },
+    "build": {
+      "command": "npm run build",
+      "exit_code": 0,
+      "includes": [
+        "production compile",
+        "fixture compile",
+        "tsc --noEmit",
+        "vite build"
+      ]
+    },
+    "additional": [
+      {
+        "started_at": "2026-09-26T19:32:01.7486466Z",
+        "command": "npm run audit",
+        "exit_code": 0
+      },
+      {
+        "started_at": "2026-09-26T19:32:55.7562052Z",
+        "command": "npm run compile:fixture",
+        "exit_code": 0
+      },
+      {
+        "started_at": "2026-09-26T19:33:14.1300804Z",
+        "command": "npm run typecheck",
+        "exit_code": 0
+      }
+    ],
+    "dev": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 5173 --strictPort",
+      "server_ready": true,
+      "browser_checks_passed": true
+    },
+    "production_server": {
+      "command": "node scripts/serve-subpath.cjs",
+      "url": "http://127.0.0.1:4173/rc-preview/",
+      "strict_subpath": true
+    }
+  },
+  "graph": {
+    "nodes": 249,
+    "edges": 137,
+    "by_type": {
+      "assumption": 13,
+      "burden": 21,
+      "claim": 41,
+      "derivation": 8,
+      "diagnostic": 3,
+      "escape": 9,
+      "lock": 68,
+      "measurement": 18,
+      "method": 9,
+      "observation": 14,
+      "ratchet": 19,
+      "receipt": 19,
+      "source": 4,
+      "theory": 3
+    },
+    "authored_records": 387,
+    "published_records": 386,
+    "derivations": 8,
+    "candidates": 3,
+    "candidate_states": [
+      "machine_proposed"
+    ],
+    "build_id": "8cd63978a2c97f4a07e68694f86efd7427f02704be97f5f676a97a6c2f5268ba",
+    "content_fingerprint": "e73591845f5404edf9aae2a343011ce283295a62b50f28d7882cf3b17584b308",
+    "graph_file_sha256": "c250980513da07887a498216dbdadd44b51e88753f1a358b7c2739ade896e32f",
+    "topology": {
+      "fingerprint": "913bb29268aa8a082588bb45913214b6919d45d7a43056358112a43ce78ef5d8",
+      "blast_radius_fingerprint": "e6e6fd01572924bcd1b0d54e013814e2c5996ea34ec5d075a05a4266b7f76c5f",
+      "interrogation_order_fingerprint": "57944acd5c589a710096e84a96cc5d33a5c40ba336cfef24534bcb46919d1db3"
+    },
+    "implementation_fingerprint": "cfdb5c0e01adecb9b4aa39638cd4e386c8a9b867afbe24998775319d2766b1e5"
+  },
+  "integrity": {
+    "vault_unchanged": true,
+    "evidence_unchanged": true,
+    "vault_files": 407,
+    "protected_files": 421,
+    "vault_fingerprint": "cf023ffe4a4997ea7e2a95d3b25e97eecac45f921604b10650c72608b9795b6f",
+    "fingerprint_definition": "SHA-256 of JSON.stringify(sorted array of {path,sha256}); each SHA-256 hashes original file bytes",
+    "source_and_receipt_verification": {
+      "sources": [
+        {
+          "id": "src-bray-social-petn-05g",
+          "sha256": "271fafb09ea82c77deb1bbb9c1615153de64453029c41db960299805b359894c",
+          "verification": "local_bytes_verified"
+        },
+        {
+          "id": "src-bray-social-petn-recoil-05g",
+          "sha256": "328f444c0447dbf26d138c604fa6e6c160fa4bb1e32429fd03947cdcf1e80d55",
+          "verification": "local_bytes_verified"
+        },
+        {
+          "id": "src-epicenter-main-20260701",
+          "sha256": "f097e03da2aa4786bc760c9720f924219ca63d276b53b9ccbbc024022a7a9563",
+          "verification": "local_bytes_verified"
+        },
+        {
+          "id": "src-epicenter-main-20260926",
+          "sha256": "9289906bc10ebc37c4ad2c2b9b80556f12506fceb3f6d1e7f6f88e65e3da802e",
+          "verification": "local_bytes_verified"
+        }
+      ],
+      "receipts": [
+        {
+          "id": "rec-4940-strouhal",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-blood-delay",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-blood-timezero",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-bray-petn-05g",
+          "verification": "locator_structurally_valid_not_content_verified"
+        },
+        {
+          "id": "rec-bray-petn-recoil-05g",
+          "verification": "locator_structurally_valid_not_content_verified"
+        },
+        {
+          "id": "rec-component-ejection-timeline",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-first-sound-nondiscriminating",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-five-signatures-sources",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-itd-nearfield",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-july-radial-battery",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-medical-limits",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-pcb-color-values",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-pcb-dimensional-scale",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-pcb-four-independent-lines",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-pcb-six-independent-lines",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-radial-pressure",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-rode-acoustic-classification",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-shaped-charge-13-of-13",
+          "verification": "quote_verified_at_lines"
+        },
+        {
+          "id": "rec-synthesis-independent-pieces",
+          "verification": "quote_verified_at_lines"
+        }
+      ]
+    },
+    "generated": [
+      {
+        "file": "build-manifest.json",
+        "sha256": "3442c0ebb054211e6167c5d69da1bdce59365a209beb6c61188d4ad9fc25329c",
+        "public_data_identical": true,
+        "dist_data_identical": true
+      },
+      {
+        "file": "dependency-blast-radius.json",
+        "sha256": "dd35ee4b2383be9087f2d1daa3e6035a71ad37945cf019b30fd41d7fb7389703",
+        "public_data_identical": true,
+        "dist_data_identical": true
+      },
+      {
+        "file": "diagnostics.json",
+        "sha256": "110aed82b5c79fb428f315be26a827ae72feeb0b0480bb3bdefc9dd9a5f45c63",
+        "public_data_identical": true,
+        "dist_data_identical": true
+      },
+      {
+        "file": "graph.json",
+        "sha256": "c250980513da07887a498216dbdadd44b51e88753f1a358b7c2739ade896e32f",
+        "public_data_identical": true,
+        "dist_data_identical": true
+      },
+      {
+        "file": "interrogation-order.json",
+        "sha256": "32d38a274d111f2e12d833f765bbddfcae52b24b4d7f4f3c1c8bd7ce57e0ab4c",
+        "public_data_identical": true,
+        "dist_data_identical": true
+      },
+      {
+        "file": "provenance.json",
+        "sha256": "5cd2ef1fb8191dc91d65011e843875362c57e4083d14daf99f73b9d1ec312ed1",
+        "public_data_identical": true,
+        "dist_data_identical": true
+      },
+      {
+        "file": "topology.json",
+        "sha256": "ca0a1f52e75b757b437f1f2bc75372c9688c19cd966d74c0834271ffca418d99",
+        "public_data_identical": true,
+        "dist_data_identical": true
+      }
+    ],
+    "ratchets_equivalent": "19 ratchet nodes in graph.json, with derived topology in topology.json; no separate ratchets.json in current compiler"
+  },
+  "browser_smoke": {
+    "method": "Agent-driven actual browser interactions plus visual screenshot inspection; no separate human manual acceptance claimed",
+    "runs": [
+      {
+        "base": "http://127.0.0.1:5173/",
+        "browser": "153.0.8010.48",
+        "status": "passed",
+        "started_at": "2026-09-26T19:37:06.443Z",
+        "finished_at": "2026-09-26T19:38:50.069Z",
+        "checks": [
+          {
+            "name": "home renders"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-itd-nearfield"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-4940-provenance"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-pcb-dimensions"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-pcb-color"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-radial-pressure"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-13of13-meaning"
+          },
+          {
+            "name": "direct guided route isolation"
+          },
+          {
+            "name": "claim detail, WHY and downstream blast radius"
+          },
+          {
+            "name": "focused graph, two-hop expansion, node selection and graph search"
+          },
+          {
+            "name": "substantial downstream and WHY link traversal",
+            "details": {
+              "downstream_links": 4
+            }
+          },
+          {
+            "name": "receipt quote and preserved source link"
+          },
+          {
+            "name": "local evidence asset: src-bray-social-petn-05g",
+            "details": {
+              "url": "http://127.0.0.1:5173/evidence/bray/bray-petn-05g.png",
+              "status": 200
+            }
+          },
+          {
+            "name": "local evidence asset: src-bray-social-petn-recoil-05g",
+            "details": {
+              "url": "http://127.0.0.1:5173/evidence/bray/bray-petn-recoil-05g.png",
+              "status": 200
+            }
+          },
+          {
+            "name": "local evidence asset: src-epicenter-main-20260701",
+            "details": {
+              "url": "http://127.0.0.1:5173/evidence/bray/epicenter-july-archive.html",
+              "status": 200
+            }
+          },
+          {
+            "name": "local evidence asset: src-epicenter-main-20260926",
+            "details": {
+              "url": "http://127.0.0.1:5173/evidence/bray/epicenter-current.html",
+              "status": 200
+            }
+          },
+          {
+            "name": "evidence index"
+          },
+          {
+            "name": "diagnostics render candidate/review distinction"
+          },
+          {
+            "name": "ratchet index and detail"
+          },
+          {
+            "name": "search and result navigation"
+          },
+          {
+            "name": "operator classification, commitment ledger and conflict callback"
+          },
+          {
+            "name": "parking tangent preserves active lock"
+          },
+          {
+            "name": "operator export and import",
+            "details": {
+              "events": 10
+            }
+          },
+          {
+            "name": "replay timeline, scrubber, event reconstruction and import"
+          },
+          {
+            "name": "mobile home and guided layout fit viewport"
+          },
+          {
+            "name": "hash permalink reload at served base"
+          },
+          {
+            "name": "no app console errors, page errors or failed HTTP responses"
+          }
+        ],
+        "console_errors": [],
+        "http_errors": [],
+        "report": "release-evidence/dev/browser-report.json",
+        "screenshots": [
+          "home.png",
+          "guided.png",
+          "graph.png",
+          "operator.png",
+          "replay.png",
+          "mobile-home.png",
+          "mobile-guided.png"
+        ]
+      },
+      {
+        "base": "http://127.0.0.1:4173/rc-preview/",
+        "browser": "153.0.8010.48",
+        "status": "passed",
+        "started_at": "2026-09-26T19:41:08.263Z",
+        "finished_at": "2026-09-26T19:43:03.434Z",
+        "checks": [
+          {
+            "name": "home renders"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-itd-nearfield"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-4940-provenance"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-pcb-dimensions"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-pcb-color"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-radial-pressure"
+          },
+          {
+            "name": "guided branches, back, reset, refresh, resume, permalink, technical: rat-13of13-meaning"
+          },
+          {
+            "name": "direct guided route isolation"
+          },
+          {
+            "name": "claim detail, WHY and downstream blast radius"
+          },
+          {
+            "name": "focused graph, two-hop expansion, node selection and graph search"
+          },
+          {
+            "name": "substantial downstream and WHY link traversal",
+            "details": {
+              "downstream_links": 4
+            }
+          },
+          {
+            "name": "receipt quote and preserved source link"
+          },
+          {
+            "name": "local evidence asset: src-bray-social-petn-05g",
+            "details": {
+              "url": "http://127.0.0.1:4173/rc-preview/evidence/bray/bray-petn-05g.png",
+              "status": 200
+            }
+          },
+          {
+            "name": "local evidence asset: src-bray-social-petn-recoil-05g",
+            "details": {
+              "url": "http://127.0.0.1:4173/rc-preview/evidence/bray/bray-petn-recoil-05g.png",
+              "status": 200
+            }
+          },
+          {
+            "name": "local evidence asset: src-epicenter-main-20260701",
+            "details": {
+              "url": "http://127.0.0.1:4173/rc-preview/evidence/bray/epicenter-july-archive.html",
+              "status": 200
+            }
+          },
+          {
+            "name": "local evidence asset: src-epicenter-main-20260926",
+            "details": {
+              "url": "http://127.0.0.1:4173/rc-preview/evidence/bray/epicenter-current.html",
+              "status": 200
+            }
+          },
+          {
+            "name": "evidence index"
+          },
+          {
+            "name": "diagnostics render candidate/review distinction"
+          },
+          {
+            "name": "ratchet index and detail"
+          },
+          {
+            "name": "search and result navigation"
+          },
+          {
+            "name": "operator classification, commitment ledger and conflict callback"
+          },
+          {
+            "name": "parking tangent preserves active lock"
+          },
+          {
+            "name": "operator export and import",
+            "details": {
+              "events": 10
+            }
+          },
+          {
+            "name": "replay timeline, scrubber, event reconstruction and import"
+          },
+          {
+            "name": "mobile home and guided layout fit viewport"
+          },
+          {
+            "name": "hash permalink reload at served base"
+          },
+          {
+            "name": "no app console errors, page errors or failed HTTP responses"
+          }
+        ],
+        "console_errors": [],
+        "http_errors": [],
+        "report": "release-evidence/production/browser-report.json",
+        "screenshots": [
+          "home.png",
+          "guided.png",
+          "graph.png",
+          "operator.png",
+          "replay.png",
+          "mobile-home.png",
+          "mobile-guided.png"
+        ]
+      }
+    ],
+    "guided_ratchets": [
+      "rat-itd-nearfield",
+      "rat-4940-provenance",
+      "rat-pcb-dimensions",
+      "rat-pcb-color",
+      "rat-radial-pressure",
+      "rat-13of13-meaning"
+    ],
+    "routes": [
+      "#/",
+      "#/guided",
+      "#/guided/:ratchet?lock=:lock",
+      "#/claims",
+      "#/claim/clm-itd-nearfield-only",
+      "#/claim/clm-petn-shaped-charge-hidden",
+      "#/receipt/rec-itd-nearfield",
+      "#/source/:source",
+      "#/sources",
+      "#/graph?focus=:node&depth=2",
+      "#/diagnostics",
+      "#/ratchets",
+      "#/ratchet/rat-pcb-color",
+      "#/search",
+      "#/operator",
+      "#/replay"
+    ],
+    "substantial_downstream_case": {
+      "claim": "clm-petn-shaped-charge-hidden",
+      "downstream_claims": 4,
+      "descendant_nodes": 28
+    }
+  },
+  "pages": {
+    "locally_ready": true,
+    "actual_deployment_performed": false,
+    "github_actions_executed": false,
+    "base": "./",
+    "workflow": ".github/workflows/pages.yml",
+    "workflow_artifact_path": "dist",
+    "workflow_changed": false,
+    "repository_name_hardcoded": false,
+    "checks": [
+      "hashed JavaScript and CSS loaded",
+      "all seven public data artifacts matched",
+      "all four source evidence URLs returned 200 under prefix",
+      "hash routes and reload worked",
+      "no app console or HTTP errors"
+    ]
+  },
+  "architecture_conflicts": "NONE",
+  "unresolved_warnings": [
+    "Actual GitHub Actions execution and GitHub Pages deployment were not performed.",
+    "Two image receipt locators are structurally validated, not automatically content-verified; 17 text receipts match recorded lines.",
+    "npm warned that esbuild postinstall was not approved; the installed binary successfully built the production bundle. No dependency or script-approval policy was changed.",
+    "Browser coverage uses installed Chrome, desktop 1440x1000 and mobile viewport 390x844; it is not an exhaustive cross-browser or all-branch acceptance proof.",
+    "No scientific truth judgment or reviewer-identity authentication is established by software verification."
+  ],
+  "changed_files_scope": "Compared with supplied ZIP. Excludes installed node_modules, scratch work, and .git. Includes regenerated outputs, build artifacts, release documentation, and verification evidence.",
+  "changed_files": {
+    "modified": [
+      "build-receipt.json",
+      "fixtures/4940/dist-data/build-manifest.json",
+      "fixtures/4940/negative/dist-data/build-manifest.json",
+      "fixtures/active-claim-conflict/dist-data/build-manifest.json",
+      "fixtures/active-claim-conflict/negative/dist-data/build-manifest.json",
+      "fixtures/assumption-laundering/dist-data/build-manifest.json",
+      "fixtures/assumption-laundering/negative/dist-data/build-manifest.json",
+      "fixtures/build-index.json",
+      "fixtures/itd/dist-data/build-manifest.json",
+      "fixtures/missing-calibration/dist-data/build-manifest.json",
+      "fixtures/missing-calibration/negative/dist-data/build-manifest.json",
+      "fixtures/pcb-color/dist-data/build-manifest.json",
+      "fixtures/pcb-color/negative/dist-data/build-manifest.json",
+      "fixtures/pcb-size/dist-data/build-manifest.json",
+      "fixtures/pcb-size/negative/dist-data/build-manifest.json",
+      "fixtures/pseudo-independent/dist-data/build-manifest.json",
+      "fixtures/pseudo-independent/negative/dist-data/build-manifest.json",
+      "index.html",
+      "scripts/verify.ts",
+      "src/app/App.tsx",
+      "src/app/GraphView.tsx",
+      "src/app/GuidedCase.tsx",
+      "src/audit/detectors.ts",
+      "src/compiler/arithmetic.ts",
+      "tests/audit.test.ts"
+    ],
+    "added": [
+      "ARCHITECTURE_CONFLICTS.md",
+      "RELEASE_CANDIDATE_RECEIPT.json",
+      "RELEASE_NOTES_RC1.md",
+      "dist-data/build-manifest.json",
+      "dist-data/dependency-blast-radius.json",
+      "dist-data/diagnostics.json",
+      "dist-data/graph.json",
+      "dist-data/interrogation-order.json",
+      "dist-data/provenance.json",
+      "dist-data/topology.json",
+      "dist/assets/index-BAxzDij2.js",
+      "dist/assets/index-BfAl2vem.css",
+      "dist/data.README.md",
+      "dist/data/build-manifest.json",
+      "dist/data/dependency-blast-radius.json",
+      "dist/data/diagnostics.json",
+      "dist/data/graph.json",
+      "dist/data/interrogation-order.json",
+      "dist/data/provenance.json",
+      "dist/data/topology.json",
+      "dist/evidence/4940-record.txt",
+      "dist/evidence/active-claim-conflict-record.txt",
+      "dist/evidence/assumption-laundering-record.txt",
+      "dist/evidence/bray/bray-petn-05g.png",
+      "dist/evidence/bray/bray-petn-recoil-05g.png",
+      "dist/evidence/bray/epicenter-current.html",
+      "dist/evidence/bray/epicenter-july-archive.html",
+      "dist/evidence/itd-synthetic.txt",
+      "dist/evidence/missing-calibration-record.txt",
+      "dist/evidence/pcb-color-record.txt",
+      "dist/evidence/pcb-size-record.txt",
+      "dist/evidence/pseudo-independent-false-color.txt",
+      "dist/evidence/pseudo-independent-optical-flow.txt",
+      "dist/evidence/pseudo-independent-record.txt",
+      "dist/index.html",
+      "fixtures/4940/dist-data/dependency-blast-radius.json",
+      "fixtures/4940/dist-data/interrogation-order.json",
+      "fixtures/4940/dist-data/topology.json",
+      "fixtures/4940/negative/dist-data/dependency-blast-radius.json",
+      "fixtures/4940/negative/dist-data/interrogation-order.json",
+      "fixtures/4940/negative/dist-data/topology.json",
+      "fixtures/active-claim-conflict/dist-data/dependency-blast-radius.json",
+      "fixtures/active-claim-conflict/dist-data/interrogation-order.json",
+      "fixtures/active-claim-conflict/dist-data/topology.json",
+      "fixtures/active-claim-conflict/negative/dist-data/dependency-blast-radius.json",
+      "fixtures/active-claim-conflict/negative/dist-data/interrogation-order.json",
+      "fixtures/active-claim-conflict/negative/dist-data/topology.json",
+      "fixtures/assumption-laundering/dist-data/dependency-blast-radius.json",
+      "fixtures/assumption-laundering/dist-data/interrogation-order.json",
+      "fixtures/assumption-laundering/dist-data/topology.json",
+      "fixtures/assumption-laundering/negative/dist-data/dependency-blast-radius.json",
+      "fixtures/assumption-laundering/negative/dist-data/interrogation-order.json",
+      "fixtures/assumption-laundering/negative/dist-data/topology.json",
+      "fixtures/itd/dist-data/dependency-blast-radius.json",
+      "fixtures/itd/dist-data/interrogation-order.json",
+      "fixtures/itd/dist-data/topology.json",
+      "fixtures/missing-calibration/dist-data/dependency-blast-radius.json",
+      "fixtures/missing-calibration/dist-data/interrogation-order.json",
+      "fixtures/missing-calibration/dist-data/topology.json",
+      "fixtures/missing-calibration/negative/dist-data/dependency-blast-radius.json",
+      "fixtures/missing-calibration/negative/dist-data/interrogation-order.json",
+      "fixtures/missing-calibration/negative/dist-data/topology.json",
+      "fixtures/pcb-color/dist-data/dependency-blast-radius.json",
+      "fixtures/pcb-color/dist-data/interrogation-order.json",
+      "fixtures/pcb-color/dist-data/topology.json",
+      "fixtures/pcb-color/negative/dist-data/dependency-blast-radius.json",
+      "fixtures/pcb-color/negative/dist-data/interrogation-order.json",
+      "fixtures/pcb-color/negative/dist-data/topology.json",
+      "fixtures/pcb-size/dist-data/dependency-blast-radius.json",
+      "fixtures/pcb-size/dist-data/interrogation-order.json",
+      "fixtures/pcb-size/dist-data/topology.json",
+      "fixtures/pcb-size/negative/dist-data/dependency-blast-radius.json",
+      "fixtures/pcb-size/negative/dist-data/interrogation-order.json",
+      "fixtures/pcb-size/negative/dist-data/topology.json",
+      "fixtures/pseudo-independent/dist-data/dependency-blast-radius.json",
+      "fixtures/pseudo-independent/dist-data/interrogation-order.json",
+      "fixtures/pseudo-independent/dist-data/topology.json",
+      "fixtures/pseudo-independent/negative/dist-data/dependency-blast-radius.json",
+      "fixtures/pseudo-independent/negative/dist-data/interrogation-order.json",
+      "fixtures/pseudo-independent/negative/dist-data/topology.json",
+      "public/data/build-manifest.json",
+      "public/data/dependency-blast-radius.json",
+      "public/data/diagnostics.json",
+      "public/data/graph.json",
+      "public/data/interrogation-order.json",
+      "public/data/provenance.json",
+      "public/data/topology.json",
+      "release-evidence/commands/baseline-build.log",
+      "release-evidence/commands/baseline-commands.json",
+      "release-evidence/commands/baseline-compile.log",
+      "release-evidence/commands/baseline-test.log",
+      "release-evidence/commands/baseline-verify.log",
+      "release-evidence/commands/final-additional-commands.json",
+      "release-evidence/commands/final-audit.log",
+      "release-evidence/commands/final-compile-fixture.log",
+      "release-evidence/commands/final-typecheck.log",
+      "release-evidence/commands/final-verify.log",
+      "release-evidence/commands/test-results.json",
+      "release-evidence/dev/browser-report.json",
+      "release-evidence/dev/graph.png",
+      "release-evidence/dev/guided.png",
+      "release-evidence/dev/home.png",
+      "release-evidence/dev/mobile-guided.png",
+      "release-evidence/dev/mobile-home.png",
+      "release-evidence/dev/operator.png",
+      "release-evidence/dev/replay.png",
+      "release-evidence/dev/session-export.json",
+      "release-evidence/input-integrity.json",
+      "release-evidence/prior-attempts/README.md",
+      "release-evidence/prior-attempts/assertion-correction.json",
+      "release-evidence/prior-attempts/dev-failure.png",
+      "release-evidence/prior-attempts/production-failure.png",
+      "release-evidence/prior-attempts/screenshot-timeout.json",
+      "release-evidence/production/browser-report.json",
+      "release-evidence/production/graph.png",
+      "release-evidence/production/guided.png",
+      "release-evidence/production/home.png",
+      "release-evidence/production/mobile-guided.png",
+      "release-evidence/production/mobile-home.png",
+      "release-evidence/production/operator.png",
+      "release-evidence/production/replay.png",
+      "release-evidence/production/session-export.json",
+      "scripts/browser-smoke.cjs",
+      "scripts/serve-subpath.cjs",
+      "tests/release-integration.test.ts"
+    ],
+    "removed": []
+  }
+}

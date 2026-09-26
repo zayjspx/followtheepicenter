@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "build_id": "e5d5e58dcd6ce49f2dec0d0a6b41162bd5c1d425eec9b0d8181f8ce39162c6fe",
+  "compiler_version": "slice-2-v1",
+  "authored_count": 18,
+  "published_count": 18,
+  "excluded_ids": [],
+  "inputs": [
+    {
+      "path": "clm-convergence.md",
+      "id": "clm-convergence",
+      "sha256": "5267054672643e06b00a1c33b2ed5ee6f475b5bc5b86e8080fcc859de5a54792"
+    },
+    {
+      "path": "edg-clahe.md",
+      "id": "edg-clahe",
+      "sha256": "63316c4bc43c2e110f2dc71b7743d411531c74eda83c77d61b61a5ea101ea7a0"
+    },
+    {
+      "path": "edg-false-color.md",
+      "id": "edg-false-color",
+      "sha256": "672f8959b0952dc5a5fd3b38374175762c77b32dbcc8d1f082aec324383aa684"
+    },
+    {
+      "path": "edg-optical-flow.md",
+      "id": "edg-optical-flow",
+      "sha256": "3b88dfc5705efd65d1b15b5d1be40025882d5a8bff349840a21450452fa47b34"
+    },
+    {
+      "path": "inf-clahe.md",
+      "id": "inf-clahe",
+      "sha256": "c7bf26e349255d453673b27d462bc71799159496713fe95da241f9f59b0a230f"
+    },
+    {
+      "path": "inf-false-color.md",
+      "id": "inf-false-color",
+      "sha256": "36eadacccc0d91ae33e234023ecf717e98b671838214f60e7865000f9552b73b"
+    },
+    {
+      "path": "inf-optical-flow.md",
+      "id": "inf-optical-flow",
+      "sha256": "46653dc14a4316ee1f3b954bf2a0d1bc35126aafbb919479638f54a6c94af589"
+    },
+    {
+      "path": "met-read.md",
+      "id": "met-read",
+      "sha256": "3ecb1bb228a7a8c182415a3434749fce8cac7f37d5aeee3b0398cc965e6f3944"
+    },
+    {
+      "path": "obs-false-color.md",
+      "id": "obs-false-color",
+      "sha256": "660f2a1982da169e00dda72ef8857a6316ce699e4f12dca64b7273ddc49adeff"
+    },
+    {
+      "path": "obs-optical-flow.md",
+      "id": "obs-optical-flow",
+      "sha256": "67c0d26ed6d68492cc597de72dcf78c1b9fc29cfa1881503d880030b8891132a"
+    },
+    {
+      "path": "obs-record.md",
+      "id": "obs-record",
+      "sha256": "af40e4d7848f27602727f3c8a8d8139e0afbb7d302df7565f2486a9d050db6ca"
+    },
+    {
+      "path": "rec-false-color.md",
+      "id": "rec-false-color",
+      "sha256": "f4bc6f23e2be9389a35d6c43e6e47014033945b300726a15806fff6ae850c50d"
+    },
+    {
+      "path": "rec-optical-flow.md",
+      "id": "rec-optical-flow",
+      "sha256": "bda20dfc234aa60fd7d3ec2b9913d9c48fe14053b7c81ec8744efdff2b09201b"
+    },
+    {
+      "path": "rec-record.md",
+      "id": "rec-record",
+      "sha256": "9c80a86037a3b0c1f066c4b050a963cc193b1b493e3f6c70b080e5913344d0a7"
+    },
+    {
+      "path": "src-false-color.md",
+      "id": "src-false-color",
+      "sha256": "aa9654bcfe3bd5b8f30522c858de873df8b5b3f6ffb032e543e95fb84153056f"
+    },
+    {
+      "path": "src-optical-flow.md",
+      "id": "src-optical-flow",
+      "sha256": "ff1c069b594a62cbae82b16061825d50bab01d3d1a90610e4302fa87a44e7fad"
+    },
+    {
+      "path": "src-record.md",
+      "id": "src-record",
+      "sha256": "48fbe1636a26608bf76bcf110289b31b3936446e9ff87e40e32ef59d0f64366b"
+    },
+    {
+      "path": "thy-fixture.md",
+      "id": "thy-fixture",
+      "sha256": "834d80535d2ac55eb5b808bce372cebe9e85bd022f37807a57fafbf0d50a6359"
+    }
+  ],
+  "integrity": {
+    "sources": [
+      {
+        "id": "src-false-color",
+        "sha256": "8df95fdf83bb713cab63118476f8f067e07dc0eb080bd6bb2fc971da9510c904",
+        "verification": "local_bytes_verified"
+      },
+      {
+        "id": "src-optical-flow",
+        "sha256": "398294c669a92500484fb87fcba5cac2fc3e4c6078a7bf1cccdcc44d28470d55",
+        "verification": "local_bytes_verified"
+      },
+      {
+        "id": "src-record",
+        "sha256": "8395a85032b3e670df8f512c2245392496c4e6b1c009967134da5f2b95f3f2f9",
+        "verification": "local_bytes_verified"
+      }
+    ],
+    "receipts": [
+      {
+        "id": "rec-false-color",
+        "verification": "quote_verified_at_lines"
+      },
+      {
+        "id": "rec-optical-flow",
+        "verification": "quote_verified_at_lines"
+      },
+      {
+        "id": "rec-record",
+        "verification": "quote_verified_at_lines"
+      }
+    ]
+  },
+  "audit_annotations_sha256": "aa6f6f399f20c03dced44355a48fe3a92090f1ee376fe43fb891147cefd99399",
+  "excluded_annotation_ids": [],
+  "graph_fingerprint": "63eefb020dd429142a53abef7324790275afc178907b027aecd3792f8a384c21",
+  "scope": "Slice 2 compiler: hardened schemas, typed audit annotations and explicit provenance paths; no graph UI or runtime",
+  "audit": {
+    "engine_version": "slice-2-v1",
+    "detectors": [
+      "arithmetic_contradiction",
+      "circular_support",
+      "pseudo_independence",
+      "assumption_laundering",
+      "missing_calibration",
+      "active_claim_conflict"
+    ],
+    "candidate_count": 0,
+    "fingerprint": "0c89564d206cfbc742092e3ad2808802c2d7ecf0c6cc0c42654aef971542120b"
+  },
+  "topology": {
+    "fingerprint": "b740f33bc06ea3f87318275151d611447b855c7868e536402e0b79d487b56c40",
+    "blast_radius_fingerprint": "6b9c9524bf8f8e1a95b82c589f9d4474bf21a61a7b72c49a62eabe350045464f",
+    "interrogation_order_fingerprint": "5ff7084f061dcf2faabe216a511adcb3195f01ddb5d438d97319adba774fd8c6"
+  }
+}

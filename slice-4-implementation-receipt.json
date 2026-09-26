@@ -1,0 +1,23 @@
+{
+  "slice": 4,
+  "name": "operator-live-runtime",
+  "status": "implemented_static_review_pending_environment_smoke",
+  "features": [
+    "event_sourced_session",
+    "active_lock",
+    "answer_classification",
+    "commitment_ledger",
+    "burden_ledger",
+    "dynamic_callbacks",
+    "static_callbacks",
+    "tangent_parking",
+    "local_persistence",
+    "session_export_import",
+    "session_replay",
+    "build_pinning"
+  ],
+  "runtime_schema": "interrogation.session.v1",
+  "backend_required": false,
+  "canonical_graph_mutated_by_runtime": false,
+  "smoke_test_command": "npm ci && npm run build"
+}

@@ -1,0 +1,42 @@
+{
+  "required_files": {
+    "src/session/runtime.ts": true,
+    "src/app/SessionOperator.tsx": true,
+    "src/app/SessionReplay.tsx": true,
+    "tests/session-runtime.test.ts": true,
+    "SLICE_4_RETURN_TO_USER.md": true,
+    "slice-4-implementation-receipt.json": true
+  },
+  "routes": {
+    "operator": true,
+    "replay": true
+  },
+  "event_types": {
+    "session_started": true,
+    "response_classified": true,
+    "commitment_added": true,
+    "tangent_parked": true,
+    "callback_available": true,
+    "session_ended": true
+  },
+  "tangent_does_not_advance": true,
+  "event_replay": true,
+  "build_pins": true,
+  "local_adapter": true,
+  "dynamic_conflict_relations": true,
+  "session_export": true,
+  "session_import_validation": true,
+  "shim_typecheck_status": "PASS",
+  "shim_typecheck_scope": "Slice 4 app/runtime plus local app dependencies; React types shimmed because node_modules is not available in this environment.",
+  "npm_offline": "NOT_RUNNABLE_NO_CACHE",
+  "canonical_vault_mutation": false,
+  "files_sha256": {
+    "src/session/runtime.ts": "3a9dbf5859cfa702495831846ec8da45916951027c9cfbcccd0cbcd1c1e61fc7",
+    "src/app/SessionOperator.tsx": "93fe005a159babdaae06ff47af289eb545e3d1f0b1e8221c8df3cf7020236bc2",
+    "src/app/SessionReplay.tsx": "5431279eab75f98c4cb2cdeb8b916d2030c5b584bd34dd7367f691a57782a54f",
+    "tests/session-runtime.test.ts": "d1aed22f41c39ae7141093dc1415b9c0373dd8b0865923f0c797d9493cb4ef23",
+    "SLICE_4_RETURN_TO_USER.md": "c3ec7b0a3cd939cbb0a97e638661cfe42111e620f804449d12fd574d59ff3a90",
+    "slice-4-implementation-receipt.json": "e2739bebe335ec7b1aa2b74513acbf2355e09eb1e48eaab2285b96b12fd989d4"
+  },
+  "status": "PASS"
+}

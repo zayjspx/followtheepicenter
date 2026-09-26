@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "build_id": "1a3110f777d2060a5b3662ee85e16d5342b4e750189a274756d71b56b9be65ce",
+  "claim_state": {
+    "clm-speed": {
+      "direct_burdens": [],
+      "inherited_burdens": [],
+      "all_burdens": [],
+      "support_paths": [
+        "mea-speed"
+      ],
+      "downstream_claims": [],
+      "structural_state": "supported",
+      "note": "Structural state only; not a truth judgment."
+    }
+  },
+  "ratchets": {},
+  "response_patterns": {},
+  "fingerprint": "e7f6d69ac65387c1098f9751c1f2e5a47c28feaaca6b69e5cd08994142963cce"
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "build_id": "b6d30a1529d880961bf709a69e8fd054f4d096d5da575ee9f5b0ad012ba8b411",
+  "compiler_version": "slice-2-v1",
+  "authored_count": 8,
+  "published_count": 8,
+  "excluded_ids": [],
+  "inputs": [
+    {
+      "path": "clm-exceeds.md",
+      "id": "clm-exceeds",
+      "sha256": "013e28918d0f1c4887a9d9ac29d078903518cab111795e906c060c29b08f5914"
+    },
+    {
+      "path": "mea-object.md",
+      "id": "mea-object",
+      "sha256": "e845a8a85cfc32c2778a5d788aa33532496ee3aa2357feb045a8c0af43074b50"
+    },
+    {
+      "path": "mea-shirt.md",
+      "id": "mea-shirt",
+      "sha256": "2348dc04ede6a8bfe254749ca70453a99cfb411e6e02a24bc88388f0c4ca9405"
+    },
+    {
+      "path": "met-read.md",
+      "id": "met-read",
+      "sha256": "3ecb1bb228a7a8c182415a3434749fce8cac7f37d5aeee3b0398cc965e6f3944"
+    },
+    {
+      "path": "obs-record.md",
+      "id": "obs-record",
+      "sha256": "af40e4d7848f27602727f3c8a8d8139e0afbb7d302df7565f2486a9d050db6ca"
+    },
+    {
+      "path": "rec-record.md",
+      "id": "rec-record",
+      "sha256": "13425cbe444e0dc593bff19cc33ea5c7aea4b911c64b0cb674a9752273e905d1"
+    },
+    {
+      "path": "src-record.md",
+      "id": "src-record",
+      "sha256": "57420cb8d97f67fec36bfcceb1b087e66e87a4c84aeb2aa8203eab07efa87fe1"
+    },
+    {
+      "path": "thy-fixture.md",
+      "id": "thy-fixture",
+      "sha256": "570e494f2c151d6aa8fdb8479ba15bba30aa5fa643f277ffd39d097389a377f1"
+    }
+  ],
+  "integrity": {
+    "sources": [
+      {
+        "id": "src-record",
+        "sha256": "b6dc1363bda1cd5b831d3c4cd818537046ce7c07fb6645c8b1f297899d36cc51",
+        "verification": "local_bytes_verified"
+      }
+    ],
+    "receipts": [
+      {
+        "id": "rec-record",
+        "verification": "quote_verified_at_lines"
+      }
+    ]
+  },
+  "audit_annotations_sha256": "7a341a60e070488f9227de972d4d5eba1169b9d95e16faeb141b779e39f49338",
+  "excluded_annotation_ids": [],
+  "graph_fingerprint": "15b3edff3e20d789f088d95366a2d180d76be03811a6e02ae25f5e456b163982",
+  "scope": "Slice 2 compiler: hardened schemas, typed audit annotations and explicit provenance paths; no graph UI or runtime",
+  "audit": {
+    "engine_version": "slice-2-v1",
+    "detectors": [
+      "arithmetic_contradiction",
+      "circular_support",
+      "pseudo_independence",
+      "assumption_laundering",
+      "missing_calibration",
+      "active_claim_conflict"
+    ],
+    "candidate_count": 0,
+    "fingerprint": "cc2215dd131c7d2e11bfc037bbe66be5331b6f926f344be00707aca24185cd99"
+  },
+  "topology": {
+    "fingerprint": "cccb02b63697f0e0f5e259cb73dbe0824621645b1ec63f065b8796fca07270ca",
+    "blast_radius_fingerprint": "02492be8d838b7309b2524e8383e86b5db2e0816a19a06b1d7bf0432c1b59d36",
+    "interrogation_order_fingerprint": "e5904da5879ab9b9ad1073b9099cb2d54d0e5bc8c0fdbdae2d91901bfa625cd7"
+  }
+}

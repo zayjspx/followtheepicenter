@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "results": [
+    {
+      "input": "fixtures/itd/vault",
+      "output": "fixtures/itd/dist-data",
+      "build_id": "309639f350789e8ed6013fb9bd66153527bee3e52cd82379dfa36636c21f1451",
+      "nodes": 8,
+      "edges": 1,
+      "derivations": [
+        {
+          "id": "der-itd-max",
+          "quantity": "max_plane_wave_itd",
+          "value": 113.70262390670555,
+          "unit": "us",
+          "inputs": {
+            "baseline": {
+              "node": "asm-phone-baseline-39mm"
+            },
+            "sound_speed": {
+              "value": 343,
+              "unit": "m/s"
+            }
+          },
+          "expression": "baseline / sound_speed",
+          "expected": {
+            "value": 113.7,
+            "tolerance": 0.05
+          },
+          "absolute_error": 0.0026239067055513488
+        }
+      ],
+      "candidates": [],
+      "topology_fingerprint": "5c701a3a5aeedb313754a7647a33d0fd9d06f383b6fbb7d89c9177d4a6856642",
+      "fixture": "itd",
+      "variant": "positive"
+    },
+    {
+      "input": "fixtures/4940/vault",
+      "output": "fixtures/4940/dist-data",
+      "build_id": "861d4adf5ee5c81b72beae8e92262c3d0901a2bbdb8fb84f95f2db5b9bbf590e",
+      "nodes": 8,
+      "edges": 1,
+      "derivations": [
+        {
+          "id": "der-velocity",
+          "quantity": "gas_velocity",
+          "value": 188.214,
+          "unit": "m/s",
+          "inputs": {
+            "frequency": {
+              "node": "mea-frequency"
+            },
+            "diameter": {
+              "node": "asm-diameter"
+            },
+            "strouhal": {
+              "node": "asm-strouhal"
+            }
+          },
+          "expression": "frequency * diameter / strouhal",
+          "expected": {
+            "value": 188.214,
+            "tolerance": 0.001
+          },
+          "absolute_error": 0
+        }
+      ],
+      "candidates": [
+        {
+          "id": "dgn-candidate-bbfb8dc3ac2c480ca2029ffd",
+          "detector": "circular_support",
+          "fingerprint": "13cb0ce9b6206c41fe74b2e39034b353f911437d47354c80ad4eadf5e96e6964"
+        }
+      ],
+      "topology_fingerprint": "b92160b94cb682c434ce05146b248a9ba9a10dccf428f0ef87a794abb56ecb33",
+      "fixture": "4940",
+      "variant": "positive"
+    },
+    {
+      "input": "fixtures/4940/negative/vault",
+      "output": "fixtures/4940/negative/dist-data",
+      "build_id": "62e20736240f88c2430d61757ed68e1aac170d59be2b1040382126a7c892c67e",
+      "nodes": 8,
+      "edges": 1,
+      "derivations": [
+        {
+          "id": "der-velocity",
+          "quantity": "gas_velocity",
+          "value": 188.214,
+          "unit": "m/s",
+          "inputs": {
+            "frequency": {
+              "node": "mea-frequency"
+            },
+            "diameter": {
+              "node": "asm-diameter"
+            },
+            "strouhal": {
+              "node": "asm-strouhal"
+            }
+          },
+          "expression": "frequency * diameter / strouhal",
+          "expected": {
+            "value": 188.214,
+            "tolerance": 0.001
+          },
+          "absolute_error": 0
+        }
+      ],
+      "candidates": [],
+      "topology_fingerprint": "22ff9dc59a4301357c663ce5410636900fc869435878cdaaf1a25634b31cc76f",
+      "fixture": "4940",
+      "variant": "negative"
+    },
+    {
+      "input": "fixtures/pcb-color/vault",
+      "output": "fixtures/pcb-color/dist-data",
+      "build_id": "be593aac7a5dfa88d137a55c98f2534d3a481f94f7636a4f859b0a3686d4c24b",
+      "nodes": 8,
+      "edges": 0,
+      "derivations": [],
+      "candidates": [
+        {
+          "id": "dgn-candidate-55d6b21d72fa31606153576a",
+          "detector": "arithmetic_contradiction",
+          "fingerprint": "896990195a093a8ba04c0df6ecaeaff9cfa6620f67a0d2d277579ab29648efb2"
+        }
+      ],
+      "topology_fingerprint": "2d0e8483afd85cd3beb76367208a661dd6154ba1b2d34255b63ce7bebf56d559",
+      "fixture": "pcb-color",
+      "variant": "positive"
+    },
+    {
+      "input": "fixtures/pcb-color/negative/vault",
+      "output": "fixtures/pcb-color/negative/dist-data",
+      "build_id": "b6d30a1529d880961bf709a69e8fd054f4d096d5da575ee9f5b0ad012ba8b411",
+      "nodes": 8,
+      "edges": 0,
+      "derivations": [],
+      "candidates": [],
+      "topology_fingerprint": "cccb02b63697f0e0f5e259cb73dbe0824621645b1ec63f065b8796fca07270ca",
+      "fixture": "pcb-color",
+      "variant": "negative"
+    },
+    {
+      "input": "fixtures/pcb-size/vault",
+      "output": "fixtures/pcb-size/dist-data",
+      "build_id": "83127f44fedfc8d93ec70cb1472dc154d59a095c2aece3afc8c38dc6aa6a20ae",
+      "nodes": 7,
+      "edges": 0,
+      "derivations": [],
+      "candidates": [
+        {
+          "id": "dgn-candidate-4bb87e0063bc27baa6b4253d",
+          "detector": "active_claim_conflict",
+          "fingerprint": "c4e1875a8f0d2da187a921ba9a451315ae6c4ad5a1e6055fdbd066a8c3c09f47"
+        }
+      ],
+      "topology_fingerprint": "96a340a9a9292662db59a81b627afced45f04af0771cba84a8629f77984a9417",
+      "fixture": "pcb-size",
+      "variant": "positive"
+    },
+    {
+      "input": "fixtures/pcb-size/negative/vault",
+      "output": "fixtures/pcb-size/negative/dist-data",
+      "build_id": "28f55ab12a93c6d1fd0acd36dca65e77dad16d5b3cec58894e7b2606d56a5d02",
+      "nodes": 7,
+      "edges": 0,
+      "derivations": [],
+      "candidates": [],
+      "topology_fingerprint": "02e0f1823c3f8ad54ad9d7df8d95c92f22cc056a82f53b5ca39e5f7ac653ca92",
+      "fixture": "pcb-size",
+      "variant": "negative"
+    },
+    {
+      "input": "fixtures/pseudo-independent/vault",
+      "output": "fixtures/pseudo-independent/dist-data",
+      "build_id": "c47d8bab0cb4fb01f4d4b6715b5534b79400d2788640d21a409544178b1ea743",
+      "nodes": 9,
+      "edges": 3,
+      "derivations": [],
+      "candidates": [
+        {
+          "id": "dgn-candidate-fbd56836ba786406a217d08e",
+          "detector": "pseudo_independence",
+          "fingerprint": "daf69f9af63a48aef20042f6b6a5c824c9dcb867aeceb8aa6a9464fe210a15c6"
+        }
+      ],
+      "topology_fingerprint": "e9f381aa56c7602ca78e9a724df3c09bea1a4c723922691b84e5c2c874e9bcd8",
+      "fixture": "pseudo-independent",
+      "variant": "positive"
+    },
+    {
+      "input": "fixtures/pseudo-independent/negative/vault",
+      "output": "fixtures/pseudo-independent/negative/dist-data",
+      "build_id": "e5d5e58dcd6ce49f2dec0d0a6b41162bd5c1d425eec9b0d8181f8ce39162c6fe",
+      "nodes": 15,
+      "edges": 3,
+      "derivations": [],
+      "candidates": [],
+      "topology_fingerprint": "b740f33bc06ea3f87318275151d611447b855c7868e536402e0b79d487b56c40",
+      "fixture": "pseudo-independent",
+      "variant": "negative"
+    },
+    {
+      "input": "fixtures/assumption-laundering/vault",
+      "output": "fixtures/assumption-laundering/dist-data",
+      "build_id": "22b736790eb741d8510fcce483e6d42bca8b2f793bb4736df6e25ed6143c75de",
+      "nodes": 8,
+      "edges": 2,
+      "derivations": [],
+      "candidates": [
+        {
+          "id": "dgn-candidate-316add65c23c2d03a4281c22",
+          "detector": "assumption_laundering",
+          "fingerprint": "8584153fde7762a8a8ee9eff30c520fe1496235eaf574ec290f437d084f42b94"
+        }
+      ],
+      "topology_fingerprint": "9a779b21d2ef66facb6f6e114db2f2bd2b3b03cf23227b757324f6e9a6d3db7c",
+      "fixture": "assumption-laundering",
+      "variant": "positive"
+    },
+    {
+      "input": "fixtures/assumption-laundering/negative/vault",
+      "output": "fixtures/assumption-laundering/negative/dist-data",
+      "build_id": "1a3110f777d2060a5b3662ee85e16d5342b4e750189a274756d71b56b9be65ce",
+      "nodes": 8,
+      "edges": 1,
+      "derivations": [],
+      "candidates": [],
+      "topology_fingerprint": "e7f6d69ac65387c1098f9751c1f2e5a47c28feaaca6b69e5cd08994142963cce",
+      "fixture": "assumption-laundering",
+      "variant": "negative"
+    },
+    {
+      "input": "fixtures/missing-calibration/vault",
+      "output": "fixtures/missing-calibration/dist-data",
+      "build_id": "a32343f7f4e98af18783b83a8a855681360149408da46fd80c5600a498699749",
+      "nodes": 6,
+      "edges": 0,
+      "derivations": [],
+      "candidates": [
+        {
+          "id": "dgn-candidate-ca5daf0d11327974ee3dfbc6",
+          "detector": "missing_calibration",
+          "fingerprint": "37354b0baea13081983f06ae99f4492e793f70ed94cd8a076cc153e9bf5c2685"
+        }
+      ],
+      "topology_fingerprint": "51a9907275d87407e25bf0ab64b95c409b2f4bf0f67e0559bdeb1e46e47d6d7b",
+      "fixture": "missing-calibration",
+      "variant": "positive"
+    },
+    {
+      "input": "fixtures/missing-calibration/negative/vault",
+      "output": "fixtures/missing-calibration/negative/dist-data",
+      "build_id": "0ec41eea73991251024bdb3e3a0332b63136e27884ba4264a4db27c152476cf5",
+      "nodes": 7,
+      "edges": 0,
+      "derivations": [],
+      "candidates": [],
+      "topology_fingerprint": "abd1d9b5e8054c7a8e4d97a650f10a672b701a707730fa4167c1acf58c6c6c6f",
+      "fixture": "missing-calibration",
+      "variant": "negative"
+    },
+    {
+      "input": "fixtures/active-claim-conflict/vault",
+      "output": "fixtures/active-claim-conflict/dist-data",
+      "build_id": "182f499d6943f98af9ca1d71249c37281b9b8f9f11aff584251736f2d7f0b55f",
+      "nodes": 7,
+      "edges": 1,
+      "derivations": [],
+      "candidates": [
+        {
+          "id": "dgn-candidate-b1b37b5cc563a7c48ab448c4",
+          "detector": "active_claim_conflict",
+          "fingerprint": "b3cb4042566e3ba46cdcf101a56e9b7c727ca9157d5f4a540ebc69cb563ac72e"
+        }
+      ],
+      "topology_fingerprint": "5fe36c3e28e4300d7999aecc55d86d10673ca94726a61c5813e723071fb25ff4",
+      "fixture": "active-claim-conflict",
+      "variant": "positive"
+    },
+    {
+      "input": "fixtures/active-claim-conflict/negative/vault",
+      "output": "fixtures/active-claim-conflict/negative/dist-data",
+      "build_id": "92c860e15553c554e2afe6b8f514625d0d13f47bf66ce0fedd70c433f7332e42",
+      "nodes": 7,
+      "edges": 1,
+      "derivations": [],
+      "candidates": [],
+      "topology_fingerprint": "16c2772a19cae63564e962358e38fc757302c91a3ca412cafe71a2575e82257c",
+      "fixture": "active-claim-conflict",
+      "variant": "negative"
+    }
+  ]
+}
